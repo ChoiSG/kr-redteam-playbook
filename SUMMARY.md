@@ -45,6 +45,7 @@
 * [블러드하운드](정보수집/블러드하운드.md)
 * [정보 수집 - 파워쉘 - TODO](정보수집/정보-수집-파워쉘.md)
 * [정보 수집 - C# - TODO](정보수집/정보-수집-시샵.md)
+* [SMB 쉐어 수집](정보수집/smb-share.md)
 
 ## 실행 (Execution) <a href="#실행" id="실행"></a>
 
@@ -102,7 +103,8 @@
   * [MS-EFSRPC - Petitpotam](계정-정보-탈취/강제-인증/ms-efsrpc.md)
   * [MS-FSRVP - ShadowCoerce](계정-정보-탈취/강제-인증/ms-fsrvp.md)
   * [MS-DFSNM - DFSCoerce](계정-정보-탈취/강제-인증/ms-dfsnm.md)
-* [NTLM 릴레이 - TODO](계정-정보-탈취/ntlm-릴레이.md)
+* [NTLM 릴레이](계정-정보-탈취/ntlm-릴레이/README.md)
+  * [SMB to SMB](계정-정보-탈취/ntlm-릴레이/smb-to-smb.md)
 * [NTLM 다운그레이드](계정-정보-탈취/ntlm-다운그레이드.md)
 * [RBCD (Resource Based Constrained Delegation) - TODO](계정-정보-탈취/rbcd.md)
 
