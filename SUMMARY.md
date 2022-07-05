@@ -35,7 +35,7 @@
   * [XLM Excel 4.0 매크로](초기침투/피싱-첨부파일/XLM-Excel-40.md)
 * [HTML 스머글링 (Smuggling)](초기침투/html-smuggling.md)
 * [피싱 - MitM](초기침투/피싱-mitm.md)
-* [Living Off Trusted Sites (LOTS) - TODO ](초기침투/living-off-trusted-sites.md)
+* [Living Off Trusted Sites (LOTS)](초기침투/living-off-trusted-sites.md)
 * [비밀번호 스프레이 공격 - TODO ](초기침투/비밀번호-스프레이-공격.md)
 
 ## 정보 수집 - 내부망 <a href="#정보수집" id="정보수집"></a>
