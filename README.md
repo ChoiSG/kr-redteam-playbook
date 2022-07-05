@@ -45,3 +45,9 @@ There is no novel research/content in this project, nor do I claim any work in p
 * [링크드인](https://www.linkedin.com/in/sunggwan-choi/)
 * [블로그 ](https://blog.sunggwanchoi.com/)
 * [깃헙 ](https://github.com/choisg)
+
+### 기여자&#x20;
+
+해당 프로젝트에 기여해주신 모든 분들께 감사합니다.&#x20;
+
+* (이름)/핸들/Website/한줄 할 말&#x20;
