@@ -223,55 +223,72 @@ public static byte[] xorByteArray(byte[] sc, int scLength, byte[] key, int keyLe
 #### AES CBC mode Decrypt
 
 ```
-// https://www.powershellgallery.com/packages/DRTools/4.0.2.3/Content/Functions%5CInvoke-AESEncryption.ps1 
+// https://stackoverflow.com/questions/53653510/c-sharp-aes-encryption-byte-array
+// byte[] buf = Aes256Decrypt(bufEncrypted, Encoding.ASCII.GetBytes(key), Encoding.ASCII.GetBytes(iv));
+public static byte[] Aes256Decrypt(byte[] data, byte[] key, byte[] iv)
+{
+    using (var aes = Aes.Create())
+    {
+        aes.KeySize = 128;
+        aes.BlockSize = 128;
+        aes.Padding = PaddingMode.Zeros;
 
-public static byte[] aes256Decrypt(byte[] fileByteArray, string key)
-{   
-    SHA256Managed shaManaged = new SHA256Managed();
-    AesManaged aesManaged = new AesManaged();
-    aesManaged.Mode = CipherMode.CBC;
-    aesManaged.Padding = PaddingMode.Zeros;
-    aesManaged.BlockSize = 128;
-    aesManaged.KeySize = 256;
+        aes.Key = key;
+        aes.IV = iv;
 
-    aesManaged.Key = shaManaged.ComputeHash(Encoding.UTF8.GetBytes(key));
-    byte[] cipherBytes = fileByteArray;
+        using (var decryptor = aes.CreateDecryptor(aes.Key, aes.IV))
+        {
+            return PerformCryptography(data, decryptor);
+        }
+    }
+}
 
-    // Decrypting 
-    var ivBytes = new byte[16];
-    Array.Copy(cipherBytes, ivBytes, 16);
-    aesManaged.IV = ivBytes;
-    var decryptor = aesManaged.CreateDecryptor();
+public static byte[] PerformCryptography(byte[] data, ICryptoTransform cryptoTransform)
+{
+    using (var ms = new MemoryStream())
+    using (var cryptoStream = new CryptoStream(ms, cryptoTransform, CryptoStreamMode.Write))
+    {
+        cryptoStream.Write(data, 0, data.Length);
+        cryptoStream.FlushFinalBlock();
 
-    byte[] decryptedBytes = decryptor.TransformFinalBlock(cipherBytes, 16, cipherBytes.Length - 16);
-    aesManaged.Dispose();
-
-    return decryptedBytes;
+        return ms.ToArray();
+    }
 }
 ```
 
 #### AES CBC mode Encrypt
 
 ```
-public static byte[] aes256Encrypt(byte[] originalByteArray, string key)
+// https://stackoverflow.com/questions/53653510/c-sharp-aes-encryption-byte-array
+// byte[] buf = Aes256Decrypt(bufEncrypted, Encoding.ASCII.GetBytes(key), Encoding.ASCII.GetBytes(iv));
+public byte[] Encrypt(byte[] data, byte[] key, byte[] iv)
 {
-    SHA256Managed shaManaged = new SHA256Managed();
-    AesManaged aesManaged = new AesManaged();
-    aesManaged.Mode = CipherMode.CBC;
-    aesManaged.Padding = PaddingMode.Zeros;
-    aesManaged.BlockSize = 128;
-    aesManaged.KeySize = 256;
+    using (var aes = Aes.Create())
+    {
+        aes.KeySize = 128;
+        aes.BlockSize = 128;
+        aes.Padding = PaddingMode.Zeros;
 
-    aesManaged.Key = shaManaged.ComputeHash(Encoding.UTF8.GetBytes(key));
+        aes.Key = key;
+        aes.IV = iv;
 
-    var encryptor = aesManaged.CreateEncryptor();
-    byte[] encryptedBytes = encryptor.TransformFinalBlock(originalByteArray, 0, originalByteArray.Length);
-    byte[] finalEncryptedBytes = aesManaged.IV.Concat(encryptedBytes).ToArray();
+        using (var encryptor = aes.CreateEncryptor(aes.Key, aes.IV))
+        {
+            return PerformCryptography(data, encryptor);
+        }
+    }
+}
 
-    shaManaged.Dispose();
-    aesManaged.Dispose();
+public static byte[] PerformCryptography(byte[] data, ICryptoTransform cryptoTransform)
+{
+    using (var ms = new MemoryStream())
+    using (var cryptoStream = new CryptoStream(ms, cryptoTransform, CryptoStreamMode.Write))
+    {
+        cryptoStream.Write(data, 0, data.Length);
+        cryptoStream.FlushFinalBlock();
 
-    return finalEncryptedBytes;
+        return ms.ToArray();
+    }
 }
 ```
 
