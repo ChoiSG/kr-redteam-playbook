@@ -90,6 +90,7 @@
 * [프로세스 인젝션](defense-evasion/프로세스-인젝션/README.md)
   * [CreateRemoteThread](defense-evasion/프로세스-인젝션/createremotethread.md)
   * [NtMapViewOfSection](defense-evasion/프로세스-인젝션/ntmapviewofsection.md)
+* [간단 디펜더 우회](defense-evasion/간단-디펜더-우회.md)
 
 ## 계정 정보 탈취 (Credential Access) <a href="#계정-정보-탈취" id="계정-정보-탈취"></a>
 
@@ -128,6 +129,7 @@
 
 * [기여하는 방법](MISC/기여하는-방법.md)
 * [파워쉘 원라이너 (oneliner)](MISC/파워쉘-원라이너.md)
+* [C# snippets](MISC/csharp-snippets.md)
 * [winapi 리스트](MISC/winapi-리스트/README.md)
   * [original notes from obsidian](MISC/winapi-리스트/original-notes-from-obsidian.md)
 * [Future Works and Research](MISC/future-works-and-research.md)
