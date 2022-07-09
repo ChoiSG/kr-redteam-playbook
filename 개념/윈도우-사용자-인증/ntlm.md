@@ -9,7 +9,7 @@
 
 NTLM 인증 프로토콜은 1993년도에 제로 트러스트 (Zero Trust)를 의식해 나온 프로토콜이다. 네트워크상 평문 비밀번호가 전달되지 않도록 특별한 Challenge/Response 형태의 사용자 인증을 구현했다.  NTLM 인증은 다음과 같이 이뤄진다: &#x20;
 
-![](<../../.gitbook/assets/ntlm-local-auth.drawio (2).png>)
+![](<../../.gitbook/assets/ntlm-local-auth.drawio (2) (1).png>)
 
 1. 클라 -> 서버: 인증하고 싶은 유저의 이름을 평문으로 보내 NTLM 인증 프로토콜을 시작한다.&#x20;
 2. 서버 -> 클라: 랜덤한 8 바이 챌린지(Challenge) 문자열을 보내면서 클라이언트가 갖고 있는 유저의 비밀번호를 NT 해시화한 뒤 챌린지를 암호화 해 서버에게 보내도록 지시한다. &#x20;
