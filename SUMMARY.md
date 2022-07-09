@@ -29,6 +29,7 @@
   * [오피스 VBA 매크로](초기침투/피싱-첨부파일/오피스-매크로.md)
   * [원격 템플렛 인젝션](초기침투/피싱-첨부파일/템플렛-인젝션.md)
   * [VBA Stomping](초기침투/피싱-첨부파일/vba-stomping.md)
+  * [VBA Purging - TODO](초기침투/피싱-첨부파일/vba-purging.md)
   * [DotNetToJS](초기침투/피싱-첨부파일/dotnettojs.md)
   * [HTA](초기침투/피싱-첨부파일/hta.md)
   * [Follina](초기침투/피싱-첨부파일/follina.md)
