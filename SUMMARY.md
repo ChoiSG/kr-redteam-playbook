@@ -112,6 +112,7 @@
 ## 횡적 이동 (Lateral Movement) <a href="#횡적-이동" id="횡적-이동"></a>
 
 * [개념](횡적-이동/개념.md)
+* [Pass-the-Hash](횡적-이동/pass-the-hash.md)
 * [SMB 와 PsExec](횡적-이동/smb-psexec.md)
 * [WMI](횡적-이동/wmi.md)
 * [WinRM / Powershell Remoting](횡적-이동/winrm-ps-remoting.md)
@@ -125,12 +126,19 @@
 
 * [개념](real-attack-ttp-and-mitigations/개념.md)
 
+## 개념 <a href="#개념" id="개념"></a>
+
+* [윈도우 사용자 인증](개념/윈도우-사용자-인증/README.md)
+  * [NTLM 인증](개념/윈도우-사용자-인증/ntlm.md)
+  * [커버로스 (Kerberos) 인증 - TODO](개념/윈도우-사용자-인증/kerberos-authentication.md)
+  * [ADCS 인증서 기반 인증 ](개념/윈도우-사용자-인증/adcs-auth.md)
+
 ## MISC <a href="#MISC" id="MISC"></a>
 
 * [기여하는 방법](MISC/기여하는-방법.md)
-* [파워쉘 원라이너 (oneliner)](MISC/파워쉘-원라이너.md)
 * [C# snippets](MISC/csharp-snippets.md)
 * [winapi 리스트](MISC/winapi-리스트/README.md)
   * [original notes from obsidian](MISC/winapi-리스트/original-notes-from-obsidian.md)
 * [Future Works and Research](MISC/future-works-and-research.md)
 * [레퍼런스와 크레딧](MISC/레퍼런스-크레딧.md)
+* [파워쉘 원라이너 (oneliner)](MISC/파워쉘-원라이너.md)
