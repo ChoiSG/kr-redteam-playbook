@@ -20,7 +20,7 @@ HTML 스머글링 (HTML Smuggling)은 자바스크립트와 HTML5의 download, a
 
 HTML 스머글링의 장점은 바로 호스트와 방어 기술들의 입장에서는 의심될만한 것이 많이 없다는 것이다. 아래는 Outflank 사의 블로그 포스트에서 가져온 이미지다:&#x20;
 
-![https://outflank.nl/blog/2018/08/14/html-smuggling-explained/](<../.gitbook/assets/image (13).png>)
+![https://outflank.nl/blog/2018/08/14/html-smuggling-explained/](<../.gitbook/assets/image (13) (1).png>)
 
 타겟의 프록시/방화벽의 입장에서는 피해자 호스트가 단순한 HTML 페이지를 방문하는 것처럼 보인다. MIME Type도 text/html밖에 없고, 로드되는 코드들도 클라이언트-사이드의 자바스크립트 밖에 없다. 요새 자바스크립트 없는 웹 페이지가 없다보니 이상한 점은 없어보인다.&#x20;
 
