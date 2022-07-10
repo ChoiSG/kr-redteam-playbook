@@ -108,7 +108,7 @@ VBA Stomping 기법과 P-code의 악용 방법은 2018년도에 나왔기 때문
 
 olevba 를 통해 분석해보면 다음과 같은 VBA 매크로와 P-code가 나온다.&#x20;
 
-![](<../../.gitbook/assets/image (10).png>)
+![](<../../.gitbook/assets/image (10) (1).png>)
 
 VBA 매크로인 `Macros/VBA/ThisDocument` 과 `Macros/VBA/NewMacros` 에서는 수상한 VBA 매크로가 발견되지 않는다. EvilClippy가 위에서 가짜 VBA 매크로로 VBA Stomping을 진행했기 때문이다.&#x20;
 

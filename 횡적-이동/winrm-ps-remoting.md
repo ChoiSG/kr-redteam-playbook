@@ -68,7 +68,7 @@ WinRM은 타겟 호스트에 접근해 명령어를 실행할 때 다음과 같�
 
 관련된 윈도우 이벤트 ID로는 91 - Windows Remote Management - Request Handling이 있다. 이는 이벤트 뷰어의`Applications and Service logs -> Microsoft -> Windows -> Windows Remote Management -> Operational` 에서 확인할 수 있다.&#x20;
 
-![](<../.gitbook/assets/image (7) (1) (1).png>)
+![](<../.gitbook/assets/image (7) (1) (1) (1).png>)
 
 ### 레퍼런스&#x20;
 
