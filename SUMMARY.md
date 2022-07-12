@@ -36,7 +36,7 @@
   * [Follina](초기침투/피싱-첨부파일/follina.md)
   * [XLM Excel 4.0 매크로](초기침투/피싱-첨부파일/XLM-Excel-40.md)
 * [HTML 스머글링 (Smuggling)](초기침투/html-smuggling.md)
-* [피싱 - MitM](초기침투/피싱-mitm.md)
+* [피싱 - AitM (Adversary in the Middle)](초기침투/피싱-aitm.md)
 * [Living Off Trusted Sites (LOTS)](초기침투/living-off-trusted-sites.md)
 * [비밀번호 스프레이 공격 - TODO ](초기침투/비밀번호-스프레이-공격.md)
 
