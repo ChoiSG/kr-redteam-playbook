@@ -52,7 +52,7 @@ $pThread = [winAPIClass]::CreateThread(0,0,$pAlloc,0,0,0)
 
 </details>
 
-![](<../../.gitbook/assets/image (11).png>)
+![](<../../.gitbook/assets/image (11) (1).png>)
 
 #### 대응 방안&#x20;
 
