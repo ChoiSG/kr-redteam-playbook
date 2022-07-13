@@ -24,7 +24,9 @@ ISO 파일들은 컴팩트 디스크 이미지 파일이고, ISO 파일 포멧�
 
 ### 실습&#x20;
 
-실습에서는 APT29 그룹이 실제 공격에 사용했던 페이로드를 똑같이 재현해본다. APT29 그룹은 ISO 파일 안에 마이크로소프트사의 바이너리인 `OneDriveStandAloneUpdater.exe` 를 넣은 뒤, `version.dll` DLL 파일을 사이드로딩을 했다. ISO 파일 안의 페이로드들은 다음과 같다:&#x20;
+실습에서는 APT29 그룹이 2022년 7월 [실제 공격](https://unit42.paloaltonetworks.com/brute-ratel-c4-tool/)에 사용했던 페이로드를 똑같이 재현해본다. APT29 러시아의 해외정보국 (SVR) 이라고 추측되는 그룹이다.&#x20;
+
+7월달 공격에서 APT29는 ISO 파일 안에 마이크로소프트사의 바이너리인 `OneDriveStandAloneUpdater.exe` 를 넣은 뒤, `version.dll` DLL 파일을 사이드로딩을 했다. 사이드로딩을 실행하는데에는 자기소개서/레지메처럼 생긴 LNK 파일을 사용했다. 이 모든 페이로드들을 담고 있 ISO 파일 안의 페이로드들은 다음과 같다:&#x20;
 
 1. OneDriveStandAloneUpdater.exe - 마이크로소프트사의 공식 바이너리&#x20;
 2. version.dll - 공격자의 프록시 DLL&#x20;
