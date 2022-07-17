@@ -121,20 +121,20 @@
 * [WinRM / Powershell Remoting](횡적-이동/winrm-ps-remoting.md)
 * [RDP](횡적-이동/rdp.md)
 
-## 홈 랩 구축 <a href="#홈-랩-구축" id="홈-랩-구축"></a>
-
-* [시스몬 (sysmon) 설치](홈-랩-구축/시스몬-설치.md)
-
-## 실 공격 TTP와 대응방안 - TODO <a href="#real-attack-ttp-and-mitigations" id="real-attack-ttp-and-mitigations"></a>
-
-* [개념](real-attack-ttp-and-mitigations/개념.md)
-
 ## 개념 <a href="#개념" id="개념"></a>
 
 * [윈도우 사용자 인증](개념/윈도우-사용자-인증/README.md)
   * [NTLM 인증](개념/윈도우-사용자-인증/ntlm.md)
   * [커버로스 (Kerberos) 인증 - TODO](개념/윈도우-사용자-인증/kerberos-authentication.md)
   * [ADCS 인증서 기반 인증 ](개념/윈도우-사용자-인증/adcs-auth.md)
+
+## 실 공격 TTP와 대응방안 - TODO <a href="#real-attack-ttp-and-mitigations" id="real-attack-ttp-and-mitigations"></a>
+
+* [개념](real-attack-ttp-and-mitigations/개념.md)
+
+## 홈 랩 구축 <a href="#홈-랩-구축" id="홈-랩-구축"></a>
+
+* [시스몬 (sysmon) 설치](홈-랩-구축/시스몬-설치.md)
 
 ## MISC <a href="#MISC" id="MISC"></a>
 
