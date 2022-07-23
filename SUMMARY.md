@@ -47,7 +47,7 @@
 * [로컬 호스트 정보 수집](enumeration/local-host-enumeration.md)
 * [블러드하운드](enumeration/bloodhound.md)
 * [SMB 쉐어 수집](enumeration/smb-share.md)
-* [정보 수집 - 파워쉘 - TODO](enumeration/powershell.md)
+* [정보 수집 - 파워쉘](enumeration/powershell.md)
 * [정보 수집 - C# - TODO](enumeration/csharp.md)
 
 ## 실행 (Execution)
@@ -66,7 +66,7 @@
 * [골든 티켓 (Golden Ticket)](persistence/golden-ticket.md)
 * [DLL 사이드로딩 (DLL Side-Loading)](persistence/dll-sideloading.md)
 * [DLL Search Order Hijacking - TODO](persistence/dll-hijacking.md)
-* [스타트업 폴더 - TODO](persistence/startup-folder.md)
+* [레지스트리 / 스타트업 폴더](persistence/registry-startup-folder.md)
 
 ## 권한 상승 - TODO  <a href="#privilege-escalation" id="privilege-escalation"></a>
 
