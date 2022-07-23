@@ -18,7 +18,7 @@ AV/EDR 솔루션들은 사용자 경험을 해치지 않고 CPU와 램 사용량
 
 ### 실습&#x20;
 
-실습에 사용할 페이로드는 Meterpreter 쉘코드를 현재 프로세스에 로드해 실행하는 C# 기반의 .NET 어셈블리다. [오피스-매크로.md](../초기침투/피싱-첨부파일/오피스-매크로.md "mention") 페이지에서도 사용했던 페이로드다. 이를 PE 바이너리 형태로 다운받아 실행시키면, 당연히 윈도우 디펜더에 걸린다.&#x20;
+실습에 사용할 페이로드는 Meterpreter 쉘코드를 현재 프로세스에 로드해 실행하는 C# 기반의 .NET 어셈블리다. [vba-macros.md](../initial-access/phish-attachments/vba-macros.md "mention") 페이지에서도 사용했던 페이로드다. 이를 PE 바이너리 형태로 다운받아 실행시키면, 당연히 윈도우 디펜더에 걸린다.&#x20;
 
 ![](../.gitbook/assets/meter-caught.gif)
 

@@ -36,7 +36,7 @@ There is no novel research/content in this project, nor do I claim any work in p
 
 ### 기여하는 방법&#x20;
 
-프로젝트에 기여하실 분들은 [기여하는 방법 페이지](MISC/기여하는-방법.md)를 확인해주시기 바랍니다.&#x20;
+프로젝트에 기여하실 분들은 [기여하는 방법 페이지](MISC/contributions.md)를 확인해주시기 바랍니다.&#x20;
 
 ### Whoami&#x20;
 

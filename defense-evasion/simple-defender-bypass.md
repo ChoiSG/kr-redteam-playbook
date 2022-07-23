@@ -170,7 +170,7 @@ namespace EncryptCreateRemoteThread
 
 </details>
 
-PInvoke를 제외한다면 `OpenProcess -> VirtualAllocEx -> WriteProcessMemory -> VirtualProtectEx -> CreateRemoteThread` 를 사용하는 전통적인 프로세스 인젝션 로더다. 이와 관련된 기법은 이 [CreateRemoteThread 페이지](프로세스-인젝션/createremotethread.md)에서 서술했다.&#x20;
+PInvoke를 제외한다면 `OpenProcess -> VirtualAllocEx -> WriteProcessMemory -> VirtualProtectEx -> CreateRemoteThread` 를 사용하는 전통적인 프로세스 인젝션 로더다. 이와 관련된 기법은 이 [CreateRemoteThread 페이지](process-injection/createremotethread.md)에서 서술했다.&#x20;
 
 `Main()` 함수를 보다보면 안에 `bufEncrypted` 변수가 있다. 여기에는 위에서 만든 쉘코드를 집어넣어주면 된다.&#x20;
 
@@ -184,4 +184,4 @@ PDB를 제거한 뒤, x64로 컴파일한다. 20년이 넘은 `CreateRemoteThrea
 
 ![](../.gitbook/assets/custom-loader.gif)
 
-C# 으로 만든 페이로드기 때문에 [파워쉘-C# 페이지](../실행/파워쉘/시샵-실행.md)에서 서술했던 대로 메모리상에서 파워쉘을 통해 실행시킬 수도 있다. 혹은 [DotNettoJS 페이지](../초기침투/피싱-첨부파일/dotnettojs.md)에서 서술했던 대로 JScript나 VBScript 등으로 변환할 수도 있다.&#x20;
+C# 으로 만든 페이로드기 때문에 [파워쉘-C# 페이지](../execution/powershell/csharp-execution.md)에서 서술했던 대로 메모리상에서 파워쉘을 통해 실행시킬 수도 있다. 혹은 [DotNettoJS 페이지](../initial-access/phish-attachments/dotnettojs.md)에서 서술했던 대로 JScript나 VBScript 등으로 변환할 수도 있다.&#x20;

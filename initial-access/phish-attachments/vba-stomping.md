@@ -22,7 +22,7 @@ VBA 매크로는 총 3가지 형태로 오피스 제품에 저장된다:&#x20;
 
 ### 실습&#x20;
 
-[오피스 VBA 매크로 페이지](오피스-매크로.md)에서 사용했던 코드를 그대로 사용한다. 단, 작전보안을 위해 [VisualBasicObfuscator](https://github.com/mgeeky/VisualBasicObfuscator)를 이용해 코드를 난독화한다. 스키디의 악용을 막기 위해 툴의 라인 647에서 발생하는 에러를 고치는 법은 따로 설명하지 않는다.&#x20;
+[오피스 VBA 매크로 페이지](vba-macros.md)에서 사용했던 코드를 그대로 사용한다. 단, 작전보안을 위해 [VisualBasicObfuscator](https://github.com/mgeeky/VisualBasicObfuscator)를 이용해 코드를 난독화한다. 스키디의 악용을 막기 위해 툴의 라인 647에서 발생하는 에러를 고치는 법은 따로 설명하지 않는다.&#x20;
 
 ```
 https://github.com/mgeeky/VisualBasicObfuscator.git
