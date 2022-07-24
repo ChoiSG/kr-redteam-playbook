@@ -107,8 +107,9 @@
   * [MS-EFSRPC - Petitpotam](credential-access/authentication-coercion/ms-efsrpc.md)
   * [MS-FSRVP - ShadowCoerce](credential-access/authentication-coercion/ms-fsrvp.md)
   * [MS-DFSNM - DFSCoerce](credential-access/authentication-coercion/ms-dfsnm.md)
-* [NTLM 릴레이 - TODO ](credential-access/ntlm-relay/README.md)
+* [NTLM 릴레이](credential-access/ntlm-relay/README.md)
   * [SMB to SMB](credential-access/ntlm-relay/smb-to-smb.md)
+  * [SMB to LDAP - TODO](credential-access/ntlm-relay/smb-to-ldap-todo.md)
 * [NTLM 다운그레이드](credential-access/ntlm-downgrade.md)
 * [RBCD (Resource Based Constrained Delegation) - TODO](credential-access/rbcd.md)
 

@@ -27,7 +27,7 @@ $link.save()
 
 마이크로소프트 워드의 아이콘을 갖은 LNK 파일을 생성해낸다. 오른쪽 클릭해서 shortcut을 확인해보면 `Target` 에 위에서 만든 페이로드인 `%windir%/system32/cmd.exe` 를 실행한다.&#x20;
 
-![](<../../.gitbook/assets/image (10).png>)
+![](<../../.gitbook/assets/image (10) (1).png>)
 
 ### 실습 - 2&#x20;
 

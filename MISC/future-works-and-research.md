@@ -9,7 +9,7 @@ RunOF- [https://labs.nettitude.com/blog/introducing-runof-arbitrary-bof-tool/](h
 
 XLL
 
-DLL-sideloading - wfh + sharpdllproxy -> modify source code to fetch shellcode from remote + decyrpt + inject?&#x20;
+~~DLL-sideloading - wfh + sharpdllproxy -> modify source code to fetch shellcode from remote + decyrpt + inject? - done!~~&#x20;
 
 scarecrow&#x20;
 
@@ -17,7 +17,7 @@ binary signing&#x20;
 
 inline operations vs. fork-and-run&#x20;
 
-VBA Purging - [https://blog.nviso.eu/2020/02/25/evidence-of-vba-purging-found-in-malicious-documents/](https://blog.nviso.eu/2020/02/25/evidence-of-vba-purging-found-in-malicious-documents/)   and [https://www.mandiant.com/resources/purgalicious-vba-macro-obfuscation-with-vba-purging](https://www.mandiant.com/resources/purgalicious-vba-macro-obfuscation-with-vba-purging) and [https://github.com/mandiant/OfficePurge](https://github.com/mandiant/OfficePurge)&#x20;
+~~VBA Purging -~~ [~~https://blog.nviso.eu/2020/02/25/evidence-of-vba-purging-found-in-malicious-documents/~~](https://blog.nviso.eu/2020/02/25/evidence-of-vba-purging-found-in-malicious-documents/)   ~~and~~ [~~https://www.mandiant.com/resources/purgalicious-vba-macro-obfuscation-with-vba-purging~~](https://www.mandiant.com/resources/purgalicious-vba-macro-obfuscation-with-vba-purging) ~~and~~ [~~https://github.com/mandiant/OfficePurge~~](https://github.com/mandiant/OfficePurge) ~~~~&#x20;
 
 CPL for initial access&#x20;
 
@@ -32,6 +32,8 @@ process herpaderping
 full callstackspoofer&#x20;
 
 ret address overwriting with syscalls&#x20;
+
+PP, PPL, RunAsPPL, its bypass, and its end - [https://itm4n.github.io/the-end-of-ppldump/](https://itm4n.github.io/the-end-of-ppldump/) &#x20;
 
 
 
