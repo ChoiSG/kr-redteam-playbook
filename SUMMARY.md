@@ -109,7 +109,7 @@
   * [MS-DFSNM - DFSCoerce](credential-access/authentication-coercion/ms-dfsnm.md)
 * [NTLM 릴레이](credential-access/ntlm-relay/README.md)
   * [SMB to SMB](credential-access/ntlm-relay/smb-to-smb.md)
-  * [SMB to LDAP - TODO](credential-access/ntlm-relay/smb-to-ldap-todo.md)
+  * [HTTP to LDAP - TODO](credential-access/ntlm-relay/http-to-ldap-todo.md)
 * [NTLM 다운그레이드](credential-access/ntlm-downgrade.md)
 * [RBCD (Resource Based Constrained Delegation) - TODO](credential-access/rbcd.md)
 

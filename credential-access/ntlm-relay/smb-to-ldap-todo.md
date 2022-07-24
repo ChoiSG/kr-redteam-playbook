@@ -1,2 +1,0 @@
-# SMB to LDAP - TODO
-
