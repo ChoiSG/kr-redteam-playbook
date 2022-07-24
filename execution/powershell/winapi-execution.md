@@ -52,7 +52,7 @@ $pThread = [winAPIClass]::CreateThread(0,0,$pAlloc,0,0,0)
 
 </details>
 
-![](<../../.gitbook/assets/image (11) (1).png>)
+![](<../../.gitbook/assets/image (11) (1) (1).png>)
 
 #### 대응 방안&#x20;
 
@@ -60,7 +60,7 @@ Add-Type이 실행될 때 C# 코드가 메모리상에서 컴파일 된다고 �
 
 ![](<../../.gitbook/assets/image (2).png>)
 
-![](<../../.gitbook/assets/image (6).png>)
+![](<../../.gitbook/assets/image (6) (1).png>)
 
 2022년도 기준 `Add-Type` 를 이용한 파워쉘에서의 C# 코드 및 윈도우 API 실행은 유명한 TTP라 왠만한 AV/EDR 솔루션들 및 윈도우 디펜더는 이를 기본적으로 막는다.&#x20;
 

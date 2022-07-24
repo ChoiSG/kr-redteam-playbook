@@ -86,15 +86,15 @@ End Sub
 
 VBA Stomping 과 난독화를 진행하지 않은 일반 페이로드의 탐지율을 확인해보자.&#x20;
 
-![일반 페이로드 ](<../../.gitbook/assets/image (5) (1) (1).png>)
+![일반 페이로드 ](<../../.gitbook/assets/image (5) (1) (1) (1).png>)
 
 VBA stomping만 적용한 페이로드의 탐지율을 다음과 같다.&#x20;
 
-![VBA stomping을 적용한 페이로드](<../../.gitbook/assets/image (11) (1) (1).png>)
+![VBA stomping을 적용한 페이로드](<../../.gitbook/assets/image (11) (1) (1) (1).png>)
 
 VBA stomping과 난독화를 둘 다 적용한 페이로드다. 몇몇 AV들은 스캔을 포기한 것을 볼 수 있다.
 
-![VBA stomping과 난독화를 적용한 페이로드 ](<../../.gitbook/assets/image (9) (1).png>)
+![VBA stomping과 난독화를 적용한 페이로드 ](<../../.gitbook/assets/image (9) (1) (1).png>)
 
 
 

@@ -29,7 +29,7 @@ SSH 키가 등록됐다면 EC2 화면으로가 새로운 EC2 인스턴스를 2�
 * Auto-Assign public IP - Enabled&#x20;
 * 방화벽 - Create Security Group, Allow SSH Traffic From - 내 공인 아이피주소/32&#x20;
 
-![](<../.gitbook/assets/image (6) (1) (1) (1).png>)
+![](<../.gitbook/assets/image (6) (1) (1) (1) (1).png>)
 
 Security Group은 AWS의 가상 방화벽 룰들의 집합이라고 생각하면 된다. 내가 원하는 방화벽 룰 들을 하나의 집합 (Security Group)으로 만든 뒤, 이 Security Group을 특정 VPC안에 있는 서브넷 혹은 인스턴스들에게 적용할 수 있다.&#x20;
 

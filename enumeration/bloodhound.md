@@ -1,6 +1,6 @@
 # 블러드하운드
 
-![이미지 출처: https://bloodhound.readthedocs.io/en/latest/data-analysis/bloodhound-gui.html](<../.gitbook/assets/image (5) (1) (1) (1) (1).png>)
+![이미지 출처: https://bloodhound.readthedocs.io/en/latest/data-analysis/bloodhound-gui.html](<../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png>)
 
 [블러드하운드(BloodHound)](https://github.com/BloodHoundAD/BloodHound)는 액티브 디렉토리의 LDAP 데이터를 수집하고 이를 그래프 자료구조 형식으로 보여주는 툴이다. 수만명의 도메인 유저 계정, 수십만대의 호스트들의 관계와 정보를 일일히 수동으로 정리하는 것은 불가능에 가깝다. 블러드하운드는 이를 도와주기 위해서 만들어진 툴이다.&#x20;
 

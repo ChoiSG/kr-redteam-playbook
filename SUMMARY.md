@@ -39,7 +39,6 @@
 * [HTML 스머글링 (Smuggling)](initial-access/html-smuggling.md)
 * [피싱 - AitM (Adversary in the Middle)](initial-access/aitm.md)
 * [Living Off Trusted Sites (LOTS)](initial-access/living-off-trusted-sites.md)
-* [비밀번호 스프레이 공격 - TODO ](initial-access/비밀번호-스프레이-공격.md)
 
 ## 정보 수집 - 내부망 <a href="#enumeration" id="enumeration"></a>
 
@@ -109,7 +108,7 @@
   * [MS-DFSNM - DFSCoerce](credential-access/authentication-coercion/ms-dfsnm.md)
 * [NTLM 릴레이](credential-access/ntlm-relay/README.md)
   * [SMB to SMB](credential-access/ntlm-relay/smb-to-smb.md)
-  * [HTTP to LDAP - TODO](credential-access/ntlm-relay/http-to-ldap-todo.md)
+  * [HTTP to LDAP - TODO](credential-access/ntlm-relay/smb-to-ldap-todo.md)
 * [NTLM 다운그레이드](credential-access/ntlm-downgrade.md)
 * [RBCD (Resource Based Constrained Delegation) - TODO](credential-access/rbcd.md)
 
@@ -140,9 +139,9 @@
 ## MISC <a href="#MISC" id="MISC"></a>
 
 * [기여하는 방법](MISC/contributions.md)
+* [레퍼런스와 크레딧](MISC/레퍼런스-크레딧.md)
 * [C# snippets](MISC/csharp-snippets.md)
 * [winapi 리스트](MISC/winapi-리스트/README.md)
   * [original notes from obsidian](MISC/winapi-리스트/original-notes-from-obsidian.md)
 * [Future Works and Research](MISC/future-works-and-research.md)
-* [레퍼런스와 크레딧](MISC/레퍼런스-크레딧.md)
 * [파워쉘 원라이너 (oneliner)](MISC/파워쉘-원라이너.md)

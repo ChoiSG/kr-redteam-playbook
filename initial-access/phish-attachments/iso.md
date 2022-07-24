@@ -12,7 +12,7 @@ description: T1553.005
 
 인터넷에서 다운 받은 `.exe` `.dll` 등의 파일들은 윈도우의 NTFS 파일 시스템의 특징 중 하나인 Alternate Data Stream (ADS) 에 "인터넷에서 다운 받은 파일" 이라는 낙인(?)이 찍힌다. 이것을 Mark of the Web 이라고 부른다. MotW 이 찍힌 파일을 실행하려고 하면 윈도우는 유저에게 경고창을 띄운다. 이는 인터넷에서 다운 받은 위험한 파일을 유저가 실행하지 않도록 하는데 큰 도움을 준다.&#x20;
 
-![이런 경고창 한 번 쯤은 본 기억이 있지 않은가](<../../.gitbook/assets/image (11).png>)
+![이런 경고창 한 번 쯤은 본 기억이 있지 않은가](<../../.gitbook/assets/image (11) (1).png>)
 
 하지만 이런 MotW 낙인이 붙지 않는 파일 확장자들도 있다. 7Z, ZIP, ISO, IMG, CAB 등의 파일 확장자들이 대표적이다.&#x20;
 
@@ -56,7 +56,7 @@ cp ./version.dll c:\opt\dllsideloading\vresion.dll
 
 3\. SharpDLLProxy 가 만든 `.c` 파일을 수정한 뒤, 컴파일 한다. 맨 위의 `pragma comment` 에서 DLL 이름을 `tmpXXXX` 에서 `vresion` 으로 수정해주면 끝이다.&#x20;
 
-![](<../../.gitbook/assets/image (5).png>)
+![](<../../.gitbook/assets/image (5) (1).png>)
 
 4\. version.dll 로 컴파일 한다.&#x20;
 

@@ -37,7 +37,7 @@ description: T1557
 
 
 
-![](<../.gitbook/assets/image (9).png>)
+![](<../.gitbook/assets/image (9) (1).png>)
 
 이중인증 페이지도 정상적으로 뜬다. "피싱 아니고 진짜 링크드인 SSO 로그인이였구나. 다행이다" 라는 생각을 하며 이중 인증도 진행한다.&#x20;
 
