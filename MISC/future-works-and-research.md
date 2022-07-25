@@ -35,7 +35,9 @@ ret address overwriting with syscalls&#x20;
 
 PP, PPL, RunAsPPL, its bypass, and its end - [https://itm4n.github.io/the-end-of-ppldump/](https://itm4n.github.io/the-end-of-ppldump/) &#x20;
 
+windows persistence - [https://persistence-info.github.io/](https://persistence-info.github.io/)&#x20;
 
+protectmytooling - [https://mgeeky.tech/protectmytooling/](https://mgeeky.tech/protectmytooling/)
 
 
 
