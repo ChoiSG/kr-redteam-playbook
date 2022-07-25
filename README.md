@@ -46,4 +46,4 @@ There is no novel research/content in this project, nor do I claim any work in p
 
 해당 프로젝트에 기여해주신 모든 분들께 감사합니다.&#x20;
 
-* [@takudaddy](https://www.linkedin.com/in/onejae-e-87a4a4204/), [블로그](https://takudaddy.tistory.com/), 오탈자와 표현 수정 기여 - 감사합니다!&#x20;
+* [@takudaddy](https://www.linkedin.com/in/takudaddy-87a4a4204/), [블로그](https://takudaddy.tistory.com/), 오탈자와 표현 수정 기여 - 감사합니다!&#x20;
