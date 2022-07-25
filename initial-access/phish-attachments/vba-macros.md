@@ -2,9 +2,9 @@
 
 비쥬얼 베이직 어플리케이션 (VBA) 매크로는 마이크로소프트 오피스 제품들의 자동화를 도와주는 비쥬얼 베이직 6.0 기반의 프로그래밍 언어다. 보안적으로는 90년대부터 피싱 공격 첨부파일안의 악성코드를 실행하는데 많이 사용됐다.&#x20;
 
-2022년 기준 오피스 VBA 매크로를 사용한 초기 침투 및 피싱 공격은 성공하기 매우 어려워졌다. 마이크로소프트는 2022년 2월에 모든 오피스 제품들과 오피스365에서[ 기본적으로 매크로를 비활성화 하도록 패치](https://docs.microsoft.com/en-us/deployoffice/security/internet-macros-blocked)했다. - 2022/07/07 업데이트 - 라고 생각했는데 7월 7일 이 패치를 롤백했다 ([https://www.bleepingcomputer.com/news/microsoft/microsoft-rolls-back-decision-to-block-office-macros-by-default/](https://www.bleepingcomputer.com/news/microsoft/microsoft-rolls-back-decision-to-block-office-macros-by-default/)). 따라서 VBA 매크로는 여전히 기본적으로 활성화 되어 있는 상태다. 레드팀들이나 공격자들이 매우 환영할만한 롤백이다(...).&#x20;
+2022년 기준 오피스 VBA 매크로를 사용한 초기 침투 및 피싱 공격은 성공하기 매우 어려워졌다. 마이크로소프트는 2022년 2월에 모든 오피스 제품들과 오피스365에서[ 기본적으로 매크로를 비활성화 하도록 패치](https://docs.microsoft.com/en-us/deployoffice/security/internet-macros-blocked)했다. 2022/07/07에 잠깐의 롤백이 있었지만 7월 24\~25일, 다시 인터넷에서 다운 받은 문서들의 VBA 매크로를 기본적으로 비활성화 시켰다. 30년 간의 매크로 피싱이 드디어 끝을 보이기 시작했다.&#x20;
 
-이제는 잘 쓰이지 않게 된 TTP지만 거의 30년 동안 공격자들이 사용했던 역사적인 가치가 있는 공격 기법이기 때문에 기초를 닦는다는 마음가짐으로 이 페이지에서 정리한다.&#x20;
+이제는 잘 쓰이지 않게 된 TTP지만 거의 30년 동안 공격자들이 사용했던 역사적인 가치가 있는 공격 기법이기 때문에 기초를 닦는다는 마음가짐으로 이 페이지에서 정리한다. 또한, 모두가 항상 오피스365를 쓰거나, 온-프레미스 오피스 버전들이 항상 최신 버전으로 업데이트 되는 것은 아니기 때문에 추후 몇 년 간은 매크로 기반의 페이로드들은 계속해서 쓰일 것이다.&#x20;
 
 ### AutoOpen, Document\_Open&#x20;
 
