@@ -28,15 +28,15 @@ ISO 파일들은 컴팩트 디스크 이미지 파일이고, ISO 파일 포멧�
 
 실습에서는 APT29 그룹이 2022년 7월 [실제 공격](https://unit42.paloaltonetworks.com/brute-ratel-c4-tool/)에 사용했던 페이로드를 똑같이 재현해본다. APT29는 러시아의 해외정보국 (SVR) 이라고 추측되는 그룹이다.&#x20;
 
-7월달 공격에서 APT29는 ISO 파일 안에 마이크로소프트사의 바이너리인 `OneDriveStandAloneUpdater.exe` 를 넣은 뒤, `version.dll` DLL 파일을 사이드로딩 했다. 사이드로딩을 실행하는 데에는 자기소개서/레지메처럼 생긴 LNK 파일을 사용했다. 이 모든 페이로드들을 담고 있 ISO 파일 안의 페이로드들은 다음과 같다:&#x20;
+7월달 공격에서 APT29는 ISO 파일 안에 마이크로소프트사의 바이너리인 `OneDriveStandAloneUpdater.exe` 를 넣은 뒤, `version.dll` DLL 파일을 사이드로딩 했다. 사이드로딩을 실행하는 데에는 자기소개서/레쥬처럼 생긴 LNK 파일을 사용했다. 이 모든 페이로드들을 담고 있 ISO 파일 안의 페이로드들은 다음과 같다:&#x20;
 
 1. OneDriveStandAloneUpdater.exe - 마이크로소프트사의 공식 바이너리&#x20;
 2. version.dll - 공격자의 프록시 DLL&#x20;
 3. vresion.dll - 진짜 version.dll 파일. APT29 그룹은 `vresion` 으로 이름을 바꿨다.&#x20;
 4. OneDrive.Update - 공격자의 쉘코드. 프록시 DLL 안에 넣어도 되는데 APT29는 굳이 파일 시스템에 저장했다.&#x20;
-5. `Roshan-Bandara_CV_Dialog.lnk` - OneDriveStandAloneUpdater.exe 파일을 실행시킬 LNK 파일. LNK 파일이 악성코드에 사용될 수 있는 방법은 [LNK 첨부파일 페이지](lnk.md)를 참고한다.&#x20;
+5. `Roshan-Bandara_CV_Dialog.lnk` - OneDriveStandAloneUpdater.exe 파일을 실행시킬 LNK 파일. LNK 파일이 악성코드에 사용되 방법은 [LNK 첨부파일 페이지](lnk.md)를 참고한다.&#x20;
 
-페이로드들은 다음과 같이 생성한다:&#x20;
+페이로드들은 다음과 같이 생성한다.&#x20;
 
 1. 쉘코드를 생성한다.&#x20;
 
