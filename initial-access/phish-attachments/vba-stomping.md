@@ -5,7 +5,7 @@ VBA Stomping 은 2018년도 Derbycon 에서 Harold Ogden (@haroldogden), Kirk Sa
 VBA 매크로는 총 3가지 형태로 오피스 제품에 저장된다:&#x20;
 
 1. 소스코드 - 실제로 작성된 VBA 매크로의 소스코드가 압축된 형태&#x20;
-2. P-code - #1번을 기반으로 컴파일된 어셈블리어와 비슷한 형태 - 캐시된 형태로, 똑같은 오피스 버전에서 열리면 소스코드가 아닌 P-code가 대신 실행된다&#x20;
+2. P-code - #1번을 기반으로 컴파일된 어셈블리어와 비슷한 형태 - 캐시된 형태로, 똑같은 오피스 버전에서 열리면 소스코드가 아닌 P-code가 대신 실행된다.&#x20;
 3. Execode - P-Code가 여러번 실행될 시 P-code를 tokenize 한 형태로 저장되는 형태 - 이건 일단 무시한다.&#x20;
 
 여기서 재밌는 점은 소스코드를 flexhex 등의 툴을 이용해 다른 VBA 매크로로 변경해도 P-code는 이전 소스코드를 담고 있다는 것이다. 예를 들어,&#x20;
@@ -114,7 +114,7 @@ VBA 매크로인 `Macros/VBA/ThisDocument` 과 `Macros/VBA/NewMacros` 에서는 
 
 하지만 P-code 섹션을 보면 원래 있었던 VBA 페이로드가 보인다. 난독화를 진행했기 때문에 `Create, ShowWindow, Xor, Base64 Strings, VBA Stomping` 등의 수상한 키워드들이 보인다.&#x20;
 
-`ThisDocument` 와 `NewMacros` 의 코드는 다음과 같이 나온다&#x20;
+`ThisDocument` 와 `NewMacros` 의 코드는 다음과 같이 나온다.&#x20;
 
 ```
 ┌──(root㉿kali)-[~/blog]                                                                              
