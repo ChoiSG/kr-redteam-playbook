@@ -3,13 +3,10 @@
 BOF, COFF - [https://hstechdocs.helpsystems.com/manuals/cobaltstrike/current/userguide/content/topics/beacon-object-files\_main.htm](https://hstechdocs.helpsystems.com/manuals/cobaltstrike/current/userguide/content/topics/beacon-object-files\_main.htm)
 
 * [https://www.cobaltstrike.com/blog/cobalt-strike-4-1-the-mark-of-injection/](https://www.cobaltstrike.com/blog/cobalt-strike-4-1-the-mark-of-injection/)
-*
 
 RunOF- [https://labs.nettitude.com/blog/introducing-runof-arbitrary-bof-tool/](https://labs.nettitude.com/blog/introducing-runof-arbitrary-bof-tool/)
 
 XLL
-
-~~DLL-sideloading - wfh + sharpdllproxy -> modify source code to fetch shellcode from remote + decyrpt + inject? - done!~~&#x20;
 
 scarecrow&#x20;
 
@@ -29,8 +26,6 @@ process doppelganging
 
 process herpaderping
 
-full callstackspoofer&#x20;
-
 ret address overwriting with syscalls&#x20;
 
 PP, PPL, RunAsPPL, its bypass, and its end - [https://itm4n.github.io/the-end-of-ppldump/](https://itm4n.github.io/the-end-of-ppldump/) &#x20;
@@ -42,6 +37,20 @@ protectmytooling - [https://mgeeky.tech/protectmytooling/](https://mgeeky.tech/p
 setting up phishing infrastructure - o365, evilginx2, categorization&#x20;
 
 * [https://www.optiv.com/insights/source-zero/blog/spear-phishing-modern-platforms](https://www.optiv.com/insights/source-zero/blog/spear-phishing-modern-platforms)
+
+implant dev - [https://pre.empt.dev/posts/maelstrom-the-implant/](https://pre.empt.dev/posts/maelstrom-the-implant/)
+
+sleep, obfuscate - [https://github.com/Cracked5pider/Ekko](https://github.com/Cracked5pider/Ekko)
+
+terminating current thread & restoring the thread - [https://github.com/janoglezcampos/DeathSleep](https://github.com/janoglezcampos/DeathSleep)
+
+Thread stack spoofing - [https://github.com/mgeeky/ThreadStackSpoofer](https://github.com/mgeeky/ThreadStackSpoofer)
+
+Some callback PIC executions in c# - [https://github.com/0xsp-SRD/callback\_injection-Csharp/tree/main/DrawStateA](https://github.com/0xsp-SRD/callback\_injection-Csharp/tree/main/DrawStateA)
+
+OSINT - awesome hacker search engines - [https://github.com/edoardottt/awesome-hacker-search-engines](https://github.com/edoardottt/awesome-hacker-search-engines)
+
+ISO mitigation for my ISO+LNK pages - [https://twitter.com/mubix/status/1521898616914423809](https://twitter.com/mubix/status/1521898616914423809)  and [https://twitter.com/mttaggart/status/1553476660439068677](https://twitter.com/mttaggart/status/1553476660439068677)&#x20;
 
 
 
