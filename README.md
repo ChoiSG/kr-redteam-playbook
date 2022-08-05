@@ -18,7 +18,6 @@
 
 ### 목표&#x20;
 
-* 본인이 공부하면서 노트정리를 Google Drive, Sublime Text, Evernote, CherryTree, Obsidian.md, Notion 등에서 하다가 깃북에 정착하게 되었습니다.&#x20;
 * 업계 종사자들이 발표한 공격 기법을 공부하고 실습한 뒤, 대응 방안에 대해서 알아봅니다.&#x20;
 * 실제 공격자들의 TTP에 대해 공부하고 분석한 뒤, 이를 막는 대응 방안에 대해서 알아봅니다.&#x20;
 * 외부망 모의해킹, 내부망 모의해킹, 레드팀 작전 수행 시 사용하는 TTP에 대해 알아봅니다.&#x20;
@@ -34,13 +33,13 @@ There is no novel research/content in this project, nor do I claim any work in p
 
 프로젝트에 기여하실 분들은 [기여하는 방법 페이지](MISC/contributions.md)를 확인해주시기 바랍니다.&#x20;
 
-### Whoami&#x20;
+### WhoAreWe?&#x20;
 
-[@choi](https://www.linkedin.com/in/sunggwan-choi/) - Fortune 100에서 Fortune 100, 500, 핀테크 뿐만 아니라 전세계 고객사들을 상대로 내부망, 외부망, 웹 모의해킹을 진행하고 있습니다.&#x20;
+업계 경험이 있는 전/현직 해커들로, 한국의 오펜시브 시큐리티 정보 공유에 기여하는 것을 지향합니다.
 
-* [링크드인](https://www.linkedin.com/in/sunggwan-choi/)
-* [블로그 ](https://blog.sunggwanchoi.com/)
-* [깃헙 ](https://github.com/choisg)
+* [@choi](https://www.linkedin.com/in/sunggwan-choi/) - Fortune 100에서 Fortune 100, 500, 핀테크 뿐만 아니라 전세계 고객사들을 상대로 내부망, 외부망, 웹 모의해킹을 진행하고 있습니다.&#x20;
+  * [블로그](https://blog.sunggwanchoi.com/), [깃헙 ](https://github.com/choisg)
+* [@Normaltic](https://www.youtube.com/c/NormalticPlace) - TBD.&#x20;
 
 ### 기여자&#x20;
 

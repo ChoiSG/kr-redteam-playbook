@@ -94,7 +94,7 @@ VBA stomping만 적용한 페이로드의 탐지율을 다음과 같다.&#x20;
 
 VBA stomping과 난독화를 둘 다 적용한 페이로드다. 몇몇 AV들은 스캔을 포기한 것을 볼 수 있다.
 
-![VBA stomping과 난독화를 적용한 페이로드 ](<../../.gitbook/assets/image (9) (1) (1).png>)
+![VBA stomping과 난독화를 적용한 페이로드 ](<../../.gitbook/assets/image (9) (1).png>)
 
 
 
@@ -108,7 +108,7 @@ VBA Stomping 기법과 P-code의 악용 방법은 2018년도에 나왔기 때문
 
 olevba 를 통해 분석해보면 다음과 같은 VBA 매크로와 P-code가 나온다.&#x20;
 
-![](<../../.gitbook/assets/image (10) (1) (1).png>)
+![](<../../.gitbook/assets/image (10) (1) (2).png>)
 
 VBA 매크로인 `Macros/VBA/ThisDocument` 과 `Macros/VBA/NewMacros` 에서는 수상한 VBA 매크로가 발견되지 않는다. EvilClippy가 위에서 가짜 VBA 매크로로 VBA Stomping을 진행했기 때문이다.&#x20;
 

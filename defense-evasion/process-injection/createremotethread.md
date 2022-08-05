@@ -147,4 +147,4 @@ namespace CreateRemoteThread
 
 
 
-![](<../../.gitbook/assets/image (12) (1).png>)
+![](<../../.gitbook/assets/image (12) (2).png>)

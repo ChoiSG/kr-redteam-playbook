@@ -30,7 +30,7 @@
 
 예를 들어 위 슬리버 비컨/서버가 가지고 있던 네트워크 IoC 들 - `.js, .php, APISID, 202 Accepted, Mozilla/5.0 (Windows NT 10.0; Win64; x64` 을 바꾸는 가변적 C2 프로필을 적용시켜보자.&#x20;
 
-![](<../.gitbook/assets/image (12) (1) (1).png>)
+![](<../.gitbook/assets/image (12) (1).png>)
 
 가변적 C2 프로필을 적용시키고 나니 몇가지 바뀐점이 보인다&#x20;
 
