@@ -1,14 +1,18 @@
-# NTLM 릴레이
+# NTLM 릴레이 (NTLM Relay)
 
-LLMNR/Nbt-NS/mDNS, MITM6, RPC 기반 강제 인증 등으로 공격자 머신에게 들어온 인증 트래픽은 릴레이 공격을 통해 다른 머신들의 SMB, HTTP(S), LDAP(S) 등의 다양한 서비스로 릴레이 할 수 있다. 이때 공격자는 중간자 위치에 있기 때문에 피해자 호스트의 맥락으로 해당 서비스들을 이용할 수 있게 된다.&#x20;
+액티브 디렉토리에서는 LLMNR/Nbt-NS/mDNS, MITM6, RPC 기반 강제 인증 등으로 공격자 머신에게 들어온 인증 트래픽을 다른 머신들의 다양한 서비스 (SMB, HTTP(S), LDAP(S)) 로 릴레이 (Relay) 공격을 할 수 있다. 이때 공격자는 중간자 위치에 있기 때문에 피해자 호스트로 부터 받은 인증 트래픽을 타겟 서버에게 그대로 릴레이하며 피해자 머신/유저 계정의 맥락에서 인증을 할 수 있게 된다.&#x20;
+
+![](../../.gitbook/assets/ntlm-relay-simple.drawio.png)
+
+NTLM 릴레이는 코드 실행, 계정 정보 덤프, SOCKS 프록시 구축, ADCS (Active Directory Certificate Services) 접근 등의 다양한 공격으로 이어질 수 있다. 굳이 공격자가 도메인 유저나 머신의 권한을 가지고 있지 않아도 중간자 공격을 통해 다양한 효과를 볼 수 있기 때문에 내부망 모의해킹 시 자주 사용된다. &#x20;
 
 ### 릴레이 종류&#x20;
 
-릴레이 공격의 종류는 다음 [@nwodtuhs](https://twitter.com/\_nwodtuhs/) 라는 분이 만든 NTLM 릴레이 공격 다이어그램을 참고한다. &#x20;
+릴레이 공격의 종류는 다음 [@nwodtuhs](https://twitter.com/\_nwodtuhs/) 라는 분이 만든 NTLM 릴레이 공격 이어그램을 참고한다. &#x20;
 
 ![](../../.gitbook/assets/ntlm-relay-nwodtuhs.jpg)
 
-릴레이가 시작 되는 부분은 강제 인증, LLMNR/Nbt-NS 포이즈닝, MITM6 등의 공격으로 들어오는 SMB 인증 트래픽일 때가 많다. HTTP 인증 트래픽도 WebDav 등을 통해서 들어올 수 있지만, 그렇게 자주 발견되지는 않는다.&#x20;
+릴레이가 시작 되는 부분은 강제 인증, LLMNR/Nbt-NS 포이즈닝, MITM6 등의 공격으로 들어오는 SMB 인증 트래픽일 때가 많다. HTTP 인증 트래픽도 WebDav 등을 통해서 들어올 수 있다.&#x20;
 
 * SMB -> SMB - 모의해킹 시 가장 자주 이용되는 릴레이 공격이다. 릴레이 되는 호스트의 SAM 데이터베이스를 덤프하거나, SOCKS PROXY 를 구축하거나, 원격 코드를 실행하는 용도로 사용된다.&#x20;
 * SMB -> HTTP - 강제 인증과 Active Directory Certificate Services (ADCS) 공격을 할 때 자주 이용된다. 뿐만 아니라 다양한 HTTP 기반 웹 서비스들을 이용할때도 사용할 수 있다.&#x20;

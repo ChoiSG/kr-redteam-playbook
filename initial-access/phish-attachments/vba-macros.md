@@ -209,7 +209,7 @@ Chameleon과 VBA script 난독화를 진행할 경우 디펜더 우회는 가능
 ![](../../.gitbook/assets/endpoint-no-vba.png)
 
 * 현 조직에서 매크로를 많이 사용한다면 인터넷에서 받은 문서+매크로 파일들만 비활성화 하는 GPO를 사용한다.&#x20;
-  * ![](<../../.gitbook/assets/image (4) (2).png>)
+  * ![](<../../.gitbook/assets/image (4) (2) (1).png>)
   * `User Configuration\Policies\Administrative Templates\Block macros from running in Office files from the Internet - Protected`
 * 더 자세한 대응 방안은 레퍼런스를 참고한다.&#x20;
 

@@ -101,7 +101,7 @@
   * [AS-Rep Roasting](credential-access/kerberos/as-rep-roasting.md)
 * [비밀번호 스프레이 공격](credential-access/password-spraying.md)
 * [LLMNR/NBT-NS 포이즈닝](credential-access/llmnr-nbtns-poisoning.md)
-* [NTLM 릴레이](credential-access/ntlm-relay/README.md)
+* [NTLM 릴레이 (NTLM Relay)](credential-access/ntlm-relay/README.md)
   * [SMB to SMB](credential-access/ntlm-relay/smb-to-smb.md)
   * [HTTP to LDAP - TODO](credential-access/ntlm-relay/smb-to-ldap-todo.md)
 * [강제 인증 (Authentication Coercion)](credential-access/authentication-coercion/README.md)

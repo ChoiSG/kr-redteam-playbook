@@ -34,7 +34,7 @@ Printerbug (프린터버그) / Print Spooler RPC 강제 인증은 타겟 서버�
 cme smb dc01.choi.local -u low -p 'Password123!' -d choi.local -M spooler
 ```
 
-![Enabled! Spooler 서비스/RPC가 작동중이다.](<../../.gitbook/assets/image (5).png>)
+![Enabled! Spooler 서비스/RPC가 작동중이다.](<../../.gitbook/assets/image (5) (2).png>)
 
 2\. 프린터버그 강제 인증을 실행하기 전, NTLM 릴레이를 먼저 세팅한다.&#x20;
 
@@ -62,4 +62,4 @@ dc01.choi.local (192.168.40.150) 에게 프린터버그 강제인증 실행 -> d
 
 &#x20;
 
-![프린트는 프린터에서 - 도메인 컨트롤러는 소중하다.](<../../.gitbook/assets/image (4).png>)
+![프린트는 프린터에서 - 도메인 컨트롤러는 소중하다.](<../../.gitbook/assets/image (4) (2).png>)
