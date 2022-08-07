@@ -19,7 +19,7 @@ Pre-Authentication은 다음과 같은 요청/응답으로 이뤄진다. &#x20;
 
 ![](<../../.gitbook/assets/image (7).png>)
 
-액티브 디렉토리에서는 위 Pre-Authentication 과정을 무시하는 설정인 `Do not require Kerberos Preauthentication` 이 존재한다. 이 설정을 특정 유저에게 부여하면 앞의 Pre-Authentication 과정 중 `KRB_AS_REQ` 을 유저 이름만 갖고, 유저의 해시화된 비밀번호 없이 보낼 수 있다. 이를 악용해 AS-REPRoasting 공격을 진행할 수 있다.&#x20;
+액티브 디렉토리에서는 위 Pre-Authentication 과정을 무시하는 설정인 `Do not require Kerberos Preauthentication` 이 존재한다. 이 설정을 특정 유저에게 부여하면 앞의 Pre-Authentication 과정 중 `KRB_AS_REQ` 을 유저의 비밀번호 없이 유저 이름만 가지고 보낼 수 있다. 이를 악용해 AS-REPRoasting 공격을 진행할 수 있다.&#x20;
 
 ![](../../.gitbook/assets/as-rep-roasting.drawio.png)
 
