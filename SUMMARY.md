@@ -1,7 +1,7 @@
 # Table of contents
 
 * [레드팀 플레이북](README.md)
-* [레드팀이란](레드팀이란.md)
+* [레드팀이란](what-even-is-redteam.md)
 
 ## 인프라 (Infrastructure)
 
@@ -85,7 +85,7 @@
 
 ## 보안 우회 (Defense Evasion)
 
-* [AMSI 우회](defense-evasion/amsi-우회.md)
+* [AMSI 우회](defense-evasion/amsi-bypass.md)
 * [유저랜드 후킹 - 역사](defense-evasion/userland-hooking-history.md)
 * [유저랜드 커널랜드 윈도우API 개념](defense-evasion/ring0-ring3-winapi.md)
 * [유저랜드 후킹](defense-evasion/userland-hooking.md)
@@ -138,7 +138,7 @@
 
 ## 홈 랩 (Home lab) <a href="#homelab" id="homelab"></a>
 
-* [시스몬 (sysmon) 설치](홈-랩-구축/시스몬-설치.md)
+* [시스몬 (sysmon) 설치](homelab/installing-sysmon.md)
 * [취약한 랩을 위한 설정 커맨드](homelab/homelab-misconfigurations.md)
 
 ## MISC <a href="#MISC" id="MISC"></a>
@@ -146,7 +146,7 @@
 * [기여하는 방법](MISC/contributions.md)
 * [레퍼런스와 크레딧](MISC/레퍼런스-크레딧.md)
 * [C# snippets](MISC/csharp-snippets.md)
-* [winapi 리스트](MISC/winapi-리스트/README.md)
-  * [original notes from obsidian](MISC/winapi-리스트/original-notes-from-obsidian.md)
+* [winapi 리스트](MISC/winapi-list/README.md)
+  * [original notes from obsidian](MISC/winapi-list/original-notes-from-obsidian.md)
 * [Future Works and Research](MISC/future-works-and-research.md)
-* [파워쉘 원라이너 (oneliner)](MISC/파워쉘-원라이너.md)
+* [파워쉘 원라이너 (oneliner)](MISC/powershell-oneliners.md)

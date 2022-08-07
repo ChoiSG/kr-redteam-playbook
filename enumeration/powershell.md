@@ -1,4 +1,4 @@
-# 정보 수집 - 파워쉘 - TODO
+# 정보 수집 - 파워쉘
 
 로컬 호스트 정보 수집 페이지에서도 잠깐 언급했지만, cmd 및 파워쉘을 통한 정보 수집은 레드팀 작전의 작전보안에 적합하지 않다.&#x20;
 
@@ -119,7 +119,7 @@ C:\Windows\system32\sysprep\sysprep.xml
 ### 액티브 디렉토
 
 * 파워쉘을 통한 도메인 정보 수집은 PowerView.ps1 와 같은 툴을 이용하거나 [MS-ActiveDirectory Module](https://docs.microsoft.com/en-us/powershell/module/activedirectory/?view=windowsserver2022-ps) 을 이용한다. MS AD 모듈의 경우 설치되어 있지 않은 호스트들도 많기 때문에 Powerview 등의 툴을 많이 사용하는 편이다.&#x20;
-* Powerview 등의 파워쉘 기반의 도메인 정보 수집 툴을 이용하려면 [AMSI 우회](../defense-evasion/amsi-우회.md)를 해야한다.&#x20;
+* Powerview 등의 파워쉘 기반의 도메인 정보 수집 툴을 이용하려면 [AMSI 우회](../defense-evasion/amsi-bypass.md)를 해야한다.&#x20;
 * 다음은 Powerview 기반의 정보 수집 명령어들이다.
 
 ```
