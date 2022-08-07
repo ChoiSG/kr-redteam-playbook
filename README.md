@@ -31,7 +31,7 @@ There is no novel research/content in this project, nor do I claim any work in p
 
 ### WhoAreWe?&#x20;
 
-업계 경험이 있는 전/현직 해커들로, 한국의 오펜시브 시큐리티 정보 공유에 기여하는 것을 지향합니다.
+업계에서 일하고 있는 현직 해커들로, 한국의 오펜시브 시큐리티 정보 공유에 기여하는 것을 지향합니다.
 
 * [@choi](https://www.linkedin.com/in/sunggwan-choi/) - Fortune 100에서 Fortune 100, 500, 핀테크 뿐만 아니라 전세계 고객사들을 상대로 내부망, 외부망, 웹 모의해킹을 진행하고 있습니다.&#x20;
   * [블로그](https://blog.sunggwanchoi.com/), [깃헙 ](https://github.com/choisg)
