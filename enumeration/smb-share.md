@@ -62,6 +62,7 @@ SMB 쉐어의 권한이 잘못 설정되어 Anonymous 나 Null Session 으로 �
 ```
 cme smb <target(s)> -u '' -p ''  --shares
 cme smb <target(s)> -u 'a' -p '' --shares 
+enum4linux -a <target>
 ```
 
 

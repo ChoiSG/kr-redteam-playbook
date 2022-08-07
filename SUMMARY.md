@@ -48,6 +48,7 @@
 * [SMB 쉐어 수집](enumeration/smb-share.md)
 * [정보 수집 - 파워쉘](enumeration/powershell.md)
 * [정보 수집 - C# - TODO](enumeration/csharp.md)
+* [커버로스 유저 이름 정보수집](enumeration/kerberos-username-enumeration.md)
 
 ## 실행 (Execution)
 
@@ -101,6 +102,7 @@
 * [커버로스](credential-access/kerberos/README.md)
   * [커버로스팅 (Kerberoasting)](credential-access/kerberos/kerberoasting.md)
   * [AS-Rep Roasting](credential-access/kerberos/as-rep-roasting.md)
+  * [RBCD (Resource Based Constrained Delegation) - TODO](credential-access/kerberos/rbcd.md)
 * [비밀번호 스프레이 공격](credential-access/password-spraying.md)
 * [LLMNR/NBT-NS 포이즈닝](credential-access/llmnr-nbtns-poisoning.md)
 * [NTLM 릴레이 (NTLM Relay)](credential-access/ntlm-relay/README.md)
@@ -112,7 +114,6 @@
   * [MS-FSRVP - ShadowCoerce](credential-access/authentication-coercion/ms-fsrvp.md)
   * [MS-DFSNM - DFSCoerce](credential-access/authentication-coercion/ms-dfsnm.md)
 * [NTLM 다운그레이드](credential-access/ntlm-downgrade.md)
-* [RBCD (Resource Based Constrained Delegation) - TODO](credential-access/rbcd.md)
 
 ## 횡적 이동 (Lateral Movement)
 
@@ -129,6 +130,7 @@
   * [NTLM 인증](general-concepts/windows-authentication/ntlm.md)
   * [커버로스 (Kerberos) 인증 - TODO](general-concepts/windows-authentication/kerberos-authentication.md)
   * [ADCS 인증서 기반 인증 ](general-concepts/windows-authentication/adcs-auth.md)
+* [AD 관련 용어 해설](general-concepts/glossary.md)
 
 ## 실 공격 TTP와 대응방안 - TODO <a href="#real-attack-ttp-and-mitigations" id="real-attack-ttp-and-mitigations"></a>
 

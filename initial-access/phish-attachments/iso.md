@@ -56,7 +56,7 @@ cp ./version.dll c:\opt\dllsideloading\vresion.dll
 
 3\. SharpDLLProxy 가 만든 `.c` 파일을 수정한 뒤, 컴파일 한다. 맨 위의 `pragma comment` 에서 DLL 이름을 `tmpXXXX` 에서 `vresion` 으로 수정해주면 끝이다.&#x20;
 
-![](<../../.gitbook/assets/image (5) (1) (2).png>)
+![](<../../.gitbook/assets/image (5) (1) (2) (1).png>)
 
 4\. version.dll 로 컴파일 한다.&#x20;
 
