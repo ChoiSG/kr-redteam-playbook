@@ -132,9 +132,10 @@
 
 * [개념](real-attack-ttp-and-mitigations/concepts.md)
 
-## 홈 랩 구축 <a href="#홈-랩-구축" id="홈-랩-구축"></a>
+## 홈 랩 (Home lab) <a href="#homelab" id="homelab"></a>
 
-* [시스몬 (sysmon) 설치](홈-랩-구축/시스몬-설치.md)
+* [시스몬 (sysmon) 설치](homelab/시스몬-설치.md)
+* [취약한 랩을 위한 설정 커맨드](homelab/homelab-misconfigurations.md)
 
 ## MISC <a href="#MISC" id="MISC"></a>
 
