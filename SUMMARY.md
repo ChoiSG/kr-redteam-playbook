@@ -77,8 +77,10 @@
   * [PrintNightmare](privilege-escalation/local/printnightmare.md)
 * [AD 권한 상승 - TODO ](privilege-escalation/ad/README.md)
   * [Active Directory Certificate Services (ADCS)](privilege-escalation/ad/adcs.md)
+  * [Shadow Credentials](privilege-escalation/ad/shadow-credentials.md)
   * [noPac](privilege-escalation/ad/nopac.md)
   * [Kerberoasting](privilege-escalation/ad/kerberoasting.md)
+  * [AS-REP Roasting](privilege-escalation/ad/asrep-roasting.md)
 
 ## 보안 우회 (Defense Evasion)
 
@@ -134,7 +136,7 @@
 
 ## 홈 랩 (Home lab) <a href="#homelab" id="homelab"></a>
 
-* [시스몬 (sysmon) 설치](homelab/시스몬-설치.md)
+* [시스몬 (sysmon) 설치](홈-랩-구축/시스몬-설치.md)
 * [취약한 랩을 위한 설정 커맨드](homelab/homelab-misconfigurations.md)
 
 ## MISC <a href="#MISC" id="MISC"></a>
