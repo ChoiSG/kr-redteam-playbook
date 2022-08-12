@@ -26,6 +26,8 @@ process doppelganging
 
 process herpaderping
 
+^ For those - [https://www.huntandhackett.com/blog/concealed-code-execution-techniques-and-detection](https://www.huntandhackett.com/blog/concealed-code-execution-techniques-and-detection) - This is a great blog post to learn basics & concealed code execution techniques&#x20;
+
 ret address overwriting with syscalls&#x20;
 
 PP, PPL, RunAsPPL, its bypass, and its end - [https://itm4n.github.io/the-end-of-ppldump/](https://itm4n.github.io/the-end-of-ppldump/) &#x20;
