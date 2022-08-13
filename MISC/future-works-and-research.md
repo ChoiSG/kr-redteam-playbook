@@ -54,6 +54,10 @@ OSINT - awesome hacker search engines - [https://github.com/edoardottt/awesome-h
 
 ISO mitigation for my ISO+LNK pages - [https://twitter.com/mubix/status/1521898616914423809](https://twitter.com/mubix/status/1521898616914423809)  and [https://twitter.com/mttaggart/status/1553476660439068677](https://twitter.com/mttaggart/status/1553476660439068677)&#x20;
 
+Windows internals regarding processes, threads, jobs, fibers, oh my - [https://de-engineer.github.io/Processes-threads-jobs-fibers/](https://de-engineer.github.io/Processes-threads-jobs-fibers/)
+
+Virtual Memory and Paging - concepts - [https://de-engineer.github.io/Understanding-Virtual-Memory-Paging-and-other-memory-related-concepts/](https://de-engineer.github.io/Understanding-Virtual-Memory-Paging-and-other-memory-related-concepts/)
+
 
 
 
