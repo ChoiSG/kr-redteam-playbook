@@ -123,6 +123,7 @@
 * [WMI](lateral-movement/wmi.md)
 * [WinRM / Powershell Remoting](lateral-movement/winrm-ps-remoting.md)
 * [RDP](lateral-movement/rdp.md)
+* [Network Pivoting (피벗) - TODO](lateral-movement/pivoting.md)
 
 ## 개념 <a href="#general-concepts" id="general-concepts"></a>
 
