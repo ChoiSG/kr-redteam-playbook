@@ -108,6 +108,8 @@ DLL 사이드로딩의 경우 블루팀이 이를 막는 방법도 있지만, �
 
 {% embed url="https://github.com/Flangvik/SharpDllProxy" %}
 
+{% embed url="https://hijacklibs.net/" %}
+
 {% embed url="https://www.wietzebeukema.nl/blog/hijacking-dlls-in-windows" %}
 
 {% embed url="https://www.mandiant.com/sites/default/files/2021-09/rpt-dll-sideloading.pdf" %}
