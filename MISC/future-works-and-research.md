@@ -18,6 +18,10 @@ inline operations vs. fork-and-run&#x20;
 
 CPL for initial access&#x20;
 
+List of winapi for offensive purposes - use it as a reference later on [https://malapi.io/](https://malapi.io/)
+
+sharpshooter troubleshooting - installing jsmin for python2.7 - [https://www.pizzapower.me/2021/12/22/sharpshooter-python2-7-and-pip2-installation/](https://www.pizzapower.me/2021/12/22/sharpshooter-python2-7-and-pip2-installation/)&#x20;
+
 VelvetSweatShop&#x20;
 
 process hollowing&#x20;
