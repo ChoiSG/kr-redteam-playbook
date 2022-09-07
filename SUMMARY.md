@@ -140,6 +140,7 @@
 ## 홈 랩 (Home lab) <a href="#homelab" id="homelab"></a>
 
 * [시스몬 (sysmon) 설치](homelab/installing-sysmon.md)
+* [EDR 솔루션 설치](homelab/edr.md)
 * [취약한 랩을 위한 설정 커맨드](homelab/homelab-misconfigurations.md)
 
 ## MISC <a href="#MISC" id="MISC"></a>
