@@ -1,9 +1,9 @@
 # EDR 솔루션 설치
 
-이 페이지는 다음의 페이지를 기반으로 만들어졌습니다: \
+이 페이지는 다음의 페이지와 비슷한 내용을 포함하고 있으니, 영어가 편하신 분들은 확인하시기 바랍니다. \
 [https://www.elastic.co/security-labs/the-elastic-container-project](https://www.elastic.co/security-labs/the-elastic-container-project)&#x20;
 
-* 참고를 하지는 않았지만 페이지 작성이 끝난 뒤 공식 블로그 글이 있다는 것을 알아서 뒤늦게 Credit 및 레퍼런스로 첨부합니다.&#x20;
+* 글을 참고 하지는 않았지만 페이지 작성이 끝난 뒤 공식 블로그 글이 있다는 것을 알아서 뒤늦게 Credit 및 레퍼런스로 첨부합니다. &#x20;
 
 오펜시브 시큐리티 관련 리서치를 하다보면 EDR 솔루션과 SIEM을 구축해 공격용 툴이나 스크립트가 실행할 때 어떤 IOC를 남기고 어떤 알람을 울리는지에 대해 잘 알아야한다. 하지만 기업용 EDR 솔루션이나 SIEM을 개인이 구입하기에는 무리가 있다.&#x20;
 
