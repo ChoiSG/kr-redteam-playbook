@@ -20,6 +20,9 @@ Elasticsearch 로 유명한 Elastic 사에서는 최근 자사의[ EDR 솔루션
 # Docker installation - Ubuntu 
 https://docs.docker.com/engine/install/ubuntu/
 
+# Docker installation - Debian 
+https://docs.docker.com/engine/install/debian/
+
 # Docker Install for Kali/Debian
 sudo apt update -y 
 sudo apt update -y ca-certificates curl gnupg lsb-release 
