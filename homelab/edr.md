@@ -27,21 +27,21 @@ echo \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
   
 # Install Docker 
-apt update -y 
-apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin 
+sudo apt update -y 
+sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin 
 
 # Install rest of the dependencies 
-apt install jq git curl 
+sudo apt install jq git curl 
 ```
 
 이후 Elasitc Container 프로젝트를 설치한다&#x20;
 
 ```
-git clone https://github.com/peasead/elastic-container.git
+sudo git clone https://github.com/peasead/elastic-container.git
 cd ./elastic-container
-vim ./.env 
+sudo vim ./.env 
 # ELASTIC_PASSWORD와 KIBANA_PASSWWORD를 changeme에서 다른 것으로 바꿔준다.
-./elastic-container.sh start 
+sudo ./elastic-container.sh start 
 ```
 
 
