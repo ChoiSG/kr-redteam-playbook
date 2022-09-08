@@ -17,7 +17,10 @@ Elasticsearch 로 유명한 Elastic 사에서는 최근 자사의[ EDR 솔루션
 먼저 [Elastic Container Project](https://github.com/peasead/elastic-container) 를 이용해 ELK 스택을 설치한다. 이때 필요한 의존성 패키지들을 먼저 설치한다. 깃헙 리포의 README 를 읽으셔도 된다. 이 가이드에서는 칼리 리눅스를 기반으로 서맃를 진행한다.&#x20;
 
 ```
-# Docker Install for Kali/Debian - Prereqs
+# Docker installation - Ubuntu 
+https://docs.docker.com/engine/install/ubuntu/
+
+# Docker Install for Kali/Debian
 sudo apt update -y 
 sudo apt update -y ca-certificates curl gnupg lsb-release 
 sudo mkdir -p /etc/apt/keyrings
