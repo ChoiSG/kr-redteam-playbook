@@ -40,7 +40,7 @@ mv kerbrute_linux_amd64 kerbrute
 ./kerbrute userenum -d <domain> --dc <DC-IP> <userlist-file> | tee <output-filename> 
 ```
 
-![](<../.gitbook/assets/image (4).png>)
+![](<../.gitbook/assets/image (4) (1).png>)
 
 3\. 알아챈 유저 이름 리스트를 갖고 Password Spraying, AS-REPRoasting, Kerberoasting 등을 진행한다.&#x20;
 

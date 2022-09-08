@@ -10,7 +10,7 @@
 
 이후 클라우드 및 서버 접속에 사용할 SSH 공개키를 만든다. 이때 작전보안을 위해서 각 서버들마다 1개씩의 SSH key를 만든다. `aws-redirector-ssh` 키와 `aws-lighthouse-ssh` 키를 각각 리다이렉터 서버와 네뷸라 등대 서버를 위해 만든다.
 
-![](<../.gitbook/assets/image (1) (1) (1).png>)
+![](<../.gitbook/assets/image (1) (1) (1) (2).png>)
 
 ### VPC 생성&#x20;
 
@@ -47,7 +47,7 @@ Security Group은 AWS의 가상 방화벽 룰들의 집합이라고 생각하면
 
 이후 EC2 인스턴스 -> 등대 서버 인스턴스 오른쪽 클릭 -> Security -> Change Security Groups 로 가서 원래 있던 Security Group을 삭제하고, 위에서 만들었던 `lighthouse-ssh-nebula-security-group` 을 적용시켜준다.
 
-![](../.gitbook/assets/image.png)
+![](<../.gitbook/assets/image (7).png>)
 
 제대로 Security Group을 바꿨다면 등대 서버 인스턴스를 클릭했을 때 나오는 시큐리티 그룹이 바뀌어있을 것이다.&#x20;
 
