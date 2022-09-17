@@ -77,7 +77,8 @@
   * [Always Install Elevated](privilege-escalation/local/always-install-elevated.md)
   * [PrintNightmare](privilege-escalation/local/printnightmare.md)
 * [AD 권한 상승 - TODO ](privilege-escalation/ad/README.md)
-  * [Active Directory Certificate Services (ADCS)](privilege-escalation/ad/adcs.md)
+  * [Active Directory Certificate Services (ADCS)](privilege-escalation/ad/adcs/README.md)
+    * [ESC1](privilege-escalation/ad/adcs/esc1.md)
   * [Shadow Credentials](privilege-escalation/ad/shadow-credentials.md)
   * [noPac](privilege-escalation/ad/nopac.md)
   * [Kerberoasting](privilege-escalation/ad/kerberoasting.md)
@@ -140,7 +141,7 @@
 ## 홈 랩 (Home lab) <a href="#homelab" id="homelab"></a>
 
 * [시스몬 (sysmon) 설치](homelab/installing-sysmon.md)
-* [EDR 솔루션 설치](homelab/edr.md)
+* [SIEM과 EDR 솔루션 설치](homelab/edr.md)
 * [취약한 랩을 위한 설정 커맨드](homelab/homelab-misconfigurations.md)
 
 ## MISC <a href="#MISC" id="MISC"></a>

