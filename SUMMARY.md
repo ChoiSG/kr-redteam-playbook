@@ -79,6 +79,7 @@
 * [AD 권한 상승 - TODO ](privilege-escalation/ad/README.md)
   * [Active Directory Certificate Services (ADCS)](privilege-escalation/ad/adcs.md)
     * [ESC1](privilege-escalation/ad/adcs/esc1.md)
+    * [ESC8](privilege-escalation/ad/adcs/esc8.md)
   * [Shadow Credentials](privilege-escalation/ad/shadow-credentials.md)
   * [noPac](privilege-escalation/ad/nopac.md)
   * [Kerberoasting](privilege-escalation/ad/kerberoasting.md)

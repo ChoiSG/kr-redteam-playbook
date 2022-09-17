@@ -61,7 +61,7 @@ REG ADD HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run /v pshst
 # 3. 로그오프 -> 로그인 후 리버스쉘 확인 
 ```
 
-![](<../.gitbook/assets/image (5) (1) (2).png>)
+![](<../.gitbook/assets/image (5) (1) (2) (2).png>)
 
 
 

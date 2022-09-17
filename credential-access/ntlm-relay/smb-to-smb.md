@@ -145,7 +145,7 @@ socks4 127.0.0.1 1080
 * `Computer Configuration\Policies\Windows Settings\Security Settings\Local Policies\Security Options\Microsoft network server: Digitally Sign communications (always)` 를 활성화 한다.&#x20;
 * `Computer Configuration\Policies\Windows Settings\Security Settings\Local Policies\Security Options\Microsoft network server: Digitally Sign communications (if client agrees)` 를 활성화 한다.&#x20;
 
-![](<../../.gitbook/assets/image (10).png>)
+![](<../../.gitbook/assets/image (10) (2).png>)
 
 
 

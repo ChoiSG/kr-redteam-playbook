@@ -111,11 +111,11 @@ $ cme smb <DC-IP> -u Administrator -H <NThash> -d <domain>
 * CA 서버 > `certtmpl.msc` > 인증서 양식 오른쪽 클릭 > Properties > `Subject Name` 탭 > Supply in Request 설정 해제&#x20;
 * `Supply in Request` 가 꼭 필요하다면 Properties > Issuance Requirements > CA Certificate Manager Approval 을 설정해 인증서 관리자 계정이 허락을 해야 인증서가 발급되도록 바꾼다.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/esc1.png" alt=""><figcaption><p>CT-FLAG-ENROLLEE-SUPPLIES-SUBJECT 를 비활성화 한다</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption><p>Certificate Manager Approval 을 활성화 한다</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption><p>Certificate Manager Approval 을 활성화 한다</p></figcaption></figure>
 
 
 
