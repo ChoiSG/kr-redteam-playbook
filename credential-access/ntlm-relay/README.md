@@ -40,7 +40,7 @@ NTLM 릴레이는 코드 실행, 계정 정보 덤프, SOCKS 프록시 구축, A
 
 1. [SAM Dump / SOCKS](https://www.xn--hy1b43d247a.com/credential-access/ntlm-relay/smb-to-smb#undefined) - 릴레이되는 트래픽의 유저/머신 계정 맥락을 이용해 타겟 호스트의 SAM을 덤프하거나 SOCKS 프록시를 구축할 수 있다.&#x20;
 2. [NTLMv1 Downgrade](../ntlm-downgrade.md) - Net-NTLMv1 이 릴레이 된다면 다운그레이드를 통해 NT해시를 얻을 수 있고, 이 NT 해시는 그대로 [Pass-the-Hash](../../lateral-movement/pass-the-hash.md)에 사용될 수 있다.&#x20;
-3. [ADCS ESC8](../../privilege-escalation/ad/adcs/#esc-8) - 액티브 디렉토리내 ADCS와 ADCS Web Enrollment가 운영되고 있다면 이에 릴레이 해 릴레이 되는 트래픽의 유저/머신 계정 맥락의 인증서 인증을 받은 뒤 계정을 장악할 수 있다.&#x20;
+3. [ADCS ESC8](../../privilege-escalation/ad/adcs.md#esc-8) - 액티브 디렉토리내 ADCS와 ADCS Web Enrollment가 운영되고 있다면 이에 릴레이 해 릴레이 되는 트래픽의 유저/머신 계정 맥락의 인증서 인증을 받은 뒤 계정을 장악할 수 있다.&#x20;
 4. [Resource Based Constrained Delegation](../kerberos/rbcd.md) - 커버로스의 Delegation (대리자/델리게이트) 를 이용해 공격자가 타겟서버에 높은 권한의 유저로 접근 가능하게끔 만드는 공격.&#x20;
 
 

@@ -33,7 +33,7 @@ expand-archive ./payload.zip
 
 이후 다시 파일들을 압축한다. 이 때 디렉토리 하나만 압축하지 말고, 디렉토리 안의 파일들을 모두 모아서 압축한다.&#x20;
 
-![](<../../.gitbook/assets/image (3) (1).png>)
+![](<../../.gitbook/assets/image (3) (1) (2).png>)
 
 이후 이 문서 파일을 실행하면 다음과 같이 코드 실행이 된다.&#x20;
 
