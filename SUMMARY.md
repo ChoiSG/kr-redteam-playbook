@@ -76,7 +76,7 @@
   * [Unquoted Service Path](privilege-escalation/local/unquoted-service-path.md)
   * [Always Install Elevated](privilege-escalation/local/always-install-elevated.md)
   * [PrintNightmare](privilege-escalation/local/printnightmare.md)
-* [AD 권한 상승 - TODO ](privilege-escalation/ad/README.md)
+* [AD 권한 상승](privilege-escalation/ad/README.md)
   * [Active Directory Certificate Services (ADCS)](privilege-escalation/ad/adcs.md)
     * [ESC1](privilege-escalation/ad/adcs/esc1.md)
     * [ESC8](privilege-escalation/ad/adcs/esc8.md)
