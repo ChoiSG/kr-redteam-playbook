@@ -97,7 +97,9 @@
 * [프로세스 인젝션](defense-evasion/process-injection/README.md)
   * [CreateRemoteThread](defense-evasion/process-injection/createremotethread.md)
   * [NtMapViewOfSection](defense-evasion/process-injection/ntmapviewofsection.md)
-* [간단 디펜더 우회](defense-evasion/simple-defender-bypass.md)
+* [간단 디펜더 우회 - 쉘코드](defense-evasion/simple-defender-bypass.md)
+* [간단 디펜더 우회 - C#](defense-evasion/simple-defender-bypass-csharp.md)
+* [MSIExec](defense-evasion/msiexec.md)
 
 ## 계정 정보 탈취 (Credential Access)
 

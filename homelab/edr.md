@@ -103,7 +103,7 @@ Agent 설치 명령어가 끝나고 다시 Elastic 으로 돌아오면 Agent가 
 
 추가로 더 많은 악성코드 탐지를 위해 특정한 룰을 설정할 수도 있다. `Security -> Manage -> Rules` 로 가 원하는 룰을 활성화 한다. 예를 들자면 간단한 오픈소스 오펜시브 시큐리티 툴을 탐지하고 싶다면 `malware` 를 검색한 뒤 `Malware - Detected - Elastic Endgame` 룰을 활성화한다.&#x20;
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 ### 실습&#x20;
 
@@ -126,7 +126,7 @@ rm c:\windows\temp\rubeus.exe
 
 &#x20;
 
-<figure><img src="../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 마치며&#x20;
 

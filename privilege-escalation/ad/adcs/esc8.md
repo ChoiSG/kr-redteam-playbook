@@ -24,7 +24,7 @@ ESC8 은 NTLM Relay 공격을 통해 피해자 유저/머신의 NTLM 인증 트�
 
 1. 먼저 CA와 CA의 Web Enrollment 가 존재하는지 Certipy 로 알아본다. `Web Enrollment: Enabled` 라면 웹서버가 활성화 되어 있는 것이다.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (3).png" alt=""><figcaption></figcaption></figure>
 
 2\. 정확한 확인을 위해 GUI에서는 HTTP 엔드포인트를 브라우저로 방문하거나 curl 등을 이용한다. `401 Unauthorized` 에러 메시지가 나오면 제대로 HTTP 엔드포인트가 실행 중이라는 것이다.&#x20;
 
@@ -112,11 +112,11 @@ $ certipy auth -dc-ip <dc-IP> -pfx real.pfx
 1. ADCS HTTP 엔드포인트에 Extended Protection Authentication (EPA) 을 `Required` 로 설정한다. \
    Server Manager > IIS Manager > DC/CAXX > Sites > Default Web Site > CertSrv > Authentication 더블클릭 > Windows Authentication 오른쪽 클릭 > Advanced Settings > Extended Protection: Required&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (3).png" alt=""><figcaption></figcaption></figure>
 
 1-1. 그 이 SSL을 활성화 한다.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 2\. 극단적으로 CA 서버에 NTLM 인증을 비활성화 한다. 프로덕션 서버의 경우 하위 호환성에 문제가 갈 수 있기 때문에 충분한 테스트를 거친 뒤 NTLM 인증을 비활성화 한다.  \
 &#x20;
