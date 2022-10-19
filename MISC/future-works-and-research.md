@@ -62,7 +62,7 @@ Windows internals regarding processes, threads, jobs, fibers, oh my - [https://d
 
 Virtual Memory and Paging - concepts - [https://de-engineer.github.io/Understanding-Virtual-Memory-Paging-and-other-memory-related-concepts/](https://de-engineer.github.io/Understanding-Virtual-Memory-Paging-and-other-memory-related-concepts/)
 
-
+Ways to get PID (of any process, including lsass) - [https://www.mdsec.co.uk/2022/08/fourteen-ways-to-read-the-pid-for-the-local-security-authority-subsystem-service-lsass/](https://www.mdsec.co.uk/2022/08/fourteen-ways-to-read-the-pid-for-the-local-security-authority-subsystem-service-lsass/)
 
 
 
