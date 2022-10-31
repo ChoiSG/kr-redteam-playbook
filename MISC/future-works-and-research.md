@@ -64,6 +64,8 @@ Virtual Memory and Paging - concepts - [https://de-engineer.github.io/Understand
 
 Ways to get PID (of any process, including lsass) - [https://www.mdsec.co.uk/2022/08/fourteen-ways-to-read-the-pid-for-the-local-security-authority-subsystem-service-lsass/](https://www.mdsec.co.uk/2022/08/fourteen-ways-to-read-the-pid-for-the-local-security-authority-subsystem-service-lsass/)
 
+Nice tips and techniques for bypassing EDR solutions - [https://vanmieghem.io/blueprint-for-evading-edr-in-2022/](https://vanmieghem.io/blueprint-for-evading-edr-in-2022/)
+
 
 
 Literally this entire slide deck - [https://mgeeky.tech/uploads/WarCon22%20-%20Modern%20Initial%20Access%20and%20Evasion%20Tactics.pdf](https://mgeeky.tech/uploads/WarCon22%20-%20Modern%20Initial%20Access%20and%20Evasion%20Tactics.pdf)
