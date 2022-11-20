@@ -113,6 +113,7 @@
   * [SMB to SMB](credential-access/ntlm-relay/smb-to-smb.md)
   * [SMB to LDAP/S](credential-access/ntlm-relay/smb-to-ldap-s.md)
   * [HTTP to LDAP](credential-access/ntlm-relay/http-to-ldap.md)
+  * [SMB to HTTP](credential-access/ntlm-relay/smb-to-http.md)
 * [강제 인증 (Authentication Coercion)](credential-access/authentication-coercion/README.md)
   * [MS-RPRN - Printerbug / Print Spooler](credential-access/authentication-coercion/ms-rprn.md)
   * [MS-EFSRPC - Petitpotam](credential-access/authentication-coercion/ms-efsrpc.md)
