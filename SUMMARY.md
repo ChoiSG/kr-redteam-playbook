@@ -111,6 +111,7 @@
 * [LLMNR/NBT-NS 포이즈닝](credential-access/llmnr-nbtns-poisoning.md)
 * [NTLM 릴레이 (NTLM Relay)](credential-access/ntlm-relay/README.md)
   * [SMB to SMB](credential-access/ntlm-relay/smb-to-smb.md)
+  * [SMB to LDAP/S](credential-access/ntlm-relay/smb-to-ldap-s.md)
   * [HTTP to LDAP - TODO](credential-access/ntlm-relay/smb-to-ldap-todo.md)
 * [강제 인증 (Authentication Coercion)](credential-access/authentication-coercion/README.md)
   * [MS-RPRN - Printerbug / Print Spooler](credential-access/authentication-coercion/ms-rprn.md)

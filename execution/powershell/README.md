@@ -29,15 +29,7 @@
 
 2012년도 Matt Graeber의 "Why I choose Powershell as an attack platform" 블로그를 기반으로 공격자들의 파워쉘 툴링 시대가 시작됐다.&#x20;
 
-| 종류                      | 프로젝트                                                     |   |
-| ----------------------- | -------------------------------------------------------- | - |
-| C2 프레임워크                | Powershell Empire, PoshC2, FudgeC2                       |   |
-| 정보 수집                   | PowerView, Invoke-PortScan, Powershell-AD-Recon, PSRecon |   |
-| 계정 정보 탈취                | Invoke-Mimikatz, Get-Keystrokes, Get-MicrophoneAudio     |   |
-| 코드 실행                   | Invoke-DLLInjection, Invoke-Shellcode, PowerPick         |   |
-| Reflective PE Injection | Invoke-ReflectivePEInjection                             |   |
-| 파워쉘 난독화                 | Invoke-Obfuscation, Chameleon                            |   |
-| Post-Exploitation       | PowerSpoit, PowerTools, Nishang, Powershell Suite        |   |
+<table><thead><tr><th>종류</th><th>프로젝트</th><th data-hidden></th></tr></thead><tbody><tr><td>C2 프레임워크 </td><td>Powershell Empire, PoshC2, FudgeC2</td><td></td></tr><tr><td>정보 수집</td><td>PowerView, Invoke-PortScan, Powershell-AD-Recon, PSRecon</td><td></td></tr><tr><td>계정 정보 탈취</td><td>Invoke-Mimikatz, Get-Keystrokes, Get-MicrophoneAudio</td><td></td></tr><tr><td>코드 실행</td><td>Invoke-DLLInjection, Invoke-Shellcode, PowerPick </td><td></td></tr><tr><td>Reflective PE Injection</td><td>Invoke-ReflectivePEInjection</td><td></td></tr><tr><td>파워쉘 난독화</td><td>Invoke-Obfuscation, Chameleon </td><td></td></tr><tr><td>Post-Exploitation</td><td>PowerSpoit, PowerTools, Nishang, Powershell Suite </td><td></td></tr></tbody></table>
 
 ### 파워쉘 보안&#x20;
 
