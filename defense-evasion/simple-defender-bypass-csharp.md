@@ -38,7 +38,7 @@ cp C:\opt\Masky\agent\* . -Recurse
 
 4\. 문자열을 난독화 하더라도 디펜더나 AMSI 가 잡아내는 경우가 많기 때문에 본격적인 난독화 전 문제가 될 수 있는 문자열을 제거한다. 이는 [ThreatCheck](https://github.com/rasta-mouse/ThreatCheck) 등의 툴을 쓸 수도 있고, 수동적으로 툴 이름, 툴의 작성자 핸들 등의 문제가 될 법한 문자열을 감으로 찾아 제거할 수도 있다. (**수정**: 2022년도 기준으로 ThreatCheck 등의 툴을 이용하면 오히려 윈도우 디펜더가 머신 러닝등을 이용해 무조건적으로 악성코드로 탐지해내는 경우가 있다. 수동적으로 문자열들을 찾아 바꾼다.)
 
-<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption><p>문제가 될만한 문자열의 Masky 를 choirtp 로 대체했다</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18) (1).png" alt=""><figcaption><p>문제가 될만한 문자열의 Masky 를 choirtp 로 대체했다</p></figcaption></figure>
 
 필요한 패키지 들을 설치/제거 해야한다면 지금 진행한다. Masky의 경우 Nuget 매니저로 가 모든 누겟 패키지를 언인스톨 한 뒤, Fody, Costura.Fody, Newtonsoft.Json 등을 다시 재설치 한다.
 

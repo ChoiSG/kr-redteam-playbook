@@ -65,4 +65,4 @@ python3 dementor.py -u low -p 'Password123!' -d choi.local 192.168.40.132 192.16
 
 `(Default Domain Controller Policy 혹은 GPO`) `> Computer Configuration > Policies > Windows Settings > Security Settings > Local Policies >  Security Options > Domain controller: LDAP server signing requirement` - REQUIRED 로 설정&#x20;
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
