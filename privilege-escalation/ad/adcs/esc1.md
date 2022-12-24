@@ -6,7 +6,7 @@
 
 ADCS의 인증서 양식에 `CT_FLAG_ENROLLEE_SUPPLIES_SUBJECT` 라는  설정이  존재한다. 이 설정이 되어있는 취약  인증서 양식은 공격자 인증서 서명 요청을 보낼 때 자신이 원하는 유저를 주체로 특정해 보낼 수 있다. 예를 들자면,&#x20;
 
-1. Choi -> CA: 저 인증서 서명 요청 드립니다. 근데 SAN (Subject Alternative Name) 란에는는 choi가 아니라 `Administrator@choi.local` 이라는 도메인 관리자로 해주세요.&#x20;
+1. Choi -> CA: 저 인증서 서명 요청 드립니다. 근데 SAN (Subject Alternative Name) 특성은 choi가 아니라 `Administrator@choi.local` 이라는 도메인 관리자로 해주세요.&#x20;
 2. CA -> Choi: 네, 인증서 발급하겠습니다. 요청대로 SAN에는 도메인 관리자 유저 이름을 넣어서 발급해드릴게요.&#x20;
 3. Choi: 감사합니다. - 일반 도메인 유저에서 도메인 관리자로 권한 상승 성공.&#x20;
 

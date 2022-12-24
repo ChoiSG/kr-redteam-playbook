@@ -6,7 +6,7 @@
 
 Printerbug (프린터버그) / Print Spooler RPC 강제 인증은 타겟 서버에서 실행중인 Print Spooler 서비스의 `RpcRemoteFindFirstPrinterChangeNotificationEx` RPC 함수를 이용하는 공격이다. 공격은 다음과 같은 단계로 이뤄진다:&#x20;
 
-1. 공격자는 사용자 인증이 필요없는 취약한 RPC 함수 중 하나인 `RpcRemoteFindFirstPrinterChangeNotificationEx` 를 타겟 서버에게 요청한다. 이 함수는 타겟 서버에서 프린터와 관련된 변화가 일어날 시 클라이언트에게 알림을 자동으로 해주는 함수다.&#x20;
+1. 공격자는 취약한 RPC 함수 중 하나인 `RpcRemoteFindFirstPrinterChangeNotificationEx` 를 타겟 서버에게 요청한다. 이 함수는 타겟 서버에서 프린터와 관련된 변화가 일어날 시 클라이언트에게 알려주는 함수다.&#x20;
 2. 서버가 클라이언트가 RPC 함수를 실행했다는 것을 인지한다.
 3. `RpcRemoteFindFirstPrinterChangeNotificationEx`  함수가 제대로 실행되려면 서버에서 클라이언트로 인증하고 접근 한 뒤, 클라이언트에게 알림 설정을 해줘야한다. 이 설정을 하기 위해 서버는 스스로 (하지만 사실상 클라이언트가 함수를 실행했으니 "강제"로) 공격자 클라이언트에게 서버 머신 계정 + Net-NTLMv1/v2 해시가 포함된 사용자 인증 패킷을 보낸다.&#x20;
 4. 공격자는 이 머신 계정의 사용자 인증 패킷을 Responder 와 같은 툴로 받는다.&#x20;
