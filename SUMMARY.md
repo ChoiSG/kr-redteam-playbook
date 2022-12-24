@@ -156,5 +156,5 @@
 * [C# snippets](MISC/csharp-snippets.md)
 * [winapi 리스트](MISC/winapi-list/README.md)
   * [original notes from obsidian](MISC/winapi-list/original-notes-from-obsidian.md)
-* [Future Works and Research](MISC/future-works-and-research.md)
+* [Future Works, Research, and TODOs](MISC/future-works-and-research.md)
 * [파워쉘 원라이너 (oneliner)](MISC/powershell-oneliners.md)

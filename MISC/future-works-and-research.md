@@ -1,4 +1,17 @@
-# Future Works and Research
+# Future Works, Research, and TODOs
+
+## TODOs&#x20;
+
+* 실행 - WinAPI and Native API&#x20;
+* 로컬 권한 상승 (잘못된 서비스 설정, Unquoted Service Path, Always Install Elevated, Potatos, saved creds)&#x20;
+* ADCS -> ESC4&#x20;
+* LM, NT, NTLM, Net-NTLMv1, Net-NTLMv2 에 관련된 정리
+* 액티브 디렉토리 기본 용어 정리 및 개념
+* 보안 우회 -> 쉘코드 암호화&#x20;
+* 보안 우회 -> 엔트로피 조절&#x20;
+*
+
+## Future Research&#x20;
 
 BOF, COFF - [https://hstechdocs.helpsystems.com/manuals/cobaltstrike/current/userguide/content/topics/beacon-object-files\_main.htm](https://hstechdocs.helpsystems.com/manuals/cobaltstrike/current/userguide/content/topics/beacon-object-files\_main.htm)
 
