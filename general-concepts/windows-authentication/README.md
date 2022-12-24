@@ -2,9 +2,9 @@
 
 윈도우 액티브 디렉토리에서는 다양한 방법의 사용자 인증들이 사용된다.&#x20;
 
-1. [NTLM 인증](ntlm.md) - 1980년대 후반에 발표된 Challenge/Response 기반 인증 프로토콜로, 여러가지 문제점과 취약점들이 많다. 그럼에도 하위호환성을 위해 40년이 지난 지금도 쓰이고 있다 (...).&#x20;
+1. [NTLM 인증](ntlm.md) - 1980년대 후반에 발표된 Challenge/Response 기반 인증 프로토콜로, 여러가지 문제점과 취약점들이 많다. 그럼에도 하위호환성을 위해 40년이 지난 지금도 쓰이고 있다.&#x20;
 2. [Kerberos](kerberos-authentication.md) -  1980년대 MIT에서 만들어진 프로토콜이지만 윈도우와 액티브 디렉토리에는 2000년도에 적용되었다. 티켓 (Ticket) 기반의 사용자 인증을 이용한다.&#x20;
-3. [Active Directory Certificate Services](adcs-auth.md) -  2008년에 마이크로소프트사가 구현한 액티브 디렉토리를 위한  공개 키 기반 구조 (PKI - Public Key Infrastructure) 다. 디지털 인증서를 기반으로 사용자 인증을 한다.&#x20;
+3. [Active Directory Certificate Services](adcs-auth.md) -  2008년에 마이크로소프트사가 구현한 액티브 디렉토리를 위한  공개 키 기반 구조 (PKI - Public Key Infrastructure)다. 디지털 인증서를 기반으로 사용자 인증을 한다.&#x20;
 
 액티브 디렉토리 내에서 일반 사용자들이나 공격자들이나 NTLM과 Kerberos는 기본적으로 이용할 수 있다. ADCS는 2022년 기준 액티브 디렉토리를 구축하고 사용하고 있는 회사라면 매우 높은 확률로 구현되어 있다. &#x20;
 
