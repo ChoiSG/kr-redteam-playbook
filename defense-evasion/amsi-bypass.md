@@ -18,21 +18,21 @@ AMSI는 `amsi.dll` 의 라이브러리 형태로 AMSI 컨슈머 프로세스에 
 
 ### 레드팀/모의해커와 AMSI&#x20;
 
-모의해킹 일을 하면서 AMSI를 만나는 것은 대부분 파워쉘과 .NET이다. Powerview.ps1, Invoke-Mimikatz 등의 파워쉘 기반의 툴링을 사용하려고 하면 AMSI 때문에 막히는 경우가 많다. .NET Framework 4.8++ 이상부터는 .NET 기반의 툴들도 막히는 경우가 많다. 따라서 레드팀/모의해커로서 AMSI 우회는 필수다.&#x20;
+모의해킹을 하면 파워쉘과 .NET 기반의 툴링을 많이 사용하기 때문에 AMSI 를 상대해야 할 일이 많다. 이외에도 레드팀 업무를 진행하다보면 초기 침투시 VBScript, JScript 등의 스크립트 기반의 페이로드를 사용할 때가 있는데, 이때도 AMSI 를 상대해야한다. 사실상 PE 파일을 제외한 오펜시브 시큐리티에 사용될 수 있는 모든 파일 형태를 AMSI 가 방어하기 때문에 AMSI 우회는 필수적이다.
 
 ### AMSI 우회 - 3가지&#x20;
 
-AMSI는 결국 Consumer, Amsi.dll, Provider 세 가지 구성요소로 이뤄져있다. 이는 이 세 가지 구성요소의 연결점들 중 하나만 끊어져도 AMSI는 제 역할을 못하게 된다는 뜻이다. 연결점을 끊는 AMSI 우회는 총 3가지가 있다:&#x20;
+AMSI는 Consumer, Amsi.dll, Provider 세 가지 구성요소로 이뤄져있다. 이 세 가지 구성요소의 연결점들 중 하나만 끊어져도 AMSI는 제 역할을 못하게 된다. 연결점을 끊는 AMSI 우회는 총 3가지가 있다:&#x20;
 
-1. Consumer Unhooking - 컨슈머가 AMSI를 사용하지 못하도록 Reflection 을 통해 로드된 라이브러리 안의 함수를 바꿔버리거나 에러가 나도록 변경한다.&#x20;
-2. AMSI.dll Memory Patching - 로드된 `Amsi.dll` 라이브러리 안의 AMSI 함수들의 메모리 코드를 패치해 무조건 적으로 에러를 반환하게끔 한다. 이렇게 되면 컨슈머가 AMSI를 이용해도 Provider로 함수 요청이 되지 않고 그냥 에러만 반환된다.&#x20;
+1. Consumer Unhooking - 컨슈머가 AMSI를 사용하지 못하도록 Reflection을 통해 로드된 라이브러리 안의 함수를 바꿔버리거나 에러가 나도록 변경한다.&#x20;
+2. AMSI.dll Memory Patching - 로드된 `Amsi.dll` 라이브러리 안의 AMSI 함수들의 메모리를 패치해 무조건 에러를 반환하게끔 한다. 이렇게 되면 컨슈머가 AMSI를 이용해도 Provider로 함수 요청이 되지 않고 그냥 에러만 반환된다.&#x20;
 3. Provider Patching -  컨슈머 프로세스에 같이 로딩된 프로바이더 라이브러리의 1) `DllGetClassObject` 함수를 패치해 Amsi 시작 프로세스를 방해한다. 2) 혹은 프로바이더의 scan() 함수를 찾아 에러나 악성코드 없음을 반환하도록 패치한다. 이 방법은 [레퍼런스를 참고한다. ](https://i.blackhat.com/Asia-22/Friday-Materials/AS-22-Korkos-AMSI-and-Bypass.pdf)
 
 ### 실습 - AMSI.dll Memory Patching&#x20;
 
 아래는 해킹 작업소에 썼던 원글 - [https://cafe.naver.com/officialsegfault/487](https://cafe.naver.com/officialsegfault/487) 을 가져왔다.&#x20;
 
-AMSI는 amsi.dll 의 형태로 각 프로세스마다 로드가 됩니다. 라이브러리기 때문에 export 함수들을 가지고 있는데, 이는 MSDN에서 확인 가능합니다 (https://docs.microsoft.com/en-us/windows/win32/api/amsi/). 함수 중에서 AmsiScanBuffer 라는 함수가 있는데, 이 함수는 특정 버퍼를 스캔해 악성코드인지 아닌지를 확인해주는 함수입니다.
+AMSI는 amsi.dll 의 형태로 각 프로세스마다 로드가 됩니다. 라이브러리이기 때문에 export 함수들을 가지고 있는데, 이는 MSDN에서 확인 가능합니다 (https://docs.microsoft.com/en-us/windows/win32/api/amsi/). 함수 중에서 AmsiScanBuffer 라는 함수가 있는데, 이 함수는 특정 버퍼를 스캔해 악성코드인지 아닌지를 확인해주는 함수입니다.
 
 더 자세히 알아보기 위해 Ida Free로 amsi.dll 파일을 살펴봅니다.
 

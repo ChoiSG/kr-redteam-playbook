@@ -88,6 +88,7 @@
 ## 보안 우회 (Defense Evasion)
 
 * [쉘코드 암호화](defense-evasion/shellcode-encryption.md)
+* [런타임 다이나믹 링킹 (Run-time Dynamic Linking)](defense-evasion/run-time-dynamic-linking.md)
 * [AMSI 우회](defense-evasion/amsi-bypass.md)
 * [유저랜드 후킹 - 역사](defense-evasion/userland-hooking-history.md)
 * [유저랜드 커널랜드 윈도우API 개념](defense-evasion/ring0-ring3-winapi.md)
@@ -152,6 +153,7 @@
 
 ## MISC <a href="#MISC" id="MISC"></a>
 
+* [Changelog](MISC/changelog.md)
 * [기여하는 방법](MISC/contributions.md)
 * [레퍼런스와 크레딧](MISC/레퍼런스-크레딧.md)
 * [C# snippets](MISC/csharp-snippets.md)
