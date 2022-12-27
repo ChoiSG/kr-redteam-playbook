@@ -105,4 +105,6 @@ _CreateRemoteThread pCreateRemoteThread = (_CreateRemoteThread)(GetProcAddress(G
 
 ### References
 
-https://0xrick.github.io/win-internals/pe6/ https://vanmieghem.io/blueprint-for-evading-edr-in-2022/
+{% embed url="https://0xrick.github.io/win-internals/pe6" %}
+
+{% embed url="https://vanmieghem.io/blueprint-for-evading-edr-in-2022" %}
