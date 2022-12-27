@@ -87,6 +87,7 @@
 
 ## 보안 우회 (Defense Evasion)
 
+* [쉘코드 암호화](defense-evasion/shellcode-encryption.md)
 * [AMSI 우회](defense-evasion/amsi-bypass.md)
 * [유저랜드 후킹 - 역사](defense-evasion/userland-hooking-history.md)
 * [유저랜드 커널랜드 윈도우API 개념](defense-evasion/ring0-ring3-winapi.md)
