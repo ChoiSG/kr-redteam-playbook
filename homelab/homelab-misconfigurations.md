@@ -240,6 +240,13 @@ Fingers crossed it works now
 # Having WebDAV on CA server with Web Enrollment may not work - need more testing. 
 ```
 
+MachineAccountQuota - for shared lab environment&#x20;
+
+```
+Get-ADObject -Identity ((Get-ADDomain).distinguishedname) -Properties ms-DS-MachineAccountQuota
+Set-ADDomain -Identity <DomainName> -Replace @{"ms-DS-MachineAccountQuota"="500"}
+```
+
 Adding Users
 
 ```
