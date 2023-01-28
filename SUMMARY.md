@@ -122,6 +122,7 @@
   * [MS-FSRVP - ShadowCoerce](credential-access/authentication-coercion/ms-fsrvp.md)
   * [MS-DFSNM - DFSCoerce](credential-access/authentication-coercion/ms-dfsnm.md)
 * [NTLM 다운그레이드](credential-access/ntlm-downgrade.md)
+* [DHCPv6 포이즈닝](credential-access/dhcpv6.md)
 
 ## 횡적 이동 (Lateral Movement)
 
