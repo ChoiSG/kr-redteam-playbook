@@ -84,6 +84,8 @@
   * [noPac](privilege-escalation/ad/nopac.md)
   * [Kerberoasting](privilege-escalation/ad/kerberoasting.md)
   * [AS-REP Roasting](privilege-escalation/ad/asrep-roasting.md)
+  * [DHCPv6 포이즈닝](privilege-escalation/ad/dhcpv6.md)
+  * [Resource-Based Constrained Delegation (RBCD)](privilege-escalation/ad/rbcd.md)
 
 ## 보안 우회 (Defense Evasion)
 
