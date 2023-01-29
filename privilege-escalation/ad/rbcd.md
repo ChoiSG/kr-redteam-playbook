@@ -144,9 +144,18 @@ SMB         192.168.40.151  445    WKSTN01          Guest:501:aad3b435b51404eeaa
 
 RBCD는 액티브 디렉토리의 커버로스나 `ms-DS-AllowedToActOnBehalfOfOtherIdentity` 특성의 취약점을 익스플로잇 하는 공격이 아니다. 그저 커버로스 Delegation의 개념과 액티브 디렉토리의 오브젝트 특성을 공격자의 관점에서 악용하는 공격일 뿐이다.&#x20;
 
-따라서 유일한 대응 방안은 LDAP NTLM 릴레이 공격시 릴레이와 릴레이를 통한 특성 변경이 불가능 하도록 LDAP Signing 을 활성화 시키는 것 뿐이다.&#x20;
+따라서 대응 방안은 LDAP NTLM 릴레이 공격시 릴레이와 릴레이를 통한 특성 변경이 불가능 하도록 LDAP Signing 을 활성화 시키는 것 뿐이다. 다음의 GPO를 설정해 LDAP Signing 을 Required 로 설정한다.&#x20;
 
+* `(Default Domain Controller Policy 혹은 GPO`) `> Computer Configuration > Policies > Windows Settings > Security Settings > Local Policies >  Security Options > Domain controller: LDAP server signing requirement` - REQUIRED 로 설정&#x20;
 
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
+그 외에는 WebDAV 서비스를 사용하지 않는 호스트들의 WebClient 서비스를 비활성화 하는 방법이 있다. 완벽히 RBCD를 막을 순 없지만, 공격자의 입장에서 공격이 좀 더 까다로워진다. 다음의 파워쉘 명령어를 사용하거나 명령어를 GPO화 시켜 도메인 호스트들에게 적용한다.&#x20;
+
+* ```
+  Remove-WindowsFeature Web-Dav-Publishing
+  ```
+* `stop-service -name WebClient`
 
 
 
