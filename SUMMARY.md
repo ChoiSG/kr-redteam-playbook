@@ -68,14 +68,9 @@
 * [DLL Search Order Hijacking - TODO](persistence/dll-hijacking.md)
 * [레지스트리 / 스타트업 폴더](persistence/registry-startup-folder.md)
 
-## 권한 상승 - TODO  <a href="#privilege-escalation" id="privilege-escalation"></a>
+## 권한 상승 <a href="#privilege-escalation" id="privilege-escalation"></a>
 
 * [개념](privilege-escalation/concepts.md)
-* [로컬 권한 상승 - TODO ](privilege-escalation/local/README.md)
-  * [잘못된 서비스 설정](privilege-escalation/local/misconfigured-services.md)
-  * [Unquoted Service Path](privilege-escalation/local/unquoted-service-path.md)
-  * [Always Install Elevated](privilege-escalation/local/always-install-elevated.md)
-  * [PrintNightmare](privilege-escalation/local/printnightmare.md)
 * [AD 권한 상승](privilege-escalation/ad/README.md)
   * [Active Directory Certificate Services (ADCS)](privilege-escalation/ad/adcs.md)
     * [ESC1](privilege-escalation/ad/adcs/esc1.md)
@@ -86,6 +81,11 @@
   * [AS-REP Roasting](privilege-escalation/ad/asrep-roasting.md)
   * [DHCPv6 포이즈닝](privilege-escalation/ad/dhcpv6.md)
   * [Resource-Based Constrained Delegation (RBCD)](privilege-escalation/ad/rbcd.md)
+* [로컬 권한 상승 - TODO ](privilege-escalation/local/README.md)
+  * [잘못된 서비스 설정](privilege-escalation/local/misconfigured-services.md)
+  * [Unquoted Service Path](privilege-escalation/local/unquoted-service-path.md)
+  * [Always Install Elevated](privilege-escalation/local/always-install-elevated.md)
+  * [PrintNightmare](privilege-escalation/local/printnightmare.md)
 
 ## 보안 우회 (Defense Evasion)
 
