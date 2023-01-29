@@ -110,7 +110,6 @@
 * [커버로스](credential-access/kerberos/README.md)
   * [커버로스팅 (Kerberoasting)](credential-access/kerberos/kerberoasting.md)
   * [AS-Rep Roasting](credential-access/kerberos/as-rep-roasting.md)
-  * [RBCD (Resource Based Constrained Delegation)](credential-access/kerberos/rbcd.md)
 * [비밀번호 스프레이 공격](credential-access/password-spraying.md)
 * [LLMNR/NBT-NS 포이즈닝](credential-access/llmnr-nbtns-poisoning.md)
 * [NTLM 릴레이 (NTLM Relay)](credential-access/ntlm-relay/README.md)
