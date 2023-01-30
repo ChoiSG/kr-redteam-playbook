@@ -1,6 +1,6 @@
 # Resource-Based Constrained Delegation (RBCD)
 
-Resource-Based Constrained Delegation (이하 RBCD, rbcd)는   타겟 호스트의 `ms-DS-AllowedToActOnBehalfOfOtherIdentity` 액티브 디렉토리 오브젝트 특성을 조작해 공격자의 머신 계정이 타겟 호스트에 접근할 때 높은 권한의 도메인 유저 (도메인 관리자, 등)을 impersonation 할 수 있게 하는 공격이다.
+Resource-Based Constrained Delegation (이하 RBCD, rbcd)는 타겟 호스트의 `ms-DS-AllowedToActOnBehalfOfOtherIdentity` 액티브 디렉토리 오브젝트 특성을 조작해 공격자의 머신 계정이 타겟 호스트에 접근할 때 높은 권한의 도메인 유저 (도메인 관리자, 등)을 impersonation 할 수 있게 하는 공격이다.
 
 ### 공격 조건&#x20;
 
@@ -162,5 +162,7 @@ RBCD는 액티브 디렉토리의 커버로스나 `ms-DS-AllowedToActOnBehalfOfO
 ### 레퍼런스
 
 {% embed url="http://blog.redxorblue.com/2019/12/no-shells-required-using-impacket-to.html" %}
+
+{% embed url="https://shenaniganslabs.io/2019/01/28/Wagging-the-Dog.html" %}
 
 {% embed url="https://pentestlab.blog/2021/10/18/resource-based-constrained-delegation/" %}
