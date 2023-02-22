@@ -12,6 +12,23 @@
 
 
 
+LDAP Signing on/off
+
+```
+# GPO 
+Computer Configuration > Policies > Windows Settings > Security Settings > Local Policies > Security Options
+Domain Controller: LDAP Server Signing Requirements 
+```
+
+LDAP Channel Binding&#x20;
+
+```
+# Registry 
+Set-ItemProperty -Path "HKLM:\System\CurrentControlSet\Services\NTDS\Parameters" -Name "LdapEnforceChannelBinding" -Value 3
+```
+
+
+
 SMB signing off
 
 ```
