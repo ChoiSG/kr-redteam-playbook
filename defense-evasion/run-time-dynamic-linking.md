@@ -79,7 +79,7 @@ int main()
 
 컴파일 후 PEStudio 로 해당 파일을 살펴보면 IAT에 수상한 윈도우 API인 `WriteProcessMemory` 와 `CreateRemoteThread` 가 보인다. "Flag" 도 총 6개로, 수상한 윈도우 API 6개가 IAT에 기록되어 있다는 것을 보여준다.&#x20;
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 이제 런타임 다이나믹 링킹을 적용해보자. `WriteProcessMemory` 와 `CreateRemoteThread` 에 적용한 뒤, 다시 컴파일을 한다.
 
@@ -99,7 +99,7 @@ _CreateRemoteThread pCreateRemoteThread = (_CreateRemoteThread)(GetProcAddress(G
 
 다시 PEStudio 로 살펴보면, IAT 에서 `WriteProcessMemory` 와 `CreateRemoteThread` 가 더이상 보이지 않는다. "Flag" 도 6개에서 4개로 줄었다.&#x20;
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 런타임 다이나믹 링킹은 간단한 정적 분석을 우회하기 위한 용도로만 사용되야한다. 중요한 윈도우 API의 경우 직접/간접 시스템 콜을 이용하거나 수동적 맵핑을 이용한 방법을 사용하도록 한다. 별로 중요하지 않지만 자주 사용되고, 직/간접 시스템 콜을 사용할 수 없는 윈도우 API (`Process32Next` 등)의 경우, 런타임 다이나믹 링킹을 적용하면 IAT 목록을 수상하지 않게 만들 수 있다.&#x20;
 
