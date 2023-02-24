@@ -179,18 +179,30 @@ DefaultAccount:503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c0
 
 NTLM 릴레이 대응 방안에 관련해서는 [ntlm-relay](ntlm-relay/ "mention")페이지를 참고한다. 이 페이지에서는 DHCPv6 포이즈닝 대응 방안에 대해서 알아본다.&#x20;
 
-* 내부망에서 IPv6 를 사용하지 않는다면 윈도우 호스트들의 IPv6 를 비활성화 시킨다. 파워쉘을 이용하거나, GPO로 다음의 파워쉘을 내려보내 모든 호스트에 적용시킨다 (출처: [https://www.lmgsecurity.com/mitigating-ipv6-poisoning-attacks/](https://www.lmgsecurity.com/mitigating-ipv6-poisoning-attacks/))&#x20;
+대응 방안은 크게 네트워크 기반, 호스트 기반이 있다. DHCPv6 포이즈닝의 경우 네트워크 기반의 대응 방안이 가장 중요하다. 호스트 기반의 대응 방안은 있긴 있으나, 여러가지 문제가 발생할 수 있기 때문에 많은 테스트를 거쳐야한다.&#x20;
+
+#### 호스트 기반 대응 방안&#x20;
+
+1. 호스트들의 IPv6 자체를 비활성화 시킨다. 이 경우, 특정 윈도우 기능이 작동하지 않거나 써드파티 스크립트/솔루션들이 작동하지 않을 수 있기 때문에 많은 테스트가 필요하다.&#x20;
+2. 호스트들의 IPv6 DHCP Client Service 를 비활성화 시킨다. 이 경우, IPv6 자체는 이용할 수 있기 때문에 여러가지 문제가 생길 확률이 적다.&#x20;
+
+* 내부망에서 IPv6 를 사용하지 않는다면 윈도우 호스트들의  DHCPv6 기능을 비활성화 시킨다 (RouterDiscovery + DHCPv6). 파워쉘을 이용하거나, GPO로 다음의 파워쉘을 내려보내 모든 호스트에 적용시킨다 (출처: [https://www.lmgsecurity.com/mitigating-ipv6-poisoning-attacks/](https://www.lmgsecurity.com/mitigating-ipv6-poisoning-attacks/))&#x20;
   *   ```sql
       Set-NetIPInterface -AddressFamily IPv6 -InterfaceIndex $(Get-NetIPInterface -AddressFamily IPv6 | Select-Object -ExpandProperty InterfaceIndex) -RouterDiscovery Disabled -Dhcp Disabled
       ```
 
 
-* 내부망에서 IPv6가 사용되어 비활성화 시킬 수 없다면, IPv4 DNS를 IPv6 보다 더 우선순위에 두도록 우선순위를 바꿔준다.&#x20;
+* DHCPv6 전체를 비활성화 할 수 없는 경우 DHCP Client가 DHCPv6 메시지를 보낼 수 없도록 설정한다 (DHCP client only).
+  * `Set-NetIPInterface <interfacealias> -AddressFamily IPv6 -dhcp disabled`\
+    ``
+* 내부망에서 IPv6가 사용되어 비활성화 시킬 수 없다면, IPv4 DNS를 IPv6 보다 더 우선순위에 두도록 우선순위를 바꿔준다. 단, 이 경우 MITM6 툴을 이용한 DHCPv6 포이즈닝 공격을 막을 수는 없다.&#x20;
   * ```sql
     New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\TCPIP6\Parameters" -Name "DisabledComponents" -Value 0x20 -PropertyType DWORD -Force
     ```
+* 아예 IPv6 자체를 완전히 비활성화 하려면 다음의 파워쉘을 이용한다. 단, 프로덕션에 적용하기 전 충분한 테스트를 거친다. `0xff` = Disable IPv6 Completely&#x20;
+  * `Set-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters' -Name DisabledComponents -Value 0xff -Type DWORD`
 
-
+#### 네트워크 기반 대응 방안&#x20;
 
 * DHCPv6 Guard 를 지원하는 네트워크 기기 (예를 들어 네트워크 스위치, 등) 라면 DHCPv6 Guard 기능을 활성화한다.&#x20;
   * DHCPv6 Guard는 네트워크 내 인가받지 않은 Rogue DHCP 서버들이 Advertisement 및 Reply 메시지를 클라이언트들에게 전송하는 것을 막아주는 기능이다. \
