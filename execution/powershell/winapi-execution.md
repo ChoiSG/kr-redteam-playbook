@@ -58,7 +58,7 @@ $pThread = [winAPIClass]::CreateThread(0,0,$pAlloc,0,0,0)
 
 Add-Type이 실행될 때 C# 코드가 메모리상에서 컴파일 된다고 위에서 얘기했었다. 더 자세하게 얘기하자면 `csc.exe` 를 이용해 메모리상에서 C# 코드를 컴파일 하지만, 그 와중에 임시 파일을 디스크위에 작성한다.&#x20;
 
-![](<../../.gitbook/assets/image (2) (2) (1).png>)
+![](<../../.gitbook/assets/image (2) (2).png>)
 
 ![](<../../.gitbook/assets/image (6) (2).png>)
 

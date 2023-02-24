@@ -73,7 +73,7 @@ cp C:\opt\Masky\agent\* . -Recurse
 
 **난독화된 RTP-Moosky의 바이러스 토탈 결과**&#x20;
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p><a href="https://www.virustotal.com/gui/file/8220c64fcc5c6477780dacc025cca686e2ec85c7d59f9730be37781e63607292?nocache=1">https://www.virustotal.com/gui/file/8220c64fcc5c6477780dacc025cca686e2ec85c7d59f9730be37781e63607292?nocache=1</a></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption><p><a href="https://www.virustotal.com/gui/file/8220c64fcc5c6477780dacc025cca686e2ec85c7d59f9730be37781e63607292?nocache=1">https://www.virustotal.com/gui/file/8220c64fcc5c6477780dacc025cca686e2ec85c7d59f9730be37781e63607292?nocache=1</a></p></figcaption></figure>
 
 ### 실행&#x20;
 
