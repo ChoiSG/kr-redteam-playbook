@@ -85,6 +85,12 @@
   * [AddAllowedToAct](privilege-escalation/ad-dacl/addallowedtoact.md)
   * [AddKeyCredentialLink](privilege-escalation/ad-dacl/addkeycredentiallink.md)
   * [GenericAll](privilege-escalation/ad-dacl/genericall.md)
+  * [GenericWrite](privilege-escalation/ad-dacl/genericwrite.md)
+  * [WriteDACL](privilege-escalation/ad-dacl/writedacl.md)
+  * [AllExtendedRights](privilege-escalation/ad-dacl/allextendedrights.md)
+  * [WriteAccountRestrictions](privilege-escalation/ad-dacl/writeaccountrestrictions.md)
+  * [WriteOwner](privilege-escalation/ad-dacl/writeowner.md)
+  * [AddMember](privilege-escalation/ad-dacl/addmember.md)
 * [로컬 권한 상승 - TODO ](privilege-escalation/local/README.md)
   * [잘못된 서비스 설정](privilege-escalation/local/misconfigured-services.md)
   * [Unquoted Service Path](privilege-escalation/local/unquoted-service-path.md)
@@ -128,6 +134,8 @@
   * [MS-DFSNM - DFSCoerce](credential-access/authentication-coercion/ms-dfsnm.md)
 * [NTLM 다운그레이드](credential-access/ntlm-downgrade.md)
 * [DHCPv6 포이즈닝](credential-access/dhcpv6.md)
+* [LAPS - TODO](credential-access/laps-todo.md)
+* [DCSync - TODO](credential-access/dcsync-todo.md)
 
 ## 횡적 이동 (Lateral Movement)
 
