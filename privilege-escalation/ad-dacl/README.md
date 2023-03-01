@@ -51,3 +51,4 @@ DACL/ACE를 악용할 때 신경써야하는 것들은 다음과 같다.
 * https://dirkjanm.io/abusing-forgotten-permissions-on-precreated-computer-objects-in-active-directory/
 * https://www.youtube.com/watch?v=z8thoG7gPd0
 * https://www.thehacker.recipes/ad/movement/dacl
+* [https://simondotsh.com/infosec/2021/12/29/dcom-without-admin.html](https://simondotsh.com/infosec/2021/12/29/dcom-without-admin.html)&#x20;
