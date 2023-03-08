@@ -50,6 +50,7 @@
 * [정보 수집 - C# - TODO](enumeration/csharp.md)
 * [커버로스 유저 이름 정보수집](enumeration/kerberos-username-enumeration.md)
 * [CME - 호스트이름과 IP주소](enumeration/cme-hostname-ip.md)
+* [LDAP Anonymous Bind](enumeration/ldap-anonymous-bind.md)
 
 ## 실행 (Execution)
 

@@ -27,6 +27,20 @@ LDAP Channel Binding&#x20;
 Set-ItemProperty -Path "HKLM:\System\CurrentControlSet\Services\NTDS\Parameters" -Name "LdapEnforceChannelBinding" -Value 3
 ```
 
+LDAP Anonymous Bind Enabled&#x20;
+
+```
+# ADSI and dSHeurstics setting 
+ADSI Edit > Connection Settings + Select A Well known Naming Context "Configuration > 
+CN=Services > CN=Windos NT > CN=Directory Services > Properties > dSHeuristics set to 0000002 (seven zeros)
+
+# Anonymous Logon READ permission on Users Container  
+ADUC > Advanced > Users Container > Properties > Permissions > Add > Anonymous Logon > "READ" permission
+
+# Validate the Poggers 
+crackmapexec ldap <Dc> -u '' -p '' --users
+```
+
 
 
 SMB signing off

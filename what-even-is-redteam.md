@@ -1,6 +1,6 @@
 # 레드팀이란
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 레드팀(Red Team/Red Teaming)이라는 단어는 시간이 지남에 따라다양한 정의를 갖게 되었다. 가장 보편화된 정의들은 다음과 같다:
 
@@ -16,7 +16,7 @@
 
 ## 모의해킹의 한계
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 국내에서는 웹과 모바일 위주로 모의해킹이 이뤄지고 있지만, 전세계적으로는 내부망, 외부망, 웹/모바일, 클라우드, 스카다 (SCADA), 소셜 엔지니어링, 물리, 메인프레임 등의 다양한 모의해킹 서비스들이 제공되고 있다. 하지만 실제 공격자들은 공격을 진행할 때 세분화된 공격을 진행하지 않는다. 모바일 먼저 공격하고, 모바일 끝나면 웹앱 공격하고, 웹앱 끝나면 피싱 공격하고, 이렇게 세분화되고 순차적인 공격을 하지 않는다. 공격자들은 동시 다발적으로 공격 표면(Attack Surface)들을 공격한다. 또한, 여러개의 공격 표면을 같이 엮어 공격하거나, 1개의 공격 표면을 장악한 뒤 다른 공격 표면으로 횡적이동을 할 수도 있다. 예를 들어 피싱과 취약한 웹 어플리케이션을 통해 내부망으로 진입한 뒤, 도메인을 장악하고, 클라우드 데이터베이스 서비스에서 데이터를 훔친 뒤, 피해 기관의 모바일 어플리케이션의 백엔드 API 서버를 통해 데이터를 유출시킬 수 있다.
 
