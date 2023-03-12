@@ -15,6 +15,10 @@
 * [네뷸라 설정](infrastructure/nebula-config.md)
 * [도메인과 리다이렉터 설정](infrastructure/domain-redirector-config.md)
 
+## 주요정보통신기반시설 취약점 분석 <a href="#critical-info-infrastructure" id="critical-info-infrastructure"></a>
+
+* [Page 1](critical-info-infrastructure/page-1.md)
+
 ## 공개 출처 정보 수집 (OSINT)
 
 * [개념](osint/concepts.md)
