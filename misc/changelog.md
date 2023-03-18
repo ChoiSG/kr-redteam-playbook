@@ -15,3 +15,5 @@
 2/24 -  [what-even-is-redteam.md](../what-even-is-redteam.md "mention")리뉴얼, [dhcpv6.md](../credential-access/dhcpv6.md "mention")컨텐츠 추가&#x20;
 
 2/28 - [ad-dacl](../privilege-escalation/ad-dacl/ "mention")와 그 하위 페이지 9개 추가
+
+3/18 - [sccm.md](../privilege-escalation/ad/sccm.md "mention")과 [smb-to-sccm.md](../credential-access/ntlm-relay/smb-to-sccm.md "mention")페이지 추가&#x20;
