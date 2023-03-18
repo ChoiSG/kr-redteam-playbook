@@ -3,7 +3,7 @@
 * [레드팀 플레이북](README.md)
 * [레드팀이란](what-even-is-redteam.md)
 
-## 인프라 (Infrastructure)
+## 🚧 인프라 (Infrastructure)
 
 * [개념](infrastructure/concepts.md)
 * [예시 인프라](infrastructure/example-infra.md)
@@ -15,18 +15,14 @@
 * [네뷸라 설정](infrastructure/nebula-config.md)
 * [도메인과 리다이렉터 설정](infrastructure/domain-redirector-config.md)
 
-## 주요정보통신기반시설 취약점 분석 <a href="#critical-info-infrastructure" id="critical-info-infrastructure"></a>
-
-* [Page 1](critical-info-infrastructure/page-1.md)
-
-## 공개 출처 정보 수집 (OSINT)
+## 🔍 공개 출처 정보 수집 (OSINT)
 
 * [개념](osint/concepts.md)
 * [작전보안](osint/opsec.md)
 * [자산 정보 수집](osint/enumeration.md)
 * [구글 도킹](osint/google-dorking.md)
 
-## 초기 침투 (Initial Access)
+## ⚔ 초기 침투 (Initial Access)
 
 * [개념](initial-access/concepts.md)
 * [피싱 첨부파일](initial-access/phish-attachments/README.md)
@@ -44,7 +40,7 @@
 * [피싱 - AitM (Adversary in the Middle)](initial-access/aitm.md)
 * [Living Off Trusted Sites (LOTS)](initial-access/living-off-trusted-sites.md)
 
-## 정보 수집 - 내부망 <a href="#enumeration" id="enumeration"></a>
+## 🐳 정보 수집 - 내부망 <a href="#enumeration" id="enumeration"></a>
 
 * [개념](enumeration/concepts.md)
 * [로컬 호스트 정보 수집](enumeration/local-host-enumeration.md)
@@ -56,7 +52,7 @@
 * [CME - 호스트이름과 IP주소](enumeration/cme-hostname-ip.md)
 * [LDAP Anonymous Bind](enumeration/ldap-anonymous-bind.md)
 
-## 실행 (Execution)
+## 🐴 실행 (Execution)
 
 * [개념](execution/concepts.md)
 * [파워쉘](execution/powershell/README.md)
@@ -66,7 +62,7 @@
 * [LOLBAS](execution/lolbas.md)
 * [Native API - TODO](execution/native-api.md)
 
-## 지속성 (Persistence)
+## 🙃 지속성 (Persistence)
 
 * [개념](persistence/concepts.md)
 * [골든 티켓 (Golden Ticket)](persistence/golden-ticket.md)
@@ -74,7 +70,7 @@
 * [DLL Search Order Hijacking - TODO](persistence/dll-hijacking.md)
 * [레지스트리 / 스타트업 폴더](persistence/registry-startup-folder.md)
 
-## 권한 상승 <a href="#privilege-escalation" id="privilege-escalation"></a>
+## ⬆ 권한 상승 <a href="#privilege-escalation" id="privilege-escalation"></a>
 
 * [개념](privilege-escalation/concepts.md)
 * [AD 권한 상승](privilege-escalation/ad/README.md)
@@ -103,7 +99,7 @@
   * [Always Install Elevated](privilege-escalation/local/always-install-elevated.md)
   * [PrintNightmare](privilege-escalation/local/printnightmare.md)
 
-## 보안 우회 (Defense Evasion)
+## 🐍 보안 우회 (Defense Evasion)
 
 * [쉘코드 암호화](defense-evasion/shellcode-encryption.md)
 * [런타임 다이나믹 링킹 (Run-time Dynamic Linking)](defense-evasion/run-time-dynamic-linking.md)
@@ -121,7 +117,7 @@
 * [간단 디펜더 우회 - C#](defense-evasion/simple-defender-bypass-csharp.md)
 * [MSIExec](defense-evasion/msiexec.md)
 
-## 계정 정보 탈취 (Credential Access)
+## 🎭 계정 정보 탈취 (Credential Access)
 
 * [커버로스](credential-access/kerberos/README.md)
   * [커버로스팅 (Kerberoasting)](credential-access/kerberos/kerberoasting.md)
@@ -143,7 +139,7 @@
 * [LAPS - TODO](credential-access/laps-todo.md)
 * [DCSync - TODO](credential-access/dcsync-todo.md)
 
-## 횡적 이동 (Lateral Movement)
+## ↔ 횡적 이동 (Lateral Movement)
 
 * [개념](lateral-movement/concepts.md)
 * [Pass-the-Hash](lateral-movement/pass-the-hash.md)
@@ -152,6 +148,10 @@
 * [WinRM / Powershell Remoting](lateral-movement/winrm-ps-remoting.md)
 * [RDP](lateral-movement/rdp.md)
 * [Network Pivoting (피벗) - TODO](lateral-movement/pivoting.md)
+
+## 주요정보통신기반시설 취약점 분석 <a href="#critical-info-infrastructure" id="critical-info-infrastructure"></a>
+
+* [Page 1](critical-info-infrastructure/page-1.md)
 
 ## 개념 <a href="#general-concepts" id="general-concepts"></a>
 
@@ -165,19 +165,19 @@
 
 * [개념](real-attack-ttp-and-mitigations/concepts.md)
 
-## 홈 랩 (Home lab) <a href="#homelab" id="homelab"></a>
+## 🧑🔬 홈 랩 (Home lab) <a href="#homelab" id="homelab"></a>
 
 * [시스몬 (sysmon) 설치](homelab/installing-sysmon.md)
 * [SIEM과 EDR 솔루션 설치](homelab/edr.md)
 * [취약한 랩을 위한 설정 커맨드](homelab/homelab-misconfigurations.md)
 
-## MISC <a href="#MISC" id="MISC"></a>
+## 🎅 MISC
 
-* [Changelog](MISC/changelog.md)
-* [기여하는 방법](MISC/contributions.md)
-* [레퍼런스와 크레딧](MISC/레퍼런스-크레딧.md)
-* [C# snippets](MISC/csharp-snippets.md)
-* [winapi 리스트](MISC/winapi-list/README.md)
-  * [original notes from obsidian](MISC/winapi-list/original-notes-from-obsidian.md)
-* [Future Works, Research, and TODOs](MISC/future-works-and-research.md)
-* [파워쉘 원라이너 (oneliner)](MISC/powershell-oneliners.md)
+* [Changelog](misc/changelog.md)
+* [기여하는 방법](misc/contributions.md)
+* [레퍼런스와 크레딧](misc/레퍼런스-크레딧.md)
+* [C# snippets](misc/csharp-snippets.md)
+* [winapi 리스트](misc/winapi-list/README.md)
+  * [original notes from obsidian](misc/winapi-list/original-notes-from-obsidian.md)
+* [Future Works, Research, and TODOs](misc/future-works-and-research.md)
+* [파워쉘 원라이너 (oneliner)](misc/powershell-oneliners.md)

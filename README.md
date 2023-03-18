@@ -25,9 +25,9 @@
 
 ### 레퍼런스 & 크레딧 (Reference & Credits)
 
-이 프로젝트는 다음과 같은 업계 종사자들의 연구를 기반으로 만들어졌습니다. 이 프로젝트에 있는 모든 크레딧은 이들에게 돌립니다. 레퍼런스와 크레딧은 이 [페이지](MISC/레퍼런스-크레딧.md)를 참고해주세요.&#x20;
+이 프로젝트는 다음과 같은 업계 종사자들의 연구를 기반으로 만들어졌습니다. 이 프로젝트에 있는 모든 크레딧은 이들에게 돌립니다. 레퍼런스와 크레딧은 이 [페이지](misc/레퍼런스-크레딧.md)를 참고해주세요.&#x20;
 
-There is no novel research/content in this project, nor do I claim any work in project to be mine (it’s not). This project is just a collection of personal studies note that I use for personal reasons while I study others’ work. All credits go to these awesome researchers in this [page](MISC/레퍼런스-크레딧.md) (and many more!), not me.&#x20;
+There is no novel research/content in this project, nor do I claim any work in project to be mine (it’s not). This project is just a collection of personal studies note that I use for personal reasons while I study others’ work. All credits go to these awesome researchers in this [page](misc/레퍼런스-크레딧.md) (and many more!), not me.&#x20;
 
 ### WhoAreWe?&#x20;
 
@@ -39,7 +39,7 @@ There is no novel research/content in this project, nor do I claim any work in p
 
 ### 기여하는 방법&#x20;
 
-프로젝트에 기여하실 분들은 [기여하는 방법 페이지](MISC/contributions.md)를 확인해주시기 바랍니다.&#x20;
+프로젝트에 기여하실 분들은 [기여하는 방법 페이지](misc/contributions.md)를 확인해주시기 바랍니다.&#x20;
 
 ### 기여자&#x20;
 
