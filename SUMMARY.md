@@ -140,6 +140,7 @@
 * [DHCPv6 포이즈닝](credential-access/dhcpv6.md)
 * [LAPS - TODO](credential-access/laps-todo.md)
 * [DCSync](credential-access/dcsync.md)
+* [DPAPI](credential-access/dpapi.md)
 
 ## ↔ 횡적 이동 (Lateral Movement)
 

@@ -1,3 +1,7 @@
+---
+description: 'ID: T1003.006 - OS Credential Dumping: DCSync'
+---
+
 # DCSync
 
 ## 개념
