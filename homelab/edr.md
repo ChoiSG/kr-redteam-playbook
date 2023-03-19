@@ -120,7 +120,7 @@ rm c:\windows\temp\rubeus.exe
 
 <figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 악성코드를 탐지했다는 알람이 들어오기 시작하면 다양한 `Actions` 버튼을 눌러 정보를 확인할 수 있다.&#x20;
 

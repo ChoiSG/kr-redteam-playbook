@@ -11,5 +11,5 @@
 
 
 
-각 공격 들은 [rbcd.md](../ad/rbcd.md "mention") , [laps-todo.md](../../credential-access/laps-todo.md "mention"), [dcsync-todo.md](../../credential-access/dcsync-todo.md "mention") 등의 페이지를 참고한다.&#x20;
+각 공격 들은 [rbcd.md](../ad/rbcd.md "mention") , [laps-todo.md](../../credential-access/laps-todo.md "mention"), [dcsync.md](../../credential-access/dcsync.md "mention") 등의 페이지를 참고한다.&#x20;
 

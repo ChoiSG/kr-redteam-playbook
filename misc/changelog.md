@@ -17,3 +17,5 @@
 2/28 - [ad-dacl](../privilege-escalation/ad-dacl/ "mention")와 그 하위 페이지 9개 추가
 
 3/18 - [sccm.md](../privilege-escalation/ad/sccm.md "mention")과 [smb-to-sccm.md](../credential-access/ntlm-relay/smb-to-sccm.md "mention")페이지 추가&#x20;
+
+3/19 - [dcsync.md](../credential-access/dcsync.md "mention") 페이지 추가&#x20;
