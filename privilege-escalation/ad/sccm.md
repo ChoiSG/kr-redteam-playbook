@@ -97,4 +97,5 @@ Password123!
 * https://github.com/xpn/sccmwtf
 * https://github.com/ThePorgs/impacket/pull/14
 * https://www.thehacker.recipes/ad/movement/sccm-mecm
+* https://posts.specterops.io/the-phantom-credentials-of-sccm-why-the-naa-wont-die-332ac7aa1ab9
 
