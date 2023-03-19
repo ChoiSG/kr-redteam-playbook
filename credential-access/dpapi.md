@@ -12,7 +12,7 @@ DPAPI는 운영체제 레벨에서의 암호화를 쉽게 진행할 수 있도�
 
 DPAPI 가 사용된 데이터이기 때문에 DPAPI 비밀 정보 (DPAPI Secrets) 라고도 불린다.
 
-DPAPI Secrets:
+**DPAPI Secrets:**
 
 * 인터넷 브라우저에 저장되는 계정 정보와 쿠키 정보
 * 이메일 클라이언트 (Outlook, thunderbird) 등에서 사용되는 계정 정보
@@ -94,6 +94,8 @@ DPAPI 자체를 막을 수 있는 방안은 없다. 윈도우 운영체제 내�
 1. 브라우저 내의 비밀번호 관리자를 사용하지 말고, 써드파티 비밀번호 매니저를 사용한다.
 2. 파일시스템 내의 평문 비밀번호를 저장하지 않는다.
 3. 기본 윈도우 계정 매니저 (Windows Credential Manager)를 비활성화 시킨다 (레지스트리/GPO).
+
+* Computer Configuration > Policies > Windows Settings > Security Settings > Local Policies > Security Options > Network Access: Do not allow storage of passswords and credentials for network authentication&#x20;
 
 시스템 어드민으로서는 DPAPI 활동에 대해서 자세한 탐지를 실행한다. 이에 대해서는 아래의 레퍼런스를 참고한다.
 
