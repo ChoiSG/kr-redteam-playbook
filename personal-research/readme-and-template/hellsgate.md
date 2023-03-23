@@ -19,7 +19,7 @@
 
 ### 중요 개념 - 프로그래매틱하게 시스템 콜 번호 찾기
 
-* HellsGate의 중요 개념은, ntdll의 export된 NTAPI 함수의 시스템 콜 관련 바이트 패턴(mov r10, rcx // mov eax, )의 시작지점으로부터 index로 5번째 (0부터 시작 기준, 실제로는 6번째 바이트) 바이트를 bitwise shift left 8 연산을 한 뒤, index로 4번째 (0부터 시작 기준, 실제로는 5번째 바이트) 바이트를 OR 연산을 하면 시스템 콜 번호를 프로그래매틱하게 구할 수 있다는 것이다.
+* HellsGate의 중요 개념은, ntdll의 export된 NTAPI 함수의 시스템 콜 관련 바이트 패턴(mov r10, rcx // mov eax, \<syscall-number>)의 시작지점으로부터 index로 5번째 (0부터 시작 기준, 실제로는 6번째 바이트) 바이트를 bitwise shift left 8 연산을 한 뒤, index로 4번째 (0부터 시작 기준, 실제로는 5번째 바이트) 바이트를 OR 연산을 하면 시스템 콜 번호를 프로그래매틱하게 구할 수 있다는 것이다.
 
 페이퍼의 예시를 보자면, NtPlugPlayControl 함수의 시작 지점으로 부터의 명령어들은 `4c 8b d1 b8 32 01 00 00` 이다. 각각의 명령어들은 다음과  같이 풀이된다.
 
