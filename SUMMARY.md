@@ -182,5 +182,9 @@
 * [C# snippets](misc/csharp-snippets.md)
 * [winapi 리스트](misc/winapi-list/README.md)
   * [original notes from obsidian](misc/winapi-list/original-notes-from-obsidian.md)
-* [Future Works, Research, and TODOs](misc/future-works-and-research.md)
 * [파워쉘 원라이너 (oneliner)](misc/powershell-oneliners.md)
+
+## Personal-Research
+
+* [README-Template](personal-research/readme-template/README.md)
+  * [HellsGate](personal-research/readme-template/hellsgate.md)
