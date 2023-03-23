@@ -10,9 +10,18 @@ DISCLAIMER: There is no novel research/content here, and I do NOT claim any work
 
 툴/코드 원문 링크: [https://github.com/am0nsec/HellsGate](https://github.com/am0nsec/HellsGate)
 
+### 문제
+
+* AV/EDR의유저랜드 후킹을 우회하기 위해 시스템 콜을 이용하는데, 이를 위해서는 각 NTAPI 함수들의 시스템 콜 번호를 알아야한다. Hell's Gate 발표  전까지 이 번호들을 런타임 중 프로그래매틱 하게 찾아낼 수 있는 방법이 없었다.
+* 따라서 레드팀들은 모든 윈도우 버전의 모든 시스템 콜 번호들을 스태틱하게 구조체로 만들어 하드코딩 + 수많은 조건문을 이용해 시스템 콜을 사용하고 있었다. 물론, 이는 매우 불안정하고 비효율적인 방법이다.
+
+### 해결
+
+* HellsGate (헬스 게이트)는 NTAPI 함수들의 시스템 콜 번호를 런타임 도중 프로그래매틱하게 찾아주는 기법을 문서화 + POC화 시킨 연구다. 헬스 게이트 덕분에 추후 수많은 XYZ 게이트 기법들이 생겨나며 시스템 콜 시대가 시작된다.
+
 ### 중요 개념 - 프로그래매틱하게 시스템 콜 번호 찾기
 
-* HellsGate의 중요 개념은 각 NTAPI 함수의 시작 지점부터 index로 5번째 (0부터 시작 기준, 실제로는 6번째 바이트) 바이트를 bitwise shift left 8 연산을 한 뒤, index로 4번째 (0부터 시작 기준, 실제로는 5번째 바이트) 바이트를 OR 연산을 하면 시스템 콜 번호를 프로그래매틱하게 구할 수 있다는 것이다.
+* HellsGate의 중요 개념은, ntdll의 export된 NTAPI 함수의 시스템 콜 관련 바이트 패턴(mov r10, rcx // mov eax, )의 시작지점으로부터 index로 5번째 (0부터 시작 기준, 실제로는 6번째 바이트) 바이트를 bitwise shift left 8 연산을 한 뒤, index로 4번째 (0부터 시작 기준, 실제로는 5번째 바이트) 바이트를 OR 연산을 하면 시스템 콜 번호를 프로그래매틱하게 구할 수 있다는 것이다.
 
 페이퍼의 예시를 보자면, NtPlugPlayControl 함수의 시작 지점으로 부터의 명령어들은 `4c 8b d1 b8 32 01 00 00` 이다. 각각의 명령어들은 다음과  같이 풀이된다.
 
