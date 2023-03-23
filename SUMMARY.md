@@ -186,5 +186,5 @@
 
 ## Personal-Research
 
-* [README-Template](personal-research/readme-template/README.md)
-  * [HellsGate](personal-research/readme-template/hellsgate.md)
+* [README-and-Template](personal-research/readme-and-template/README.md)
+  * [HellsGate](personal-research/readme-and-template/hellsgate.md)
