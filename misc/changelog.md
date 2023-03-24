@@ -21,3 +21,7 @@
 3/19 - [dcsync.md](../credential-access/dcsync.md "mention") 페이지 추가&#x20;
 
 3/20 - [dpapi.md](../credential-access/dpapi.md "mention") 페이지 추가&#x20;
+
+3/22 - [hellsgate.md](../personal-research/readme-and-template/hellsgate.md "mention")페이지 추가&#x20;
+
+3/23 - [halosgate.md](../personal-research/readme-and-template/halosgate.md "mention")페이지 추가&#x20;

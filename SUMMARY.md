@@ -184,7 +184,8 @@
   * [original notes from obsidian](misc/winapi-list/original-notes-from-obsidian.md)
 * [파워쉘 원라이너 (oneliner)](misc/powershell-oneliners.md)
 
-## Personal-Research
+## 📖 Personal-Research
 
 * [README-and-Template](personal-research/readme-and-template/README.md)
   * [HellsGate](personal-research/readme-and-template/hellsgate.md)
+  * [HalosGate](personal-research/readme-and-template/halosgate.md)
