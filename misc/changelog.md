@@ -25,3 +25,5 @@
 3/22 - [hellsgate.md](../personal-research/readme-and-template/hellsgate.md "mention")페이지 추가&#x20;
 
 3/23 - [halosgate.md](../personal-research/readme-and-template/halosgate.md "mention")페이지 추가&#x20;
+
+3/28 - [freshycall.md](../personal-research/readme-and-template/freshycall.md "mention")페이지 추가&#x20;
