@@ -12,9 +12,9 @@
 
 첫번째, 메인화면에서 로그인이 성공 된 패킷을 확인 할 수 있다.
 
-<figure><img src="../../.gitbook/assets/image4 (1).jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image4.jpg" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image5.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image5 (1).jpg" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image6.jpg" alt=""><figcaption></figcaption></figure>
 
