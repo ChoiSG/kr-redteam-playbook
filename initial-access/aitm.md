@@ -87,5 +87,11 @@ https://www.krlogin.koreambtihealth.com/invite
 
 * URL 창에 있는 자물쇠를 맹신하지 말자 - 공격자의 입장에서 TLS/SSL 인증서를 발급 받는 것은 그렇게 어려운 일이 아니다.&#x20;
 * 항상 도메인을 잘 살펴보자. 의심이 되는 경우 바이러스 토탈이나 urlscan.io 에 첨부한다.&#x20;
-* 가장 좋은 방법은 내가 로그인 하고자 하는 페이지가 아닌 곳에서 로그인을 안하는 것이다.&#x20;
+* 가장 좋은 방법은 내가 로그인 하고자 하는 페이지가 아닌 곳에서 로그인을 안하는 것이다.
+
+### Reference
+
+* &#x20;[https://github.com/kgretzky/evilginx2](https://github.com/kgretzky/evilginx2)
+* [https://github.com/drk1wi/Modlishka](https://github.com/drk1wi/Modlishka)
+* [https://github.com/muraenateam/muraena](https://github.com/muraenateam/muraena)
 
