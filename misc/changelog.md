@@ -31,3 +31,5 @@
 4/1 - [page-1.md](../critical-info-infrastructure/page-1.md "mention")페이지 추가 - [차가운낑깡](http://localhost:5000/u/1y9ExMjOF5OnXgSOyWROhJQascW2 "mention")
 
 4/2 - 메인 랜딩 페이지 수정 및 업데이트&#x20;
+
+4/2 - [smtp.md](../infrastructure/smtp.md "mention") 페이지 추가&#x20;

@@ -153,7 +153,7 @@
 * [RDP](lateral-movement/rdp.md)
 * [Network Pivoting (피벗) - TODO](lateral-movement/pivoting.md)
 
-## 주요정보통신기반시설 취약점 분석 <a href="#critical-info-infrastructure" id="critical-info-infrastructure"></a>
+## 🏭 주요정보통신기반시설 취약점 분석 <a href="#critical-info-infrastructure" id="critical-info-infrastructure"></a>
 
 * [01.계정 관리](critical-info-infrastructure/page-1.md)
   * [통신 과정 흐름 훑어보기](critical-info-infrastructure/01./undefined.md)
