@@ -94,4 +94,5 @@ https://www.krlogin.koreambtihealth.com/invite
 * &#x20;[https://github.com/kgretzky/evilginx2](https://github.com/kgretzky/evilginx2)
 * [https://github.com/drk1wi/Modlishka](https://github.com/drk1wi/Modlishka)
 * [https://github.com/muraenateam/muraena](https://github.com/muraenateam/muraena)
+* [https://github.com/muraenateam/necrobrowser](https://github.com/muraenateam/necrobrowser)
 
