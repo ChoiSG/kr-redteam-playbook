@@ -2,15 +2,15 @@
 description: 이 문서에서는 Cuckoo Sandbox를 설치 및 구동하는 방법에 대해 설명합니다.
 ---
 
-# 악성코드 자동화 분석툴 Cuckoo 샌드박스 설치
+# 말웨어 자동화 분석툴 Cuckoo 샌드박스 설치
 
 ## 쿠쿠 샌드박스란? <a href="#cuckoo-sandbox" id="cuckoo-sandbox"></a>
 
-Cuckoo SandBox는 악성코드를 자동으로 분석하는 데 사용할 수 있는 오픈 소스 샌드박스입니다. 이것은 오픈 소스이므로 무료로 사용할 수 있지만 설치에는 약간의 시간과 노력이 필요합니다.
+Cuckoo SandBox는 말웨어를 자동으로 분석해주는픈오 소스 샌드박스입니다.    Cuckoo 샌드박스는오픈 소스이므로 무료로 사용할 수 있지만 설치에는 약간의 시간과 노력이 필요합니다.
 
 ## 샌드박싱이란? <a href="#what-is-sandboxing" id="what-is-sandboxing"></a>
 
-먼저 샌드박싱이란 무엇일까요? 샌드박싱은 End User가 실제 운영 환경을 모방해 안전하고 격리된 네트워크 환경에서 파일을 실행하고 관찰 및 분석하는 방식입니다. Cuckoo 샌드박스는 의심스러운 파일을Dumping 할수 있도록 개발되었으며, 이를 "샌드박싱"이라고 부릅니다.
+우선 샌드박싱이란 무엇일까요? 샌드박싱은 End User가 실제 운영 환경을 모방해 안전하고 격리된 네트워크 환경에서 파일을 실행하고 관찰 및 분석하는 방식입니다. Cuckoo 샌드박스는 의심스러운 파일을Dumping 할수 있도록 개발되었으며, 이를 "샌드박싱"이라고 부릅니다.
 
 ## Cuckoo SandBox의 구조 <a href="#how-the-cuckoo-sandbox-structure-looks-like" id="how-the-cuckoo-sandbox-structure-looks-like"></a>
 
