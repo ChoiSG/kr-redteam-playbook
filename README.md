@@ -39,7 +39,7 @@
 * [@choi](https://www.linkedin.com/in/sunggwan-choi/) - Fortune 100에서 Fortune 100, 500, 핀테크 뿐만 아니라 전세계 고객사들을 상대로 내부망, 외부망, 웹 모의해킹을 진행하고 있습니다.&#x20;
   * [블로그](https://blog.sunggwanchoi.com/), [깃헙 ](https://github.com/choisg)
 * @<차가운낑깡> - Coming Soon&#x20;
-* G???? - Coming Soon&#x20;
+* [Groot groot](http://localhost:5000/u/8BRfCvQi5tUsSkCgl5DyItqTKZu2 "mention") - Coming Soon&#x20;
 
 ### 기여하는 방법&#x20;
 
