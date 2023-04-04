@@ -33,3 +33,5 @@
 4/2 - 메인 랜딩 페이지 수정 및 업데이트&#x20;
 
 4/2 - [smtp.md](../infrastructure/smtp.md "mention") 페이지 추가&#x20;
+
+4/3 - [cuckoo.md](../homelab/cuckoo.md "mention")페이지 추가 - @groot&#x20;
