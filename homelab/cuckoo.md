@@ -155,17 +155,18 @@ sudo setcap cap_net_raw,cap_net_admin=eip /usr/sbin/tcpdump
 
 #### Volatility & M2Crypto 설치
 
-자식 복제 https://github.com/volatilityfoundation/volatility3.git
+```
+git clone https://github.com/volatilityfoundation/volatility3.git
+sudo pip2 install m2crypto
+```
 
-sudo pip2 설치 m2crypto
+#### guacd 설치
 
+guacd는 Cuckoo 웹 인터페이스의 원격 제어 기능을 위해 RDP, VNC 및 SSH에 대한 변환 계층을 제공하는 옵션서비스입니다.
 
-
-guacd 설치
-
-guacd는 Cuckoo 웹 인터페이스의 원격 제어 기능을 위해 RDP, VNC 및 SSH에 대한 변환 계층을 제공하는 선택적 서비스입니다.
-
-sudo apt install libguac-client-rdp0 libguac-client-VNC0 libguac-client-ssh0 guacd
+```
+sudo apt install libguac-client-rdp0 libguac-client-vnc0 libguac-client-ssh0 guacd
+```
 
 
 
