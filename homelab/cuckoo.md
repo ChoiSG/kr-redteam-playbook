@@ -84,87 +84,76 @@ Cuckcoo 호스트 Requirement 사항 설정&#x20;
 
 #### Cuckoo 호스트 요구 사항 설정
 
+VMware Workstation을 다운로드하고 Ubuntu VM을 설치합니다.
 
+본 데모에서는 VMware Workstation Pro를 사용했지만 언제든지 다른 시각화 솔루션을 사용하여도 무관합니다.
 
-VMware Workstation을 다운로드하고 Ubuntu VM을 만듭니다.
+본 데모에서는 Ubuntu 리눅스 배포판을 Cuckoo 서버 호스트 OS로 설치했습니다.
 
-VMware Workstation Pro를 사용했지만 언제든지 다른 시각화 솔루션을 다운로드 할 수 있습니다. 또한 무료 버전을 다운로드 할 수 있습니다 VMware 워크 스테이션 16 플레이어 이 \[링크] (https://www.vmware.com/products/workstation 플레이어 / 워크 스테이션 플레이어 평가 .html).
-
-이 데모에서는 우분투 OS를 Cuckoo 서버 호스트로 설치했습니다.
+* 운영 체제: 우분투 22 LTS
+* CPU: 가상 CPU 4 코어
+* 가상 IP: 192.168.121.133(고정)
+* 메모리: 8GB
 
 ![](https://1538861842-files.gitbook.io/\~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-Luj\_UTA-FG9do0VYXMX%2Fuploads%2F6UWuuzL3BEC1jSYh9jhe%2Fimage.png?alt=media\&token=f7c78d0e-cc06-4a27-bd9e-a6d00bcfca5f)
 
-
-
-파이썬 라이브러리 설치하기 (Ubuntu & Debian 기반 배포판용)
+#### 파이썬 라이브러리 설치하기 (Ubuntu & Debian 기반 배포판용)
 
 호스트를 설치하기 전에 몇 가지 필수 소프트웨어 패키지 및 라이브러리를 설치해야합니다. Cuckoo 샌드박스는 아직 Python 3을 완전히 지원하지 않으므로 다음과 같이 Python 2.7 패키지를 설치해야 합니다.
 
-sudo apt-get install python2 python-pip python2.7-dev libffi-dev libssl-dev
+`sudo apt-get install python2 python-pip python2.7-dev libffi-dev libssl-dev`
 
-pip2 설치 가상 환경
+`pip2 install virtualenv`
 
-pip2 설치 파이썬 설정 도구
+`pip2 install python-setuptools`
 
-sudo apt-get install libjpeg-dev zlib1g-dev swig
+`sudo apt-get install libjpeg-dev zlib1g-dev swig`
 
+#### MongoDB 설치
 
+Django 기반 웹 인터페이스를 사용하기 위해서는 MongoDB가 필요합니다.&#x20;
 
-MongoDB 설치
+sudo apt-get install mongodb 설치 대신에 수동 설치 (소스 코드에서)방법을 권장합니다:
 
-Django 기반 웹 인터페이스를 사용하기 위해서는 MongoDB가 필요합니다. 명령 설치 대신에,
-
-sudo apt-get 설치 mongodb, 수동 설치 (소스 코드에서)가 권장됩니다.
-
-에코 "Deb http://security.ubuntu.com/ubuntu 빈곤 보안 메인" | sudo tee /etc/apt/sources.list.d/impish-security.list
-
+```
+cho "deb http://security.ubuntu.com/ubuntu impish-security main" | sudo tee /etc/apt/sources.list.d/impish-security.list
 sudo apt-get update
-
 sudo apt-get install libssl1.1
-
 sudo apt-get install curl
-
-컬 -fsSL https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -
-
-에코 "deb \[ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/5.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list
-
-sudo apt 업데이트
-
+curl -fsSL https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/5.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list
+sudo apt update
 sudo apt install mongodb-org -y
+```
 
-몽고DB 서비스 시작
+#### MongoDB 서비스 시작
 
-sudo service mongod start & sudo systemctl enable mongod.service
+```
+sudo service mongod start && sudo systemctl enable mongod.service
+```
 
+#### TCPDUMP 설치
 
+맬웨어 샌드박스  실행 중 발생하는 네트워크 트래픽 덤프하려면 tcpdump 패키지가 필요합니다.
 
-TCPDUMP 설치
-
-맬웨어 실행 중에 네트워크 활동을 덤프하려면 tcpdump 패키지가 필요합니다.
-
+```
 sudo apt-get install tcpdump apparmor-utils
+sudo aa-disable /usr/sbin/tcpdump
+sudo setcap cap_net_raw,cap_net_admin=eip /usr/sbin/tcpdump
+sudo setcap cap_net_raw,cap_net_admin=eip /usr/bin/tcpdump
+sudo getcap /usr/sbin/tcpdump
+```
 
-sudo aa-disable / usr / sbin / tcpdump
+Tcpdump 실행은 루트 권한이 필요하지만 Cuckoo가 루트로 실행되는 것을 원하지 않으므로 특정 Linux 기능을 바이너리로 설정해야합니다.
 
-sudo setcap cap\_net\_raw,cap\_net\_admin=eip /usr/sbin/tcpdump
-
-sudo setcap cap\_net\_raw,cap\_net\_admin=eip /usr/bin/tcpdump
-
-sudo getcap / usr / sbin/tcpdump
-
-Tcpdump에는 루트 권한이 필요하지만 Cuckoo가 루트로 실행되는 것을 원하지 않으므로 특정 Linux 기능을 바이너리로 설정해야합니다.
-
+```
 sudo groupadd pcap
-
 sudo usermod -a -G pcap cuckoo
-
 sudo chgrp pcap /usr/sbin/tcpdump
+sudo setcap cap_net_raw,cap_net_admin=eip /usr/sbin/tcpdump
+```
 
-sudo setcap cap\_net\_raw,cap\_net\_admin=eip /usr/sbin/tcpdump
-
-
-
-Volatility & M2Crypto\[] 설치 (#installing-volatility-and-m2crypto)
+#### Volatility & M2Crypto 설치
 
 자식 복제 https://github.com/volatilityfoundation/volatility3.git
 
