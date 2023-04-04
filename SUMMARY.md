@@ -183,7 +183,7 @@
 * [시스몬 (sysmon) 설치](homelab/installing-sysmon.md)
 * [SIEM과 EDR 솔루션 설치](homelab/edr.md)
 * [취약한 랩을 위한 설정 커맨드](homelab/homelab-misconfigurations.md)
-* [말웨어 자동화 분석툴 Cuckoo 샌드박스 설치](homelab/cuckoo.md)
+* [말웨어 자동 분석툴 Cuckoo 샌드박스 설치](homelab/cuckoo.md)
 
 ## 🎅 MISC
 

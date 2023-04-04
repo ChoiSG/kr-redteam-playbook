@@ -2,11 +2,11 @@
 description: 이 문서에서는 Cuckoo Sandbox를 설치 및 구동하는 방법에 대해 설명합니다.
 ---
 
-# 말웨어 자동화 분석툴 Cuckoo 샌드박스 설치
+# 말웨어 자동 분석툴 Cuckoo 샌드박스 설치
 
 ## 쿠쿠 샌드박스란? <a href="#cuckoo-sandbox" id="cuckoo-sandbox"></a>
 
-Cuckoo SandBox는 말웨어를 자동으로 분석해주는픈오 소스 샌드박스입니다.    Cuckoo 샌드박스는오픈 소스이므로 무료로 사용할 수 있지만 설치에는 약간의 시간과 노력이 필요합니다.
+Cuckoo SandBox는 말웨어를 자동으로 분석해주는 오픈 소스 샌드박스 환입니다. Cuckoo 샌드박스는오픈 소스이므로 무료로 사용할 수 있지만 설치에는 약간의 시간과 노력이 필요합니다.
 
 ## 샌드박싱이란? <a href="#what-is-sandboxing" id="what-is-sandboxing"></a>
 
