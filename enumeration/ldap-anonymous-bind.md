@@ -22,4 +22,4 @@ cme ldap <dc> -u '' -p '' --password-not-required
 
 * Remove `Anonymous LOGON` groups having `READ` permission on `Users` Container.&#x20;
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>

@@ -118,7 +118,7 @@ rm c:\windows\temp\rubeus.exe
 
 파워쉘을 실행하면 바로 `Malware Alert` 라는 경고문구가 뜬다. 이후 약 2\~3분 정도가 지나면 대쉬보드에 알람이 울리기 시작한다. 경우에 따라 조금 더 기다려야 할 수도 있다. &#x20;
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (3) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -126,7 +126,7 @@ rm c:\windows\temp\rubeus.exe
 
 &#x20;
 
-<figure><img src="../.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 마치며&#x20;
 
