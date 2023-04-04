@@ -10,11 +10,11 @@ description: >-
 
 Cuckoo SandBox는 악성코드를 자동으로 분석하는 데 사용할 수 있는 오픈 소스 샌드박스입니다. 이것은 오픈 소스이므로 무료로 사용할 수 있지만 설치에는 약간의 시간과 노력이 필요합니다.
 
-### 샌드박싱이란? <a href="#what-is-sandboxing" id="what-is-sandboxing"></a>
+## 샌드박싱이란? <a href="#what-is-sandboxing" id="what-is-sandboxing"></a>
 
 먼저 샌드박싱이란 무엇일까요? 샌드박싱은 End User가 실제 운영 환경을 모방해 안전하고 격리된 네트워크 환경에서 파일을 실행하고 관찰 및 분석하는 방식입니다. Cuckoo 샌드박스는 의심스러운 파일을Dumping 할수 있도록 개발되었으며, 이를 "샌드박싱"이라고 부릅니다.
 
-### Cuckoo SandBox 구조의 모습 <a href="#how-the-cuckoo-sandbox-structure-looks-like" id="how-the-cuckoo-sandbox-structure-looks-like"></a>
+## Cuckoo SandBox의의 구조 <a href="#how-the-cuckoo-sandbox-structure-looks-like" id="how-the-cuckoo-sandbox-structure-looks-like"></a>
 
 Cuckoo 샌드박스의 기본적구조에 대해 알아봅시다. 샌드박싱환경을 설치하는 방법은 여러 가지가 있지만 여기서는 간단한 구조를 구축해 보겠습니다.
 
@@ -52,7 +52,7 @@ Cuckoo 호스트는 Cuckoo 게스트와 관리하며 데이터 트래픽 관리�
 
 _주의! 데이터베이스 쿼리를 저장을 위한 개별 VM을 설치하여 Cuckoo 호스트 VM과 데이터 베이스를 격리할 수도 있습니다. 일반적으로 Cuckoo 호스트 (Ubuntu에 설치할 경우)는 100GB 미만으로 설치되며 호스트 VM에 데이터베이스 저장소를 두는 것은 장기적으 사용하기에는 이상적인 환경이 아닙니다._
 
-### 설치 단계
+## 설치 단계
 
 설치 단계는 다음의 과정을 거칩니다.
 
@@ -74,13 +74,13 @@ Cuckcoo 호스트 Requirement 사항 설정&#x20;
 
 \-> 작동 테스트
 
-#### Cuckcoo 호스트
+### Cuckoo 호스트 설치
 
 먼저 Cuckoo 호스트 설치를 진행합니다. Cuckoo 호스트 설치 및 구성을 진행하기 전에 Cuckoo 호스트를 성공적으로 설치하려면 다음과 같은 기본 요구 사항 설정이 필요합니다.
 
 왼쪽 빨간 네모안이 Cuckcoo 호스트입니다. 호스트 VM은 서버의 역할을 수행하며 하나의 호스트를를 설정합니다.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 #### Cuckoo 호스트 요구 사항 설정
 
@@ -168,5 +168,62 @@ guacd는 Cuckoo 웹 인터페이스의 원격 제어 기능을 위해 RDP, VNC �
 sudo apt install libguac-client-rdp0 libguac-client-vnc0 libguac-client-ssh0 guacd
 ```
 
+#### 호스트 VM내  Virutual 박스 설치
 
+이제 호스트VM 내에 게스트 VM을  설치하기위한 가상화 솔루션이 필요합니다. Cuckoo 샌드박스는 대부분의 가상화 소프트웨어 솔루션을 지원합니다. 본  데모에서는 VirtualBox를 사용하며 다음과 같이 원활한수 업데이트를 위해 수동설치을 사용하는 것이 좋습니다.
+
+```
+echo deb http://download.virtualbox.org/virtualbox/debian xenial contrib | sudo tee -a /etc/apt/sources.list.d/virtualbox.list
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install -y virtualbox-5.1
+sudo apt-get install virtualbox
+https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
+```
+
+#### Cuckoo 호스트에 Cuckoo 서버 설치
+
+최신 버전의 Cuckoo를 설치하는 것은 다음과 같이 간단합니다. -U 옵션을 사용하여 "cuckoo"   (현재 사용자)로 cuckoo를 설치합니다.
+
+```
+sudo pip2 install -U cuckoo
+```
+
+이제 Cuckoo서버가 호스트에 제대로 설치되었는지 확인해 보겠습니다.
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+이것으로 Cuckoo 샌드박스의 호스트 설치를 마칩니다. 이제 Cuckoo Guest 설정 방법과 Cuckoo 샌드박스 분석 결과를 검증하기 위한 악성코드 샘플 테스트 방법을 다룹니다.
+
+### Cuckoo 게스트 설치
+
+<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+
+#### VirtualBox에 Cuckoo Windows 게스트 VM 설치
+
+Windows 운영 체제는 무료로 사용할 수 없기 때문입니다. 그러나 Microsoft는 90일 무료 평가판 가상 머신을 제공하며 아래 링크에서 다운로드할 수 있습니다.
+
+{% embed url="https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/" %}
+
+또는 인터넷에서 Windows 7 ISO를 쉽게 찾을 수 있습니다.
+
+#### VirtualBox를 실행하고 Cuckoo Ubuntu 호스트에서 게스트 VM 생성
+
+먼저,  VirtualBox를 실행합니다
+
+```
+sudo virtualbox
+```
+
+나중에 여러 게스트 VM을 생성할 수 있으므로 컴퓨터 이름을 cuckoo1, cuckoo2와 같이 지정해야 합니다.
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+Settings-> Display -> Enable 3D Acceleration을 활성화 시켜주세요.
+
+<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+
+Settings -> Storage -> CD 아이콘을 클릭하여 윈도우 .iso를 가져옵니다. 또한 호스트(Ubuntu)와 게스트(Windows) 간에 공유 폴더를 활성화하려면 최신 VBox 게스트 추가가 필요합니다.
+
+<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
