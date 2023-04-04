@@ -62,7 +62,7 @@ SMB         192.168.40.150  445    DC01             choi.local\da:1618:aad3b435b
 
 DCERPC 답게, 먼저 DCSync를 실행하면 Bind 과정을 거져 DRSUAPI 의 RPC 인터페이스들을 본격적으로 찾기 시작한다.&#x20;
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (4).png" alt=""><figcaption></figcaption></figure>
 
 그 뒤, `DsGetNCChanges` 로 도메인 유저 계정 정보를 받아온 뒤, `DsCrackNames` 로 받아온 데이터를 기본적인 문자열로 다시 포멧한다. 이 과정을 모든 도메인 유저 계정 정보를 받아올 때 까지 계속해서 반복한다.&#x20;
 

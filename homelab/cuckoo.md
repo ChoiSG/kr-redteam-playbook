@@ -56,9 +56,9 @@ _주의! 데이터베이스 쿼리를 저장을 위한 개별 VM을 설치하여
 
 Cuckcoo 호스트 Requirement 사항 설정&#x20;
 
-\-> Cuckoo 호스트에 Cuckoo 우분투 서버 설치&#x20;
+\-> Cuckoo 호스트 우분투 VM 설치&#x20;
 
-\-> Cuckoo 돌풍에 윈도우 VM 설치&#x20;
+\-> Cuckoo 게스트 윈도우 VM 설치&#x20;
 
 \-> 윈도우 VM 구성&#x20;
 
@@ -66,7 +66,7 @@ Cuckcoo 호스트 Requirement 사항 설정&#x20;
 
 \-> Cuckoo 에이전트 설치&#x20;
 
-\-> 가상 머신 저장&#x20;
+\-> 가상 머신 스냅샷저장&#x20;
 
 \-> Cuckoo 모듈 및 사용자 정의 구성&#x20;
 
@@ -78,7 +78,7 @@ Cuckcoo 호스트 Requirement 사항 설정&#x20;
 
 왼쪽 빨간 네모안이 Cuckcoo 호스트입니다. 호스트 VM은 서버의 역할을 수행하며 하나의 호스트를를 설정합니다.
 
-<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Cuckoo 호스트 요구 사항 설정
 
@@ -195,7 +195,7 @@ sudo pip2 install -U cuckoo
 
 ### Cuckoo 게스트 설치
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 #### VirtualBox에 Cuckoo Windows 게스트 VM 설치
 
@@ -215,19 +215,19 @@ sudo virtualbox
 
 나중에 여러 게스트 VM을 생성할 수 있으므로 컴퓨터 이름을 cuckoo1, cuckoo2와 같이 지정해야 합니다.
 
-<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 Settings-> Display -> Enable 3D Acceleration을 활성화 시켜주세요.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 Settings -> Storage -> CD 아이콘을 클릭하여 윈도우 .iso를 가져옵니다. 또한 호스트(Ubuntu)와 게스트(Windows) 간에 공유 폴더를 활성화하려면 최신 VBox 게스트 추가가 필요합니다.
 
-<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 Help -> About에서 VirtualBox 버전을 확인합시다. 본  데모는  6.1.32\_Ubuntu r1 49290을 실행 중입니다.
 
-<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -236,6 +236,8 @@ VirtualBox 다운로드창에 가서 버전에 맞는확장 프로그램을 다�
 &#x20;[https://download.virtualbox.org/virtualbox/6.1.0/](https://download.virtualbox.org/virtualbox/6.1.0/)&#x20;
 
 <figure><img src="https://lh6.googleusercontent.com/ln44LwwO3lOZBU1sVgqXCdnf--RF-SYOikuS6hc0qtc1HOPiLQ8IbYuoUJ2QLGWAZ6fLAh7b5ceAb_4RzT0ZfRTCeavHNsyDTrQyF_3X_DW8gS9wpzm7pXYD3cZ7a7zgf7yoThzFzjwPulbyakZYrVs" alt=""><figcaption></figcaption></figure>
+
+### 윈도우 VM 구성  설정
 
 이제 VM을 실행하고 제품 키를 사용하여 Windows 7을 설치 및 활성화합니다.
 
@@ -359,7 +361,7 @@ Cuckoo는 Guest 내부에서 실행되고 Host와의 통신 및 데이터 교환
 
 <figure><img src="https://lh3.googleusercontent.com/VsIJNIFQre3XV2kGBiMRuADcWIUGyY7tv_44ozb4GBpFbSTd5JkxzpDHJ2wsIcf9PACt31IXETA28RLm3NcqEC_yk3gHZa9vTln9WHmE1CHQrEdzKK1zV5GKjG_GZlWLY9Q1-OBiSE-KAvMyjTCqXQI" alt=""><figcaption></figcaption></figure>
 
-#### 가상 머신 저장
+### 가상 머신  스냅샷 저장
 
 이제 가상 머신을 스냅샷 상태로 저장할 준비가 되었습니다.
 
