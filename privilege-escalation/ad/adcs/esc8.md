@@ -113,7 +113,7 @@ $ certipy auth -dc-ip <dc-IP> -pfx real.pfx
 1. ADCS HTTP 엔드포인트에 Extended Protection Authentication (EPA) 을 `Required` 로 설정한다. \
    Server Manager > IIS Manager > DC/CAXX > Sites > Default Web Site > CertSrv > Authentication 더블클릭 > Windows Authentication 오른쪽 클릭 > Advanced Settings > Extended Protection: Required&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (5) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 1-1. 그 이 SSL을 활성화 한다.&#x20;
 
