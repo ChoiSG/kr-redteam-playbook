@@ -79,7 +79,7 @@ int main()
 
 컴파일 후 PEStudio 로 해당 파일을 살펴보면 IAT에 수상한 윈도우 API인 `WriteProcessMemory` 와 `CreateRemoteThread` 가 보인다. "Flag" 도 총 6개로, 수상한 윈도우 API 6개가 IAT에 기록되어 있다는 것을 보여준다.&#x20;
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 이제 런타임 다이나믹 링킹을 적용해보자. `WriteProcessMemory` 와 `CreateRemoteThread` 에 적용한 뒤, 다시 컴파일을 한다.
 
