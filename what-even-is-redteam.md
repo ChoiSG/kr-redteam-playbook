@@ -1,6 +1,6 @@
 # 레드팀이란
 
-<figure><img src=".gitbook/assets/image (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 레드팀(Red Team/Red Teaming)이라는 단어는 시간이 지남에 따라다양한 정의를 갖게 되었다. 가장 보편화된 정의들은 다음과 같다:
 

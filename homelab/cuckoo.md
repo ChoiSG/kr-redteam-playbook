@@ -1,12 +1,10 @@
 ---
-description: >-
-  이 문서에서는 Cuckoo Sandbox를 빌드하는 방법에 대해 설명합니다. 이 시리즈를 두 부분으로 나누었습니다. 1부 - Cuckoo
-  호스트 소개 및 구성, 2부 - Cuckoo 게스트 구성 및 사용자 지정.
+description: 이 문서에서는 Cuckoo Sandbox를 설치및 구동하는 방법에 대해 설명합니다.
 ---
 
 # 악성코드 자동화 분석툴 Cuckoo 샌드박스 설치
 
-쿠쿠 샌드박스란?
+## 쿠쿠 샌드박스란? <a href="#cuckoo-sandbox" id="cuckoo-sandbox"></a>
 
 Cuckoo SandBox는 악성코드를 자동으로 분석하는 데 사용할 수 있는 오픈 소스 샌드박스입니다. 이것은 오픈 소스이므로 무료로 사용할 수 있지만 설치에는 약간의 시간과 노력이 필요합니다.
 
@@ -80,7 +78,7 @@ Cuckcoo 호스트 Requirement 사항 설정&#x20;
 
 왼쪽 빨간 네모안이 Cuckcoo 호스트입니다. 호스트 VM은 서버의 역할을 수행하며 하나의 호스트를를 설정합니다.
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 #### Cuckoo 호스트 요구 사항 설정
 
@@ -191,7 +189,7 @@ sudo pip2 install -U cuckoo
 
 이제 Cuckoo서버가 호스트에 제대로 설치되었는지 확인해 보겠습니다.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 이것으로 Cuckoo 샌드박스의 호스트 설치를 마칩니다. 이제 Cuckoo Guest 설정 방법과 Cuckoo 샌드박스 분석 결과를 검증하기 위한 악성코드 샘플 테스트 방법을 다룹니다.
 
@@ -217,19 +215,19 @@ sudo virtualbox
 
 나중에 여러 게스트 VM을 생성할 수 있으므로 컴퓨터 이름을 cuckoo1, cuckoo2와 같이 지정해야 합니다.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 Settings-> Display -> Enable 3D Acceleration을 활성화 시켜주세요.
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 Settings -> Storage -> CD 아이콘을 클릭하여 윈도우 .iso를 가져옵니다. 또한 호스트(Ubuntu)와 게스트(Windows) 간에 공유 폴더를 활성화하려면 최신 VBox 게스트 추가가 필요합니다.
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 Help -> About에서 VirtualBox 버전을 확인합시다. 본  데모는  6.1.32\_Ubuntu r1 49290을 실행 중입니다.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -462,6 +460,8 @@ http://127.0.0.1:8000(기본 포트 8000)으로 이동하면 다음과 같은 �
 
 <figure><img src="https://lh5.googleusercontent.com/63GqGLpm_nSLhCd9zhpOznjt8XCb2tSCYKIeecYhgzQly9R3fh3iSWnM2_akdA72gb3WKBUpQJeNvMC1oOeP2jF4SjA-n-nqNgX-D1wztXR0NDBiBHpAL3D52Xo5--hTY__qHYkNSRB5TsJ9S-8d0VQ" alt=""><figcaption></figcaption></figure>
 
-Thanks for reading this and happy learning!
+### 마치며&#x20;
+
+이제 Cuckoo 악성코드 자동 분석 솔루션이 있으니 말웨어  샘플을 가져 테스팅 해보고웨어가 어떻게  작동하는지 공부하면 된다. Happy Hacking!
 
 \

@@ -28,7 +28,7 @@ python3 PetitPotam.py 192.168.40.182 192.168.40.160
 
 공격 결과 확인&#x20;
 
-![](<../../.gitbook/assets/image (4) (2) (2).png>)
+![](<../../.gitbook/assets/image (4) (2).png>)
 
 3\. Responder 를 통해서 도메인 컨트롤러의 Net-NTLM 인증 트래픽 확인&#x20;
 
