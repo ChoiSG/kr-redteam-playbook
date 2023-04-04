@@ -126,7 +126,7 @@ rm c:\windows\temp\rubeus.exe
 
 &#x20;
 
-<figure><img src="../.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 마치며&#x20;
 

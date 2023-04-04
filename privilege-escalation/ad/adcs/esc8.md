@@ -117,7 +117,7 @@ $ certipy auth -dc-ip <dc-IP> -pfx real.pfx
 
 1-1. 그 이 SSL을 활성화 한다.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 2\. 극단적으로 CA 서버에 NTLM 인증을 비활성화 한다. 프로덕션 서버의 경우 하위 호환성에 문제가 갈 수 있기 때문에 충분한 테스트를 거친 뒤 NTLM 인증을 비활성화 한다.  \
 &#x20;

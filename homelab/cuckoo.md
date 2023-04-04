@@ -6,7 +6,7 @@ description: >-
 
 # 악성코드 자동화 분석툴 Cuckoo 샌드박스 설치
 
-## 쿠쿠 샌드박스란? <a href="#cuckoo-sandbox" id="cuckoo-sandbox"></a>
+쿠쿠 샌드박스란?
 
 Cuckoo SandBox는 악성코드를 자동으로 분석하는 데 사용할 수 있는 오픈 소스 샌드박스입니다. 이것은 오픈 소스이므로 무료로 사용할 수 있지만 설치에는 약간의 시간과 노력이 필요합니다.
 
@@ -80,7 +80,7 @@ Cuckcoo 호스트 Requirement 사항 설정&#x20;
 
 왼쪽 빨간 네모안이 Cuckcoo 호스트입니다. 호스트 VM은 서버의 역할을 수행하며 하나의 호스트를를 설정합니다.
 
-<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 #### Cuckoo 호스트 요구 사항 설정
 
@@ -191,13 +191,13 @@ sudo pip2 install -U cuckoo
 
 이제 Cuckoo서버가 호스트에 제대로 설치되었는지 확인해 보겠습니다.
 
-<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 이것으로 Cuckoo 샌드박스의 호스트 설치를 마칩니다. 이제 Cuckoo Guest 설정 방법과 Cuckoo 샌드박스 분석 결과를 검증하기 위한 악성코드 샘플 테스트 방법을 다룹니다.
 
 ### Cuckoo 게스트 설치
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 #### VirtualBox에 Cuckoo Windows 게스트 VM 설치
 
@@ -221,15 +221,15 @@ sudo virtualbox
 
 Settings-> Display -> Enable 3D Acceleration을 활성화 시켜주세요.
 
-<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 Settings -> Storage -> CD 아이콘을 클릭하여 윈도우 .iso를 가져옵니다. 또한 호스트(Ubuntu)와 게스트(Windows) 간에 공유 폴더를 활성화하려면 최신 VBox 게스트 추가가 필요합니다.
 
-<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 Help -> About에서 VirtualBox 버전을 확인합시다. 본  데모는  6.1.32\_Ubuntu r1 49290을 실행 중입니다.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -428,36 +428,40 @@ vim ~/.cuckoo/conf/processing.conf
 
 이제 Cuckoo는 맬웨어에 대해 VirusTotal 엔진을 실행할 준비가 됐습니다
 
-### 테스트
+### &#x20;작동 테스트
 
 이제 테스트 실행을 할 시간입니다!
 
-다음과 같은 간단한 명령을 사용하여 cuckoo 서버를 실행하기만 하면 됩니다.
+다음과 같은 간단한 명령을 사용하여 cuckoo 서버를 실행하기만 하면 됩니다:
 
-뻐꾸기
+```
+cuckoo
+```
 
-.
+웹 인터페이스를 시작하겠습니다. 다음 명령을 간단히 실행할 수 있습니다.
 
-웹 인터페이스를 시작하겠습니다. 다음 명령을 간단히 실행할 수 있습니다.편물/ 예배 규칙서:
+```
+cuckoo web runserver
+```
 
-쿠쿠 웹 런서버
+<figure><img src="https://lh3.googleusercontent.com/aQVv1j572gAXDs3NXvNZgo8iucPIuUVDBSiHexVH0VgVRXhrrGfJkQ573h63e9yV6Zve--Tmid4PJnEIXeTA08A_reJlYSARtOeiP3nWqcL_yT-8XDKDoWNOTa-DUny-NGZsdJpPwMHUMOPReo45JkI" alt=""><figcaption></figcaption></figure>
 
-![](https://lh3.googleusercontent.com/aQVv1j572gAXDs3NXvNZgo8iucPIuUVDBSiHexVH0VgVRXhrrGfJkQ573h63e9yV6Zve--Tmid4PJnEIXeTA08A\_reJlYSARtOeiP3nWqcL\_yT-8XDKDoWNOTa-DUny-NGZsdJpPwMHUMOPReo45JkI)
+http://127.0.0.1:8000(기본 포트 8000)으로 이동하면 다음과 같은 웹 인터페이스가 연결결됩니다.
 
-http://127.0.0.1:8000(기본 포트 8000)으로 이동하면 다음과 같은 웹 인터페이스가 표시됩니다.
+<figure><img src="https://lh6.googleusercontent.com/mcChx-gQujjuTFoyl3C-KKm123rjPgiP3JhihIG4TN0qhv3VrhlldIs2-8JAd9ePSoV7N2h3F3B3VhWlALpdmbcQxjWHFqCep-GyPL8m9iL7KqIT7QOi5_0k6eCJFVy2Ozll2cRVeci__qMaMlD0zVw" alt=""><figcaption></figcaption></figure>
 
-![](https://lh6.googleusercontent.com/mcChx-gQujjuTFoyl3C-KKm123rjPgiP3JhihIG4TN0qhv3VrhlldIs2-8JAd9ePSoV7N2h3F3B3VhWlALpdmbcQxjWHFqCep-GyPL8m9iL7KqIT7QOi5\_0k6eCJFVy2Ozll2cRVeci\_\_qMaMlD0zVw)
+말웨어  mimikatz.exe로 테스팅 해보면 Cuckoo가 성공적으로 실행되고 게스트 VM에서 파일을 분석하고 다시 Cuckoo 호스트  서버로 보고하는 것을 확인할수 있습니다.
 
-mimikatz.exe로 테스트하면 뻐꾸기가 성공적으로 실행되고 게스트 VM에서 파일을 분석하고 다시 보고합니다!
+<figure><img src="https://lh3.googleusercontent.com/zY-j5b5ToYb_eH3pHBxJqhl0OQwrRCdXN-Pov9uSKMWKwp-TFlSb1y6dsgOQK7w_5q10siyuXzHR8piafNSibBzWQYfAeyXBjl1GaOnVLs1Jr5y-SZPuDJQbRAzr6ANIBzg7zQd8ggEENDft1i3PkBU" alt=""><figcaption></figcaption></figure>
 
-![](https://lh3.googleusercontent.com/zY-j5b5ToYb\_eH3pHBxJqhl0OQwrRCdXN-Pov9uSKMWKwp-TFlSb1y6dsgOQK7w\_5q10siyuXzHR8piafNSibBzWQYfAeyXBjl1GaOnVLs1Jr5y-SZPuDJQbRAzr6ANIBzg7zQd8ggEENDft1i3PkBU)
+맬웨어 Analysis Summary에는 바이러스 AV signature, memory dump, network analysis 또는 스크린샷과 같은 몇 가지 유용한 정보가 표시됩니다.
 
-맬웨어 분석 요약에는 바이러스 백신 서명, 메모리 덤프, 네트워크 분석 또는 스크린샷과 같은 몇 가지 유용한 정보가 표시됩니다.
-
-![](https://lh5.googleusercontent.com/NVNQOLXR-\_w1H2IlGRZDCU\_5iv0CIHcyPUMscAEvRzwcQAheMXpgg0N2lwSceDWGWQxsJsXyoxGLZG0esuJcnPvsrSdh3z2mtoxPb6Dj8XdW3UAfil3OlAmrK-odMqNQBPEXAOP6X6vamlyHVs5J\_3A)
+<figure><img src="https://lh5.googleusercontent.com/NVNQOLXR-_w1H2IlGRZDCU_5iv0CIHcyPUMscAEvRzwcQAheMXpgg0N2lwSceDWGWQxsJsXyoxGLZG0esuJcnPvsrSdh3z2mtoxPb6Dj8XdW3UAfil3OlAmrK-odMqNQBPEXAOP6X6vamlyHVs5J_3A" alt=""><figcaption></figcaption></figure>
 
 오른쪽 탭에서는 기타 세부 정보도 확인할 수 있습니다. 예를 들어 네트워크 분석에서 pcap 파일을 다운로드할 수 있습니다.
 
-![](https://lh5.googleusercontent.com/63GqGLpm\_nSLhCd9zhpOznjt8XCb2tSCYKIeecYhgzQly9R3fh3iSWnM2\_akdA72gb3WKBUpQJeNvMC1oOeP2jF4SjA-n-nqNgX-D1wztXR0NDBiBHpAL3D52Xo5--hTY\_\_qHYkNSRB5TsJ9S-8d0VQ)
+<figure><img src="https://lh5.googleusercontent.com/63GqGLpm_nSLhCd9zhpOznjt8XCb2tSCYKIeecYhgzQly9R3fh3iSWnM2_akdA72gb3WKBUpQJeNvMC1oOeP2jF4SjA-n-nqNgX-D1wztXR0NDBiBHpAL3D52Xo5--hTY__qHYkNSRB5TsJ9S-8d0VQ" alt=""><figcaption></figcaption></figure>
+
+Thanks for reading this and happy learning!
 
 \
