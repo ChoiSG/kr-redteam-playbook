@@ -24,7 +24,7 @@ Cuckoo 샌드박스의 기본적구조에 대해 알아봅시다. 샌드박싱�
 
 Cuckoo 호스트는 Cuckoo 게스트와 관리하며 데이터 트래픽 관리를 담당합니다. 분석을 시작하고 트래픽을 덤프하며 보고서를 생성합니다.
 
-**아래와 같은 스팩으로 호스트를 설치합니다:**
+**아래와 같은 스펙으로 호스트를 설치합니다:**
 
 * 운영 체제: 우분투 22 LTS
 * CPU: 가상 CPU 4 코어
@@ -37,7 +37,7 @@ Cuckoo 호스트는 Cuckoo 게스트와 관리하며 데이터 트래픽 관리�
 
 * Bridge Adapter로Cuckoo 호스트와 게스트 사이를 연결해 주세요.
 
-**Cuckoo 분석 게스트:**
+**Cuckoo 게스트:**
 
 각   분석 게스트 Analysis Guest는 악성코드가 실행되는 깨끗한 환경입니다. 맬웨어 동작은 Cuckoo 호스트에 다시 보고됩니다.
 
@@ -53,8 +53,6 @@ _주의! 데이터베이스 쿼리를 저장을 위한 개별 VM을 설치하여
 ## 설치 단계
 
 설치 단계는 다음의 과정을 거칩니다.
-
-Cuckcoo 호스트 Requirement 사항 설정&#x20;
 
 \-> Cuckoo 호스트 우분투 VM 설치&#x20;
 
@@ -237,7 +235,7 @@ VirtualBox 다운로드창에 가서 버전에 맞는확장 프로그램을 다�
 
 <figure><img src="https://lh6.googleusercontent.com/ln44LwwO3lOZBU1sVgqXCdnf--RF-SYOikuS6hc0qtc1HOPiLQ8IbYuoUJ2QLGWAZ6fLAh7b5ceAb_4RzT0ZfRTCeavHNsyDTrQyF_3X_DW8gS9wpzm7pXYD3cZ7a7zgf7yoThzFzjwPulbyakZYrVs" alt=""><figcaption></figcaption></figure>
 
-### 윈도우 VM 구성  설정
+### 게스트윈도우 VM 구성  설정
 
 이제 VM을 실행하고 제품 키를 사용하여 Windows 7을 설치 및 활성화합니다.
 
