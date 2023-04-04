@@ -4,7 +4,7 @@ description: 이 문서에서는 Cuckoo Sandbox를 설치 및 구동하는 방�
 
 # 말웨어 자동 분석툴 Cuckoo 샌드박스 설치
 
-## 쿠쿠 샌드박스란? <a href="#cuckoo-sandbox" id="cuckoo-sandbox"></a>
+## Cuckoo 샌드박스란? <a href="#cuckoo-sandbox" id="cuckoo-sandbox"></a>
 
 Cuckoo SandBox는 말웨어를 자동으로 분석해주는 오픈 소스 샌드박스 환입니다. Cuckoo 샌드박스는오픈 소스이므로 무료로 사용할 수 있지만 설치에는 약간의 시간과 노력이 필요합니다.
 
@@ -12,11 +12,11 @@ Cuckoo SandBox는 말웨어를 자동으로 분석해주는 오픈 소스 샌드
 
 우선 샌드박싱이란 무엇일까요? 샌드박싱은 End User가 실제 운영 환경을 모방해 안전하고 격리된 네트워크 환경에서 파일을 실행하고 관찰 및 분석하는 방식입니다. Cuckoo 샌드박스는 의심스러운 파일을Dumping 할수 있도록 개발되었으며, 이를 "샌드박싱"이라고 부릅니다.
 
-## Cuckoo SandBox의 구조 <a href="#how-the-cuckoo-sandbox-structure-looks-like" id="how-the-cuckoo-sandbox-structure-looks-like"></a>
+## Cuckoo 샌드박스의 구조 <a href="#how-the-cuckoo-sandbox-structure-looks-like" id="how-the-cuckoo-sandbox-structure-looks-like"></a>
 
-Cuckoo 샌드박스의 기본적구조에 대해 알아봅시다. 샌드박싱환경을 설치하는 방법은 여러 가지가 있지만 여기서는 간단한 구조를 구축해 보겠습니다.
+Cuckoo 샌드박스의 기본적 구조에 대해 알아봅시다. 샌드박싱 환경을 설치하는 방법은 여러 가지가 있지만 본 데모에서는  가장 간단한 구조를 구축해 보겠습니다.
 
-아래 다이어그램은 기본 Cuckoo 샌드박스환경이 어떻게 구성되는지 설명합니다.
+아래 다이어그램은 기본 Cuckoo 샌드박스 환경이 어떻게 구성되는지 설명합니다.
 
 <figure><img src="https://1538861842-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-Luj_UTA-FG9do0VYXMX%2Fuploads%2F963kGS0rYqbi5NxsWekt%2FCuckoo%20Structure.png?alt=media&#x26;token=82f19e66-3ddd-4d98-998c-2936532b481f" alt=""><figcaption></figcaption></figure>
 
