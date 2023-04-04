@@ -2,7 +2,7 @@
 description: 1. 계정 관리
 ---
 
-# 01.계정 관리
+# 01-계정관리
 
 ※ 무작위 대입 공격(Brute Force Attack): 특정한 암호를 풀기 위해 가능한 모든 값을 대 입하는 공격 방법&#x20;
 
@@ -41,7 +41,7 @@ email=amltQGJyYWNraXNoLmlv
 Code=5308
 ```
 
-<figure><img src="../.gitbook/assets/image.jpg" alt=""><figcaption><p>수천 건의 요청 후 재설정 코드가 적중되면 302 응답</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.jpg" alt=""><figcaption><p>수천 건의 요청 후 재설정 코드가 적중되면 302 응답</p></figcaption></figure>
 
 
 
@@ -58,7 +58,7 @@ http://web.archive.org/web/20230122144550/https://brackish.io/chamberlain-myq-ac
 
 이 있는데 이 Tool이 CVE-2023-24080 취약점을 응용한 툴이다.
 
-<figure><img src="../.gitbook/assets/image2.jpg" alt=""><figcaption><p><a href="https://github.com/SirCryptic/resetryder">https://github.com/SirCryptic/resetryder</a></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image2.jpg" alt=""><figcaption><p><a href="https://github.com/SirCryptic/resetryder">https://github.com/SirCryptic/resetryder</a></p></figcaption></figure>
 
 
 

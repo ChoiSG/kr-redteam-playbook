@@ -155,16 +155,16 @@
 
 ## 🏭 주요정보통신기반시설 취약점 분석 <a href="#critical-info-infrastructure" id="critical-info-infrastructure"></a>
 
-* [01.계정 관리](critical-info-infrastructure/page-1.md)
-  * [통신 과정 흐름 훑어보기](critical-info-infrastructure/01./undefined.md)
-  * [첫번쩨, payload설정 방법](critical-info-infrastructure/01./payload.md)
-  * [두번째, 세션을 유지하는 방법](critical-info-infrastructure/01./undefined-1.md)
-  * [세번째,  프록시를 자동으로 설정하는 방법](critical-info-infrastructure/01./undefined-2.md)
-  * [자동화 총정리](critical-info-infrastructure/01./undefined-3.md)
-  * [시스템 보안 설정](critical-info-infrastructure/01./undefined-4/README.md)
-    * [1. Tomcat 설정](critical-info-infrastructure/01./undefined-4/1.-tomcat.md)
-    * [2. 리눅스 설정](critical-info-infrastructure/01./undefined-4/2..md)
-  * [시큐어 코딩 & 소스 코드 설정](critical-info-infrastructure/01./and.md)
+* [01-계정관리](critical-info-infrastructure/01-account-management/README.md)
+  * [통신 과정 흐름 훑어보기](critical-info-infrastructure/01-account-management/undefined.md)
+  * [첫번쩨, payload설정 방법](critical-info-infrastructure/01-account-management/payload.md)
+  * [두번째, 세션을 유지하는 방법](critical-info-infrastructure/01-account-management/undefined-1.md)
+  * [세번째,  프록시를 자동으로 설정하는 방법](critical-info-infrastructure/01-account-management/undefined-2.md)
+  * [자동화 총정리](critical-info-infrastructure/01-account-management/undefined-3.md)
+  * [시스템 보안 설정](critical-info-infrastructure/01-account-management/undefined-4/README.md)
+    * [1. Tomcat 설정](critical-info-infrastructure/01-account-management/undefined-4/1.-tomcat.md)
+    * [2. 리눅스 설정](critical-info-infrastructure/01-account-management/undefined-4/2..md)
+  * [시큐어 코딩 & 소스 코드 설정](critical-info-infrastructure/01-account-management/and.md)
 
 ## 개념 <a href="#general-concepts" id="general-concepts"></a>
 
