@@ -46,7 +46,7 @@ WMIC.exe /node:192.168.40.160 /user:Administrator process call create "notepad.e
 
 공격자가 사용하는 툴 마다 WMI의 적용방법이 다르지만, 공통적으로 나타나는 현상에 집중한다. 윈도우 호스트에서 직접 `wmic.exe` 프로세스를 이용하건, 리눅스에서 impacket을 이용해 wmiexec.py를 이용하건, 공통적으로 WMI를 이용하는 툴들은 모두 `WmiPrvSE.exe` 라는 프로세스에서 시작된다.&#x20;
 
-![WmiPrvSe.exe에서 시작된 cmd.exe와 powershell.exe 프로세스 체인](<../.gitbook/assets/image (1) (1) (1) (1).png>)
+![WmiPrvSe.exe에서 시작된 cmd.exe와 powershell.exe 프로세스 체인](<../.gitbook/assets/image (1) (1) (1).png>)
 
 `eventvwr.exe` 를 실행 한 뒤 시스몬 로그들을 확인해보면 공격자가 WMI로 접근을 한 뒤, 첫 명령어를 치자마자 시스몬 아이디 1 - Process Create가 로그된 것을 볼 수 있다.&#x20;
 

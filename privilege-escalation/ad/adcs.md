@@ -69,7 +69,7 @@ cp customqueries.json ~/.config/bloodhound/customqueries.json
 
 이후 Certipy 에서 만들어진 `.zip` 파일을 블러드하운드에 드래그 앤 드롭 한다. 그 뒤 Analysis 탭에서 스크롤을 쭉 내려 커스텀 쿼리들을 확인한다.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>다양한 ESC 관련 커스텀 쿼리들이 왼쪽에 보인다. ESC1에 취약한 인증서 양식을 클릭해보니 오른쪽과 같이 2개가 나타난다. (SubCA 는 거짓양성 결과다)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>다양한 ESC 관련 커스텀 쿼리들이 왼쪽에 보인다. ESC1에 취약한 인증서 양식을 클릭해보니 오른쪽과 같이 2개가 나타난다. (SubCA 는 거짓양성 결과다)</p></figcaption></figure>
 
 
 

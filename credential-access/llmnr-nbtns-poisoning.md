@@ -12,7 +12,7 @@ LLMNR/Nbt-NS Poisoning (포이즈닝) - 피해자 호스트의 이름 변화 LLM
 
 예를 들어 윈도우에서 쉐어를 찾으려고 탐색기에서 `\\fileserver.choi.local\share` 를 검색하려다가 실수로 `\\wronghost.choi.local\share` 를 검색했다고 가정해보자. 그렇다면 현재 호스트는 IPv6 -> IPv4 -> LLMNR, Nbt-NS, mDNS 등의 순서대로 이 호스트를 찾으려고 한다.&#x20;
 
-![IPv4 -> Nbt-NS, mDNS, LLMNR](<../.gitbook/assets/image (2) (1) (2) (1).png>)
+![IPv4 -> Nbt-NS, mDNS, LLMNR](<../.gitbook/assets/image (2) (1) (2).png>)
 
 ### 문제점&#x20;
 
