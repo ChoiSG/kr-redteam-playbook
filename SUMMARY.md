@@ -15,6 +15,7 @@
 * [네뷸라 설정](infrastructure/nebula-config.md)
 * [도메인과 리다이렉터 설정](infrastructure/domain-redirector-config.md)
 * [메일 SMTP 서버 설정](infrastructure/smtp.md)
+* [메일 SMTP 테라폼](infrastructure/mail-terraform.md)
 
 ## 🔍 공개 출처 정보 수집 (OSINT)
 

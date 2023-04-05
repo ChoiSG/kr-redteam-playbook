@@ -35,3 +35,5 @@
 4/2 - [smtp.md](../infrastructure/smtp.md "mention") 페이지 추가&#x20;
 
 4/3 - [cuckoo.md](../homelab/cuckoo.md "mention")페이지 추가 - @groot&#x20;
+
+4/4 - [mail-terraform.md](../infrastructure/mail-terraform.md "mention") 페이지 추가&#x20;
