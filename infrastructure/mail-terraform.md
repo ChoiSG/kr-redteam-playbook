@@ -4,7 +4,9 @@
 
 이전페이지에서는 수동적으로 메일 SMTP 서버와 고피시 서버를 설정했다. 회사 입장에서 레드팀 작전을 실행할 때마다 이런 인프라를 구축한다면 엄청난 시간 낭비일 것이다. 따라서 인프라 구축을 자동화 하기 위해서 테라폼 (Terraform)을 이용한 Infrastructure as Code (IaC)를 진행한다.
 
-아래의 테라폼 스크립트를 이용하면 짧은 시간내에 디지털오션에 다음과 같은 리소스들을 자동으로 생성한다.
+{% embed url="https://github.com/ChoiSG/RTPSourceCodes/tree/main/iac/smtp-terraform" %}
+
+테라폼 스크립트를 이용하면 짧은 시간내에 디지털오션에 다음과 같은 리소스들을 자동으로 생성할 수 있다.&#x20;
 
 1. 메일 서버 (SMTP)
 2. 고피시 서버 (Gophish)
@@ -13,7 +15,7 @@
 
 ### 구성
 
-테라폼 구성은 여러개의 작은 `.tf` 스크립트로 이뤄져있다. 각 스크립트들은 디지털오션(Digital Ocean - DO)의 특정한 리소스들을 만들어내고 상태 (State)를 바꾼다. 예를 들어 `dns.tf` 는 DNS 레코드 및 SPF, DKIM, DMARC 설정을, `gophish.tf` 는 고피시 서버를 만든 뒤 고피시를 설치하는 등이다.
+테라폼 구성은 여러개의 작은 `.tf` 스크립트로 이뤄져있다. 각 스크립트들은 디지털오션(Digital Ocean - DO)의 특정한 리소스들을 만들어내고 상태(State)를 바꾼다. 예를 들어 `dns.tf` 는 DNS 레코드 및 SPF, DKIM, DMARC 설정을, `gophish.tf` 는 고피시 서버를 만든 뒤 고피시를 설치하는 등이다.
 
 ```
 └─# ls -1  
@@ -36,7 +38,7 @@ variables.tf
 
 * https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
 
-그 뒤, 사전 준비를 끝낸 뒤 테라폼을 실행한다.
+아래의 사전 준비를 끝낸 뒤 테라폼을 실행한다.
 
 1. 도메인 레지스트라를 이용해 도메인을 구입한다.
 2. 도메인의 네임 서버를 디지털오션 (혹은 다른 클라우드 서비스 프로바이더)의 네임 서버로 바꾼다.
@@ -100,7 +102,7 @@ EOT
 
 <figure><img src="../.gitbook/assets/tf3.PNG" alt=""><figcaption></figcaption></figure>
 
-만약 DKIM이 제대로 설정되지 않아서 8.5\~9.0 사이의 점수를 얻는다면 `systemctl restart opendkim.service` 와 `systemctl restart postfix.service` 를 하고, 10분 정도 기다린 뒤 다시 이메일 테스트를 진행한다. 원래 DKIM 자체가 시간이 좀 걸리는 편이다.
+만약 DKIM이 제대로 설정되지 않아서 8.5\~9.0 사이의 점수를 얻는다면 메일 서버에 접속해 `systemctl restart opendkim.service` 와 `systemctl restart postfix.service` 를 하고, 10분 정도 기다린 뒤 다시 이메일 테스트를 진행한다. 원래 DKIM 자체가 시간이 좀 걸리는 편이다.
 
 ### 마치며
 
