@@ -2,7 +2,7 @@
 
 ### 개요&#x20;
 
-이전페이지에서는 수동적으로 메일 SMTP 서버와 고피시 서버를 설정했다. 회사 입장에서 레드팀 작전을 실행할 때마다 이런 인프라를 구축한다면 엄청난 시간 낭비일 것이다. 따라서 인프라 구축을 자동화 하기 위해서 테라폼 (Terraform)을 이용한 Infrastructure as Code (IaC)를 진행한다.
+이전 페이지( [smtp.md](smtp.md "mention") )에서는 수동으로 메일 SMTP 서버와 고피시 서버를 설정했다. 회사 입장에서 레드팀 작전을 실행할 때마다 이런 인프라를 구축한다면 엄청난 시간 낭비일 것이다. 따라서 인프라 구축을 자동화 하기 위해서 테라폼 (Terraform)을 이용한 Infrastructure as Code (IaC)를 진행한다.
 
 {% embed url="https://github.com/ChoiSG/RTPSourceCodes/tree/main/iac/smtp-terraform" %}
 
