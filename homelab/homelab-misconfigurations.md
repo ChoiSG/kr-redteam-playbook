@@ -425,7 +425,7 @@ Invoke-WebRequest https://raw.githubusercontent.com/sebaxakerhtc/rdpwrap.ini/mas
 restart-computer -force 
 ```
 
-XP\_CMDSHELL vulnerable MSSQL server (kobitwave, hello - osint folks!)&#x20;
+XP\_CMDSHELL vulnerable MSSQL server (kobitwave, hello - osint folks! -  check git history) &#x20;
 
 <pre><code>1. Create cmd_shell proxy domain user account 
 
@@ -445,10 +445,10 @@ GRANT EXEC ON xp_cmdshell TO PUBLIC;
 USE master;
 -- Create the credential for the proxy account
 CREATE CREDENTIAL [##xp_cmdshell_proxy_account##]
-WITH IDENTITY = 'kr.kw.local\proxy_user', 
-SECRET = 'proxy_password';
+WITH IDENTITY = 'domain.com\user', 
+SECRET = 'pass';
 -- Set the xp_cmdshell proxy account
-EXEC sp_xp_cmdshell_proxy_account 'domain.com\proxy_user', 'Password123!';
+EXEC sp_xp_cmdshell_proxy_account 'domain.com\proxy_user', 'pass';
 
 4. Test
 <strong>└─# mssqlclient.py doamin.com/user:pass@1.1.1.1 -windows-auth
