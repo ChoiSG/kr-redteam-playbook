@@ -82,4 +82,4 @@
 
 3/19 - [redteam-global-trend-2024.md](../redteam-global-trend-2024.md "mention")페이지 추가&#x20;
 
-9/10 - [네트워크 피버팅 - 툴](https://www.xn--hy1b43d247a.com/lateral-movement/pivoting-tools) 페이지 추가 - [yoobi](https://app.gitbook.com/u/DKvImtiA1NdTLVoJs6squ5VV4zF2 "mention")
+9/10 - [네트워크 피버팅 - 툴](https://www.xn--hy1b43d247a.com/lateral-movement/pivoting-tools) 페이지 추가 - [yoobi](https://www.linkedin.com/in/thisisyoobi/)
