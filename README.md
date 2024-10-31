@@ -36,7 +36,7 @@
 
 업계에서 일하고 있는 현직 해커들로, 한국의 오펜시브 시큐리티 정보 공유에 기여하는 것을 지향합니다.
 
-* [@choi](https://www.linkedin.com/in/sunggwan-choi/) - Fortune 100에서 Fortune 100, 500, 핀테크 뿐만 아니라 전세계 고객사들을 상대로 내부망, 외부망, 웹 모의해킹을 진행하고 있습니다.
+* [@choi](https://www.linkedin.com/in/sunggwan-choi/) - 前 Fortune 100, 現 국내 대기업 레드팀 오퍼레이터
   * [블로그](https://blog.sunggwanchoi.com/), [깃헙](https://github.com/choisg)
 * [nanentp](https://github.com/nanentp) - 사이버 보안인
 * [yoobi](https://www.linkedin.com/in/thisisyoobi/) - 한국에서 내/외부 모의해킹 업무를 수행하고 있습니다.
