@@ -83,3 +83,5 @@
 3/19 - [redteam-global-trend-2024.md](../redteam-global-trend-2024.md "mention")페이지 추가&#x20;
 
 9/10 - [네트워크 피버팅 - 툴](https://www.xn--hy1b43d247a.com/lateral-movement/pivoting-tools) 페이지 추가 - [yoobi](https://www.linkedin.com/in/thisisyoobi/)
+
+10/31 - [도메인프론팅 - Azure CDN ](https://www.xn--hy1b43d247a.com/infrastructure/azure-cdn)페이지 추가&#x20;
