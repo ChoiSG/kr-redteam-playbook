@@ -26,7 +26,7 @@
   * [네뷸라 (Nebula)](infrastructure/old/nebula.md)
   * [네뷸라 설정](infrastructure/old/nebula-config.md)
 * [도메인 프론팅 (Domain Fronting)](infrastructure/domain-fronting.md)
-* [도메인 프론팅 - Azure Edgeio CDN](infrastructure/domain-fronting-azure-edgeio-cdn.md)
+* [도메인 프론팅 - Azure Edgio CDN](infrastructure/domain-fronting-azure-edgio-cdn.md)
 
 ## 🔎 초기 정찰 <a href="#initial-recon" id="initial-recon"></a>
 

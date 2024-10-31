@@ -1,8 +1,8 @@
-# 도메인 프론팅 - Azure CDN
+# 도메인 프론팅 - Azure Edgio CDN
 
 본 페이지는 다음의 링크들을 바탕으로 만들어졌습니다: https://0xdarkvortex.dev/c2-infra-on-azure/, https://redops.at/en/blog/cobalt-strike-cdn-reverse-proxy-setup)
 
-2010년대 후반부터 2020년대 초반까지, 도메인 프론팅을 악용하는 공격자들 때문에 많은 수의 CDN 서비스들이 도메인 프론팅 기능을 더 이상 지원하지 않았다. 하지만 2023년 9월, 마이크로소프트가 LimeNetwork의 CDN을 edgeio로 리브랜딩 하고, Azure에서 서비스 하기 시작하면서 해당 CDN은 도메인 프론팅을 다시 지원하고 있다.
+2010년대 후반부터 2020년대 초반까지, 도메인 프론팅을 악용하는 공격자들 때문에 많은 수의 CDN 서비스들이 도메인 프론팅 기능을 더 이상 지원하지 않았다. 하지만 2023년 9월, 마이크로소프트가 LimeNetwork의 CDN을 edgio로 리브랜딩 하고, Azure에서 서비스 하기 시작하면서 해당 CDN은 도메인 프론팅을 다시 지원하고 있다.
 
 도메인 프론팅과 관련된 개념은 [이전 글](https://www.xn--hy1b43d247a.com/infrastructure/domain-fronting)에서 설명했으니, 이번 글에서는 ParanoidNinja (Chetan Nayak)와 RedOps에서 발표한 블로그 글을 토대로 마이크로소프트사의 CDN을 이용해 도메인 프론팅을 진행한다.
 
@@ -73,7 +73,7 @@ C2는 오픈소스 하복을 설치한다. 하복은 조만간 Rewrite 1.0 버�
 이후, CDN을 만든다.
 
 1. Azure > CDN > Front Door and CDN profiles > Create
-2. Explore other offerings > Azure CDN Standard from Edgeio
+2. Explore other offerings > Azure CDN Standard from Edgio
 3. 이후 CDN 이름, CDN 엔드포인트 이름, 리다이렉터의 A 레코드 등을 지정한다. Bypass caching for query strings를 지정한다.
 
 <figure><img src="../.gitbook/assets/2-azurecdn.png" alt=""><figcaption></figcaption></figure>
@@ -180,7 +180,7 @@ server {
 
 ## 마치며
 
-도메인 프론팅은 몇년 전 CDN 서비스 프로바이더들이 심각하게 생각하며 지원을 종료했던 기능이다. 하지만 SNI와 Host 헤더간의 차이, CDN의 특성 자체는 시간이 지나도 바뀌지 않기 때문에 도메인 프론팅이 가능한 CDN 프로바이더가 있다면 공격자들은 항상 이를 악용할 것이다. Azure의 Edgeio CDN이 도메인 프론팅을 지원하자마자 레드티머들이 사용하는 것처럼 말이다.
+도메인 프론팅은 몇년 전 CDN 서비스 프로바이더들이 심각하게 생각하며 지원을 종료했던 기능이다. 하지만 SNI와 Host 헤더간의 차이, CDN의 특성 자체는 시간이 지나도 바뀌지 않기 때문에 도메인 프론팅이 가능한 CDN 프로바이더가 있다면 공격자들은 항상 이를 악용할 것이다. Azure의 Edgio CDN이 도메인 프론팅을 지원하자마자 레드티머들이 사용하는 것처럼 말이다.
 
 ## 레퍼런스
 
