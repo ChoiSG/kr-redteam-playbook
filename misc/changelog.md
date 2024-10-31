@@ -84,4 +84,4 @@
 
 9/10 - [네트워크 피버팅 - 툴](https://www.xn--hy1b43d247a.com/lateral-movement/pivoting-tools) 페이지 추가 - [yoobi](https://www.linkedin.com/in/thisisyoobi/)
 
-10/31 - [도메인프론팅 - Azure CDN ](https://www.xn--hy1b43d247a.com/infrastructure/azure-cdn)페이지 추가&#x20;
+10/31 -  [도메인 프론팅 - Azure Edgeio CDN](https://www.xn--hy1b43d247a.com/infrastructure/domain-fronting-azure-edgeio-cdn) 페이지 추가
