@@ -34,7 +34,7 @@ sudo apt install nginx python3-certbot-nginx certbot python3-certbot-dns-route53
 sudo certbot certonly -d '*.rtplaybook.com' -d 'rtplaybook.com' --manual --preferred-challenges=dns --agree-tos -m admin@rtplaybook.com
 
 # certbot 가 내뱉는 값들 route53에 _acme-challenge.domain.com TXT 레코드로 생성 
-# 귀찮지만 2번 해야한다 
+# 귀찮지만 2번 해야한다. AWS Route53 사용시 같은 TXT 레코드에 챌린지 2줄을 적으면 된다. 
 ```
 
 그러면 다음과 같이 인증서가 나온다
