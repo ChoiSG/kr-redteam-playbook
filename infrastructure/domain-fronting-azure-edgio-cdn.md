@@ -1,6 +1,14 @@
+---
+description: >-
+  Akamai가 Edgio를 2024년 12월 인수하고, Edgio가 파산신청을 진행하며 이 도메인 프론팅은 2025/01/15 이후 더 이상
+  할 수 없다.
+---
+
 # 도메인 프론팅 - Azure Edgio CDN
 
 본 페이지는 다음의 링크들을 바탕으로 만들어졌습니다: https://0xdarkvortex.dev/c2-infra-on-azure/, https://redops.at/en/blog/cobalt-strike-cdn-reverse-proxy-setup)
+
+> <mark style="color:red;">**Akamai가 Edgio를 2024년 12월 인수하고, Edgio가 파산신청을 진행하며 이 도메인 프론팅은 2025/01/15 이후 더 이상 할 수 없다.**</mark>&#x20;
 
 2010년대 후반부터 2020년대 초반까지, 도메인 프론팅을 악용하는 공격자들 때문에 많은 수의 CDN 서비스들이 도메인 프론팅 기능을 더 이상 지원하지 않았다. 하지만 2023년 9월, 마이크로소프트가 LimeNetwork의 CDN을 edgio로 리브랜딩 하고, Azure에서 서비스 하기 시작하면서 해당 CDN은 도메인 프론팅을 다시 지원하고 있다.
 
