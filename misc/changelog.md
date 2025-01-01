@@ -74,7 +74,7 @@
 
 8/22 - [dns](../basic-concepts/dns/ "mention") 페이지 추가 - [@nanentp](ttps://github.com/nanentp)
 
-### 2024
+## 2024
 
 1/2 - [smtp-toolkit-relay-esp.md](../infrastructure/smtp-toolkit-relay-esp.md "mention")페이지 추가&#x20;
 
@@ -85,3 +85,10 @@
 9/10 - [네트워크 피버팅 - 툴](https://www.xn--hy1b43d247a.com/lateral-movement/pivoting-tools) 페이지 추가 - [yoobi](https://www.linkedin.com/in/thisisyoobi/)
 
 10/31 -  [도메인 프론팅 - Azure Edgio CDN](https://www.xn--hy1b43d247a.com/infrastructure/domain-fronting-azure-edgio-cdn) 페이지 추가
+
+12/28 - [cloudflared-tunnel-and-worker-redirector.md](../infrastructure/cloudflared-tunnel-and-worker-redirector.md "mention") 페이지 추가&#x20;
+
+## 2025&#x20;
+
+1/1 - [cloudflared-tunnel-pages.md](../infrastructure/cloudflared-tunnel-pages.md "mention") 페이지 추가&#x20;
+
