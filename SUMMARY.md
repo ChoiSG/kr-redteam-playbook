@@ -28,6 +28,7 @@
 * [도메인 프론팅 (Domain Fronting)](infrastructure/domain-fronting.md)
 * [도메인 프론팅 - Azure Edgio CDN](infrastructure/domain-fronting-azure-edgio-cdn.md)
 * [Cloudflared Tunnel과 Worker](infrastructure/cloudflared-tunnel-and-worker-redirector.md)
+* [Cloudflared Tunnel과 Pages](infrastructure/cloudflared-tunnel-pages.md)
 
 ## 🔎 초기 정찰 <a href="#initial-recon" id="initial-recon"></a>
 
