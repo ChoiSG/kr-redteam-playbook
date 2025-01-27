@@ -14,6 +14,9 @@
 * [5. 횡적 이동: USWKSTN01 -> SQL01](basic-redteam/5.-uswkstn01-greater-than-sql01.md)
 * [6. 권한 상승 - SQL01](basic-redteam/6.-sql01.md)
 * [7. 도메인 장악 WEB01](basic-redteam/7.-web01.md)
+* [8. US -> RT 장악](basic-redteam/8.-us-greater-than-rt.md)
+* [9. RT -> DEV 정보 수집](basic-redteam/9.-rt-greater-than-dev.md)
+* [10. 권한 상승 및 목표 달성](basic-redteam/10..md)
 
 ## 🚧 인프라 (Infrastructure)
 
