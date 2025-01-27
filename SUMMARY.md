@@ -6,17 +6,17 @@
 
 ## 베이직 레드팀(Basic Redteam)
 
-* [개요](basic-redteam/undefined.md)
-* [1. 공격자 인프라 구성](basic-redteam/1..md)
-* [2. 초기 침투](basic-redteam/2..md)
-* [3. 정보 수집](basic-redteam/3..md)
-* [4. 권한 상승 - US](basic-redteam/4.-us.md)
-* [5. 횡적 이동: USWKSTN01 -> SQL01](basic-redteam/5.-uswkstn01-greater-than-sql01.md)
-* [6. 권한 상승 - SQL01](basic-redteam/6.-sql01.md)
-* [7. 도메인 장악 WEB01](basic-redteam/7.-web01.md)
-* [8. US -> RT 장악](basic-redteam/8.-us-greater-than-rt.md)
-* [9. RT -> DEV 정보 수집](basic-redteam/9.-rt-greater-than-dev.md)
-* [10. 권한 상승 및 목표 달성](basic-redteam/10..md)
+* [개요](basic-redteam/overview.md)
+* [1. 공격자 인프라 구성](basic-redteam/1-attacker-infra.md)
+* [2. 초기 침투](basic-redteam/2-initial-access.md)
+* [3. 정보 수집](basic-redteam/3-enumeration.md)
+* [4. 권한 상승 - US](basic-redteam/privesc-us-domain.md)
+* [5. 횡적 이동: USWKSTN01 -> SQL01](basic-redteam/5-lateralmovement-to-sql01.md)
+* [6. 권한 상승 - SQL01](basic-redteam/6-privesc-sql01.md)
+* [7. 도메인 장악 WEB01](basic-redteam/7-us-domain-compromise.md)
+* [8. US -> RT 장악](basic-redteam/8-rt-forestrootdomain-compromise.md)
+* [9. RT -> DEV 정보 수집](basic-redteam/9-rt-to-dev-enumeration.md)
+* [10. 권한 상승 및 목표 달성](basic-redteam/10-complete-mission.md)
 
 ## 🚧 인프라 (Infrastructure)
 
