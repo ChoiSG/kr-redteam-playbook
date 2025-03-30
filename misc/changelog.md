@@ -28,7 +28,7 @@
 
 3/28 - [freshycall.md](../personal-research/readme-and-template/freshycall.md "mention")페이지 추가
 
-4/1 - [01-account-management](../critical-info-infrastructure/01-account-management/ "mention")페이지 추가 - [차가운낑깡](https://app.gitbook.com/u/1y9ExMjOF5OnXgSOyWROhJQascW2 "mention")
+4/1 - [01-account-management](../web-and-mobile/01-account-management/ "mention")페이지 추가 - [차가운낑깡](https://app.gitbook.com/u/1y9ExMjOF5OnXgSOyWROhJQascW2 "mention")
 
 4/2 - 메인 랜딩 페이지 수정 및 업데이트
 
@@ -42,9 +42,9 @@
 
 4/9 - [http-redirector.md](../infrastructure/http-redirector.md "mention")페이지 추가
 
-4/16 - [payload.md](../critical-info-infrastructure/01-account-management/payload.md "mention") 페이지 수정 [차가운낑깡](https://app.gitbook.com/u/1y9ExMjOF5OnXgSOyWROhJQascW2 "mention")
+4/16 - [payload.md](../web-and-mobile/01-account-management/payload.md "mention") 페이지 수정 [차가운낑깡](https://app.gitbook.com/u/1y9ExMjOF5OnXgSOyWROhJQascW2 "mention")
 
-4/16 - [undefined-1.md](../critical-info-infrastructure/01-account-management/undefined-1.md "mention") 페이지 추가 [차가운낑깡](https://app.gitbook.com/u/1y9ExMjOF5OnXgSOyWROhJQascW2 "mention")
+4/16 - [undefined-1.md](../web-and-mobile/01-account-management/undefined-1.md "mention") 페이지 추가 [차가운낑깡](https://app.gitbook.com/u/1y9ExMjOF5OnXgSOyWROhJQascW2 "mention")
 
 4/18 - [SMTP GoPhish (AWS + ZOHO)](../infrastructure/smtp-aws-zoho.md) 페이지 추가 - [@nanentp](ttps://github.com/nanentp)
 
@@ -64,9 +64,9 @@
 
 5/1 - [https-redir-automation.md](../infrastructure/infra-automation/https-redir-automation.md "mention")페이지 추가
 
-6/19 - [csrf-token.md](../critical-info-infrastructure/01-account-management/csrf-token.md "mention") 페이지 추가 [차가운낑깡](https://app.gitbook.com/u/1y9ExMjOF5OnXgSOyWROhJQascW2 "mention")
+6/19 - [csrf-token.md](../web-and-mobile/01-account-management/csrf-token.md "mention") 페이지 추가 [차가운낑깡](https://app.gitbook.com/u/1y9ExMjOF5OnXgSOyWROhJQascW2 "mention")
 
-6/19 - [owasp-juice-shop.md](../critical-info-infrastructure/01-account-management/owasp-juice-shop.md "mention") 페이지 추가 [차가운낑깡](https://app.gitbook.com/u/1y9ExMjOF5OnXgSOyWROhJQascW2 "mention")
+6/19 - [owasp-juice-shop.md](../web-and-mobile/01-account-management/owasp-juice-shop.md "mention") 페이지 추가 [차가운낑깡](https://app.gitbook.com/u/1y9ExMjOF5OnXgSOyWROhJQascW2 "mention")
 
 7/3 - [후속 공격의 진화](https://www.xn--hy1b43d247a.com/post-exploitation/evolution-of-postex) 페이지 추가&#x20;
 

@@ -192,15 +192,6 @@
 * [네트워크 피버팅 - 툴](lateral-movement/pivoting-tools.md)
 * [Network Pivoting (피벗) - TODO](lateral-movement/pivoting.md)
 
-## 🏭 최신 취약점을 응용한 웹&모바일 해킹 과정 따라하기\&CTF 문제풀이 <a href="#critical-info-infrastructure" id="critical-info-infrastructure"></a>
-
-* [01-계정관리](critical-info-infrastructure/01-account-management/README.md)
-  * [통신 과정 흐름 훑어보기](critical-info-infrastructure/01-account-management/undefined.md)
-  * [첫번쩨, payload설정 방법](critical-info-infrastructure/01-account-management/payload.md)
-  * [두번째, 세션을 유지하는 방법](critical-info-infrastructure/01-account-management/undefined-1.md)
-  * [CSRF Token에 관하여](critical-info-infrastructure/01-account-management/csrf-token.md)
-  * [세번째, OWASP Juice Shop 로그인 페이지에서의 통신 흐름과 구조 알아보기](critical-info-infrastructure/01-account-management/owasp-juice-shop.md)
-
 ## 개념 <a href="#general-concepts" id="general-concepts"></a>
 
 * [윈도우 사용자 인증](general-concepts/windows-authentication/README.md)
@@ -226,6 +217,15 @@
   * [사이버 보안에 필요한 DNS 개념 편 #1](basic-concepts/dns/dns-concepts.md)
   * [해킹에 필요한 DNS 공격 & 우회 기법 편 #2](basic-concepts/dns/dns-and-2.md)
   * [방어에 필요한 DNS 탐지 편 #3](basic-concepts/dns/dns-3.md)
+
+## 웹 & 모바일 <a href="#web-and-mobile" id="web-and-mobile"></a>
+
+* [01-계정관리](web-and-mobile/01-account-management/README.md)
+  * [통신 과정 흐름 훑어보기](web-and-mobile/01-account-management/undefined.md)
+  * [첫번쩨, payload설정 방법](web-and-mobile/01-account-management/payload.md)
+  * [두번째, 세션을 유지하는 방법](web-and-mobile/01-account-management/undefined-1.md)
+  * [CSRF Token에 관하여](web-and-mobile/01-account-management/csrf-token.md)
+  * [세번째, OWASP Juice Shop 로그인 페이지에서의 통신 흐름과 구조 알아보기](web-and-mobile/01-account-management/owasp-juice-shop.md)
 
 ## 🎅 MISC
 
