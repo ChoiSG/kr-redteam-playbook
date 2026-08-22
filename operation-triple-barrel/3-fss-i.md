@@ -61,7 +61,7 @@ return cmd switch
 
 특히 페이지 35의 다이어그램처럼 Struggle 초기 침투 사례의 경우, FSS-I 익스가 터진 뒤 "Download & Execute"를 통해 Struggle 백도어를 다운받고 실행하는 형태다.
 
-// Figure 27 스크린샷 찍은 뒤 첨부 - 이건 추후 직접 추가.
+<figure><img src="../.gitbook/assets/op-db-figure27.png" alt=""><figcaption></figcaption></figure>
 
 페이지 32에서는 "취약점을 악용한 후 백도어 악성코드인 Struggle을 Microsoft 정상 프로세스에 인젝션하여 실행한 것으로 확인되었다"라고 했지만, 페이지 34에는 "워터링 홀 기법을 통해 Struggle을 다운로드 및 실행한 것으로 확인되었다"라고 적혀 있어, 정확히 취약점 익스 → 프로세스 인젝션이 이뤄진 것인지, 아니면 취약점 익스 → Struggle 다운로드 및 온디스크 실행인지는 확실치 않다.
 
