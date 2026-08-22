@@ -117,11 +117,11 @@ ws.onmessage = function (ev) {
 
 여기까지 준비했다면, 해당 익스 코드를 난독화한 뒤 HTML에 삽입하면 끝이다. 워터링 홀 페이지는 정상적인 블로그 글처럼 보이는 HTML로 만들었고, 익스플로잇 자바스크립트는 페이지 하단에 삽입된다.
 
-<스크린샷 - 차단의 google SEO + 자바스크립트>
+<figure><img src="../.gitbook/assets/image (159).png" alt=""><figcaption></figcaption></figure>
 
 공격자 인프라는 도메인 구입 → 에이징/카테고리화 → CDN까지 붙여놓은 뒤, 누구나 방문 가능하게 설정했다. 실제 작전이었다면 앞단에 Cloudflare Turnstile까지 붙였겠지만, 데모로서는 투머치라고 판단해 생략했다. 지금은 CDN과 도메인 모두 내려갔지만, 아무튼 이런 모습이었다:
 
-< 스크린샷 >
+<figure><img src="../.gitbook/assets/image (160).png" alt=""><figcaption></figcaption></figure>
 
 ### 참고
 

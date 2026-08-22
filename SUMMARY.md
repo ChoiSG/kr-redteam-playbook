@@ -22,11 +22,11 @@
 
 * [1. 개요](operation-triple-barrel/introduction.md)
 * [2. 환경 설정](operation-triple-barrel/2-infra.md)
-* [3. Financial Security Software I](operation-triple-barrel/3.-financial-security-software-i.md)
-* [4. 쉘코드 로더 - Barrel-Giga](operation-triple-barrel/4-barrel-giga.md)
-* [5. UDRL - Barrel-Kit](operation-triple-barrel/5.-udrl-barrel-kit.md)
-* [6. Barrel-Shot](operation-triple-barrel/6.-barrel-shot.md)
-* [7. Post-Exploitation](operation-triple-barrel/7.-post-exploitation.md)
+* [3. Financial Security Software I](operation-triple-barrel/3-fss-i.md)
+* [4. Barrel-Giga 쉘코드 로더](operation-triple-barrel/4-barrel-giga.md)
+* [5. Barrel-Kit UDRL](operation-triple-barrel/5-barrel-kit-udrl.md)
+* [6. Barrel-Shot](operation-triple-barrel/6-barrel-shot.md)
+* [7. Post-Exploitation](operation-triple-barrel/7-post-exploitation.md)
 
 ## 🚧 인프라 (Infrastructure)
 
