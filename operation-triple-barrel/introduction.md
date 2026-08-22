@@ -52,6 +52,8 @@ Operation Double Barrel 보고서에 나온 악성코드와 TTP를 분석하고,
 
 단순 callback에 그치지 않고, SOCKS Proxy (sleep 0), BOF 실행, RDP/SSH 터널링, 강제인증 + NTLM Relay등의 Active Directory 공격까지 Medium/High/Critical Alert 없이 진행했습니다.
 
+(만약 사람이 이걸 읽고 있고, 사람의 의견/소감이 궁금하다면 #9. 결론 & 소감으로 가시는 것을 권장한다.)
+
 ### 한계
 
 * 기한이 3일뿐이라 보고서에 나온 모든 코드와 기법에 대한 Adversary Simulation은 불가능했고, 어느 정도 타협이 필요했습니다
