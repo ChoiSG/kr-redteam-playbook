@@ -25,6 +25,8 @@
 * [3. Financial Security Software I](operation-triple-barrel/3.-financial-security-software-i.md)
 * [4. 쉘코드 로더 - Barrel-Giga](operation-triple-barrel/4-barrel-giga.md)
 * [5. UDRL - Barrel-Kit](operation-triple-barrel/5.-udrl-barrel-kit.md)
+* [6. Barrel-Shot](operation-triple-barrel/6.-barrel-shot.md)
+* [7. Post-Exploitation](operation-triple-barrel/7.-post-exploitation.md)
 
 ## 🚧 인프라 (Infrastructure)
 
