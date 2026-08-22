@@ -557,7 +557,7 @@ VOID WINAPI _KrakenSleep(DWORD milliseconds)
 
 EDR은 API 호출 시 콜스택을 트레이싱해서 "이 호출이 어디서 시작됐는지"를 확인한다. 모듈 스톰핑 덕분에 코드 자체는 `MEM_IMAGE` 영역에 있지만, 콜스택 프레임이 수상하면 여전히 탐지된다. 특히 리턴 주소가 정상적인 `call`/`ret` 쌍이 아닌 경우, 혹은 리턴 주소가 가리키는 곳이 알려진 코드 영역과 맞지 않는 경우가 그렇다.
 
-#### 전통적인 접근: Return Address Spoofing
+#### 전통적 방법: Return Address Spoofing
 
 전통적인 콜스택 스푸핑은 스택 프레임의 리턴 주소를 정상적인 주소로 덮어쓰는 방식이다. API를 호출하기 전에 스택에 가짜 프레임을 쌓아서, EDR이 콜스택을 읽었을 때 정상적인 호출 체인처럼 보이게 만든다.
 
@@ -630,7 +630,7 @@ BOOL WINAPI _CreateProcessA(...) {
 }
 ```
 
-#### Impersonation 폴백
+#### Impersonation Fallback
 
 한 가지 예외가 있다. 스레드가 토큰을 임퍼소네이션(impersonation) 중일 때다. 예를 들어, `getsystem` 이나 `make token`과 같이 에이전트가 `ImpersonateLoggedOnUser`로 다른 사용자의 토큰을 임퍼소네이션한 상태에서 API를 호출하면, 그 토큰의 권한으로 실행되어야 한다. 하지만 워커 스레드에는 해당 토큰이 없다. 이 경우 워커를 건너뛰고 메인 스레드에서 직접 호출한다.
 
