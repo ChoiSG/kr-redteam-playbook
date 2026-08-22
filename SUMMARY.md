@@ -27,6 +27,7 @@
 * [5. Barrel-Kit UDRL](operation-triple-barrel/5-barrel-kit-udrl.md)
 * [6. Barrel-Shot](operation-triple-barrel/6-barrel-shot.md)
 * [7. Post-Exploitation](operation-triple-barrel/7-post-exploitation.md)
+* [8. Operation](operation-triple-barrel/8.-operation.md)
 
 ## 🚧 인프라 (Infrastructure)
 

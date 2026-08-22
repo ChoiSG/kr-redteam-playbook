@@ -1,4 +1,4 @@
-# 5. UDRL - Barrel-Kit
+# 5. Barrel-Kit UDRL
 
 ## Struggle & UDRL - Barrel Kit
 
@@ -37,9 +37,9 @@ UDRL 개발에는 Cobalt Strike의 제작자이자, 전설적인(?) Maldev/Red t
 
 ### 전체구조
 
-오퍼레이션 트리플 배럴에서 개발한 UDRL + 호스트 PE 파일의 구조는 다음과 같다.
+앞서 몇 번 나왔지만, 오퍼레이션 트리플 배럴에서 개발한 UDRL + 호스트 PE 파일의 구조는 다음과 같다.
 
-<figure><img src="../.gitbook/assets/barrel-kit-and-barrel-giga (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/full-diagram (2).png" alt=""><figcaption></figcaption></figure>
 
 이 중, Barrel Kit을 통해 만들어진 UDRL은 #4번부터 #17번까지를 담당한다. 본격적으로 쉘코드가 실행될 때 가장 앞에 PIC 형태로 있는 UDRL이 희생양 DLL 2개를 로드하고, PICO라는 또 다른 PIC와, Adaptix C2의 Beacon DLL를 각각의 DLL에 로드한다. 모든 준비가 끝나면 Beacon DLL로 Execution을 넘기면 된다.
 

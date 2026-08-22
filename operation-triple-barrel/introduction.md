@@ -46,7 +46,7 @@ Operation Double Barrel 보고서에 나온 악성코드와 TTP를 분석하고,
 
 ### 결과
 
-
+<figure><img src="../.gitbook/assets/full-diagram.png" alt=""><figcaption></figcaption></figure>
 
 약 3일간 AI를 활용해 만든 악성코드와 TTP로 Operation Double Barrel에 등장하는 악성코드와 TTP의 일부를 재현할 수 있었습니다. 오픈소스 EDR을 제작하는 E사의 Aggressive 세팅 EDR 우회, 그리고 시중 Top 5 EDR 중 한 곳의 기본 세팅 EDR 우회도 할 수 있었습니다. 다른 EDR은 구할 방법이 없어서 테스트를 하지 못했습니다.&#x20;
 

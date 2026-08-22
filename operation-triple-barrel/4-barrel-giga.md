@@ -1,4 +1,4 @@
-# 4. 쉘코드 로더 - Barrel-Giga
+# 4. Barrel-Giga 쉘코드 로더
 
 ## Shellcode Loader - Barrel Giga
 
@@ -12,7 +12,7 @@
 
 ### 개요
 
-<figure><img src="../.gitbook/assets/barrel-kit-and-barrel-giga.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/full-diagram (1).png" alt=""><figcaption></figcaption></figure>
 
 오퍼레이션 더블 배럴 보고서 기준으로, 오퍼레이션 트리플 배럴에서 구상한 악성코드 구조는 위와 같다.
 

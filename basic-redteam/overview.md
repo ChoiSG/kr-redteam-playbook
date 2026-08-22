@@ -44,7 +44,7 @@ Brought to you, with <3, by: choi@레드라쿤
 
 라쿤테크는 국내 가상 IT 회사이며, 다음과 같은 IT 환경을 가지고 있다.
 
-<figure><img src="../.gitbook/assets/full-diagram.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/full-diagram (3).png" alt=""><figcaption></figcaption></figure>
 
 라쿤테크는 오래된 IT 회사로, 클라우드 도입이 늦어 현재까지 온-프레미스 환경을 유지하고 있다. 주요 자산은 주로 액티브 디렉토리와 윈도우 기반으로 구성되어 있으며, Gitlab과 Bookstack(위키 서버) 등은 우분투 기반의 서버에서 운영되고 있다.
 
