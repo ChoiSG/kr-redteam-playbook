@@ -20,7 +20,7 @@
 2. **쉘코드 로더:** 백도어인 Struggle이 안에 "내장되어 있는", 정상 프로그램 AppleWin.exe으로 위장한 PE 바이너리. #1번의 트리거가 이 쉘코드 로더를 다운 받은 뒤, 실행한다.
 3. **UDRL (User-Defined Reflective Loader):** Reflective DLL Loading 기법을 활용해 메모리상에서 DLL 형태의 Struggle을 다시 한 번 로드하는 코드.
 
-본 페이지에서는 #2번 - 쉘코드 로더와 이를 자동으로 만들어주는 파이프라인은 Barrel-Giga에 대해서 알아보자.
+본 페이지에서는 #2번 - 쉘코드 로더와 이를 자동으로 만들어주는 파이프라인인 Barrel-Giga에 대해서 알아본다.
 
 ### 쉘코드 로더 (Shellcode Loader)
 
