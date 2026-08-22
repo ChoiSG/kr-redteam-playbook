@@ -13,8 +13,8 @@ nmap -sV -sT -sC -T5 -v -A $targetip
 ```
 
 * **-sV** (Version detection)
-* \-**sT** (TCP connect scan)
-* \-**sC** (Performs a script scan using the default set of scripts)
+* -**sT** (TCP connect scan)
+* -**sC** (Performs a script scan using the default set of scripts)
 * **-T5**  (Insane mode)
 * **-v** (Increase verbosity level)
 * **-A** (OS Detection)
@@ -262,7 +262,7 @@ telnet 192.168.0.101 3306
 _ERROR 1130 (HY000): Host '192.168.0.101' is not allowed to connect to this MySQL server means only localhost can log in as root._
 {% endhint %}
 
-MYSQL Commands List : [http://cse.unl.edu/\~sscott/ShowFiles/SQL/CheatSheet/SQLCheatSheet.html](http://cse.unl.edu/\~sscott/ShowFiles/SQL/CheatSheet/SQLCheatSheet.html)
+MYSQL Commands List : [http://cse.unl.edu/\~sscott/ShowFiles/SQL/CheatSheet/SQLCheatSheet.html](http://cse.unl.edu/~sscott/ShowFiles/SQL/CheatSheet/SQLCheatSheet.html)
 
 #### SQL Password Storage
 
@@ -313,7 +313,7 @@ Information Gathering using nc&#x20;
 nc -nv  10.11.1.71 22
 ```
 
-![](broken-reference)
+![](/broken/files/-M2DEHQd-ZLjG7TOgEbX)
 
 The target OS is "Ubuntu", using "OpenSSH v6.6" (and package is 2ubuntu2)
 

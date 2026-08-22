@@ -18,6 +18,14 @@
 * [9. RT -> DEV 정보 수집](basic-redteam/9-rt-to-dev-enumeration.md)
 * [10. 권한 상승 및 목표 달성](basic-redteam/10-complete-mission.md)
 
+## Operation Triple Barrel
+
+* [1. 개요](operation-triple-barrel/introduction.md)
+* [2. 환경 설정](operation-triple-barrel/2-infra.md)
+* [3. Financial Security Software I](operation-triple-barrel/3.-financial-security-software-i.md)
+* [4. 쉘코드 로더 - Barrel-Giga](operation-triple-barrel/4-barrel-giga.md)
+* [5. UDRL - Barrel-Kit](operation-triple-barrel/5.-udrl-barrel-kit.md)
+
 ## 🚧 인프라 (Infrastructure)
 
 * [개념](infrastructure/concepts.md)
