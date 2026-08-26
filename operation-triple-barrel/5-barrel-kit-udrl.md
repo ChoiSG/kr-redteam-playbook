@@ -10,7 +10,7 @@
 
 ### 데모
 
-<figure><img src="../.gitbook/assets/barrel-kit-demo.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/barrel-kit-demo.gif" alt="" width="563"><figcaption></figcaption></figure>
 
 ## Struggle --> Adaptix C2&#x20;
 
