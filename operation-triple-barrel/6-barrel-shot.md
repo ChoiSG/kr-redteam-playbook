@@ -8,7 +8,7 @@
 
 ### 데모
 
-<figure><img src="../.gitbook/assets/barrel-shot-demo.gif" alt="" width="563"><figcaption></figcaption></figure>
+{% file src="../.gitbook/assets/barrel-shot-demo.mp4" %}
 
 ### 개요
 

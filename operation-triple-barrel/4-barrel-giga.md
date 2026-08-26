@@ -8,7 +8,7 @@
 
 ### Demo
 
-<div align="center"><figure><img src="../.gitbook/assets/barrel-giga-demo (1).gif" alt="" width="563"><figcaption></figcaption></figure></div>
+{% file src="../.gitbook/assets/barrel-giga-demo.mp4" %}
 
 ### 개요
 
